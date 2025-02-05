@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="../phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="c.html">C</a></li>
+                                <li><a class="dropdown-item " href="../htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="../cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="../javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="../reactpdf/react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+
+
+
+    <div class="containerjs">
+        <!-- Sidebar -->
+        <div class="sidebarjs">
+            <ul id="topicListjs">
+                <li data-topic="topic1"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to C</li>
+                <li data-topic="topic2"><i class="fas fa-book read-icon"></i>&nbsp;C Data Types, Operators & User I/O
+                </li>
+                <li data-topic="topic3"><i class="fas fa-book read-icon"></i>&nbsp;Conditional Statements
+                <li>
+                <li data-topic="topic4"><i class="fas fa-book read-icon"></i>&nbsp;Iteration Statements</li>
+                <li data-topic="topic5"><i class="fas fa-book read-icon"></i>&nbsp;Array Basics</li>
+                <li data-topic="topic6"><i class="fas fa-book read-icon"></i>&nbsp;Array Operations</li>
+                <li data-topic="topic7"><i class="fas fa-book read-icon"></i>&nbsp;String Basics</li>
+                <li data-topic="topic8"><i class="fas fa-book read-icon"></i>&nbsp;String Functions</li>
+                <li data-topic="topic9"><i class="fas fa-book read-icon"></i>&nbsp;Function Basics</li>
+                <li data-topic="topic10"><i class="fas fa-book read-icon"></i>&nbsp;Function Parameters</li>
+
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="contentjs">
+            <div id="topic1" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Introduction to C</h2>
+                <h4>C Overview</h4>
+                <h4>What is C?⁣</h4>
+                <li id="li-title"><span>Since the late 19th century, C has been a popular programming language for
+                        general-purpose use.</span></li>
+                <li id="li-title"><span>C language was developed by Dennis M. Ritchie at bell laboratory in early
+                        1970s</span></li>
+                <li id="li-title"><span>Its applications are very diverse. It ranges from developing operating systems
+                        to databases and all. ⁣It is system programming language used to do low level programming (e.g.,
+                        driver or kernel)</span></li>
+                <li id="li-title"><span>Even if it’s old, it is still a very popular programming language.</span>⁣</li>
+                <li id="li-title"><span>As the whole UNIX operating system was written in C, it has a strong association
+                        with the operating system⁣</span></li>
+                <li id="li-title"><span>C has also been used widely while creating iOS and Android kernels.⁣</span></li>
+                <li id="li-title"><span>MySQL database is written using C.⁣</span></li>
+                <li id="li-title"><span>Ruby and Pearl are mostly written using C.</span>⁣</li>
+                <li id="li-title"><span>Most part of Apache and NGINX is written using C.⁣</span></li>
+                <li id="li-title"><span>Embedded Systems are created using C</span>⁣</li>
+                <br><br>
+                <h4>Why should we learn C/ Features of C?</h4>
+                <li id="li-title"><span>As mentioned above, it is one of the most popular programming languages in the
+                        world.</span></li>
+                <li id="li-title"><span>Learning any other popular programming language such as Python or C++ becomes a
+                        cakewalk already if you know C.</span></li>
+                <li id="li-title"><span>C is a flexible language and that gets proven by the fact that it can be used in
+                        a variety of applications as well as technologies.</span></li>
+                <li id="li-title"><span>C is very fast when compared to other programming languages be it Java or
+                        Python.</span></li>
+                <li id="li-title"><span>C takes only significant CPU time for interpretation. That is why a lot of
+                        Python libraries such as NumPy, pandas, Scikit-learn, etc. are built using C.</span></li>
+                <li id="li-title"><span>Being close to Machine language, some of its functions include direct access to
+                        machine-level hardware APIs.</span></li>
+                <li id="li-title"><span>It is a structural language (Follows a specific Structure) /Compiled language
+                        this point should be added</span></li>
+                <li id="li-title"><span>It is procedural programming language (POP) Procedurall Programming is the use
+                        of code in a step-wise procedure to develop applications. </span></li>
+                <br><br>
+                <h4>How is it different from C++?</h4>
+                <li id="li-title"><span>The syntax of C++ is almost identical to that of C, as C++ was developed as an
+                        extension of C.</span></li>
+                <li id="li-title"><span>In contrast to C, C++ supports classes and objects, while C does not.</span>
+                </li>
+                <li id="li-title"><span>C gives most of the control to the hand of users. Things like memory allocation
+                        and manipulation are totally in the hands of the programmer. Being a flexible language, it
+                        provides more access to the programmer because of which it is more efficient.</span></li>
+                <li id="li-title"><span>.C is POP(procedure oriented programming) whereas c++ is OOP(Object oriented
+                        programming)</span></li>
+                <br><br>
+                <h4>Getting Started with C</h4>
+                <h5>Requirements before you start</h5>
+                <li id="li-title"><span>To start using C, you need two things:</span></li>
+                <li id="li-title"><span>A text editor, like Notepad, or an IDE, like VSCode to act as a platform for you
+                        to write C code</span></li>
+                <li id="li-title"><span>A compiler, like GCC to translate the C code you have written which is a
+                        high-level language into a low-level language that the computer will understand.</span></li>
+
+                <br><br>
+                <h4>What is an IDE?</h4>
+                <li id="li-title"><span>IDE stands for an Integrated Development Environment.</span></li>
+                <li id="li-title"><span>It is nothing more than an enhanced version of a text editor that helps you
+                        write more efficient and nicer code</span></li>
+                <li id="li-title"><span>It helps to differentiate different parts of your codes with different colors
+                        and notifies you if you are missing some semicolon or bracket at some place by highlighting that
+                        area.</span></li>
+                <li id="li-title"><span>A lot of IDEs are available, such as DEVC++ or Code Blocks, but we will prefer
+                        using VS Code for this tutorial series.</span></li>
+                <br><br>
+
+                <h4>Installing VSCode</h4>
+                <li id="li-title">Visit &nbsp;<a href=" https://code.visualstudio.com/download">
+                        https://code.visualstudio.com/download</a></li>
+                <li id="li-title"><span>Click on the download option as per your operating system.</span></li>
+                <li id="li-title"><span>After the download is completed, open the setup and run it by saving VS Code in
+                        the default location without changing any settings.</span></li>
+                <li id="li-title"><span>You will need to click the next button again and again until the installation
+                        process begins.</span></li>
+
+                <br><br>
+
+                <h4>What is a Compiler?</h4>
+                <li id="li-title"><span>A compiler is used to run the program of a certain language which is generally
+                        high-level by converting the code into a language that is low-level that our computer could
+                        understand.</span></li>
+                <li id="li-title"><span>There are a lot of compilers available, but we will proceed with teaching you to
+                        use MinGW for this course because it will fulfill all of our requirements, and also it is
+                        recommended by Microsoft itself.</span></li>
+                <br><br>
+                <h4>Setting up the compiler</h4>
+                <li id="li-title">Visit &nbsp;<a href="https://code.visualstudio.com/docs/languages/cpp">
+                        https://code.visualstudio.com/docs/languages/cpp</a></li>
+                <li id="li-title"><span>Select C++ from the sidebar.</span></li>
+                <li id="li-title"><span>Choose “GCC via Mingw-w64 on Windows” from the options shown there.</span></li>
+                <li id="li-title"><span>Select the install sourceforge option.</span></li>
+                <li id="li-title"><span>After the downloading gets completed, run the setup and choose all the default
+                        options as we did while installing VS Code.</span></li>
+                <br><br>
+
+                <h4>Setting Path for Compiler</h4>
+                <li id="li-title"><span>Go to the C directory. Navigate into the Program Files. Then, open MinGW-64.
+                        Open MinGW-32. And then the bin folder. After reaching the bin, save the path or URL to the
+                        bin.</span></li>
+                <li id="li-title"><span>Then go to the properties of ‘This PC’.</span></li>
+                <li id="li-title"><span>Select ‘Advance System Settings’.</span></li>
+                <li id="li-title"><span>Select the ‘Environment Variable’ option.</span></li>
+                <li id="li-title"><span>Add the copied path to the Environment Variable.</span></li>
+                <li id="li-title"><span>And now, you can visit your IDE and run your C programs on it. The configuration
+                        part is done.</span></li>
+                <br><br>
+                <h4>Basic Structure & Syntax</h4>
+                <p>Programming in C involves following a basic structure throughout. Here’s what it can be broken down
+                    to.</p>
+                <li id="li-title"><span>Pre-processor commands </span></li>
+                <li id="li-title"><span>Functions </span></li>
+                <li id="li-title"><span>Variables </span></li>
+                <li id="li-title"><span>Statements </span></li>
+                <li id="li-title"><span>Expressions </span></li>
+                <li id="li-title"><span>Comments </span></li>
+
+                <br><br>
+
+                <h4>Pre-processor commands</h4>
+                <p>Pre-processor commands are commands which tell our program that before its execution, it must include
+                    the file name mentioned in it because we are using some of the commands or codes from this file.
+
+                    They add functionalities to a program.
+
+                    One example could be,</p>
+
+                <img src="Image/img1.png" alt="img" id="image-id"><br><br>
+                <p>We include math.h to be able to use some special functions like power and absolute. #include
+                    <filename.h> is how we include them into our programs.
+
+                        <br>Detailed explanations of everything else in the structure will follow in the later part of
+                        the tutorial.</p>
+
+                <br><br>
+                <h4>Header files:</h4>
+                <li id="li-title"><span> Collection of predefined/built in functions developed</span></li>
+                <li id="li-title" style="margin-left:30px;"><span>It is always declares on heading side of program hence
+                        it is called header file</span></li>
+                <li id="li-title" style="margin-left:30px;"><span>It is identified with the extension(.h)</span>
+                <li id="li-title" style="margin-left:30px;"><span> It gets installed while installing IDE(integrated
+                        development environment)</span></li>
+                <li id="li-title" style="margin-left:30px;"><span> It stores functions as per their categories hence
+                        they are called library</span></li>
+                <br><br>
+                <h4>Syntax</h4>
+                <p>An example below shows how a basic C program is written.</p>
+                <img src="Image/img2.png" alt="img" id="image-id"><br><br>
+                <li id="li-title"><span> Here, the first line is a pre-processor command including a header file
+                        stdio.h.</span></li>
+                <li id="li-title"><span> C ignores empty lines and spaces.</span></li>
+                <li id="li-title"><span> There is a main() function then, which should always be there.</span></li>
+                <br><br>
+
+                <p>A C program is made up of different tokens combined. These tokens include:</p>
+                <li>Keywords</li>
+                <li>Identifiers</li>
+                <li>Constants</li>
+                <li>String Literal</li>
+                <li>Symbols</li>
+
+                <br><br>
+                <h4>Keywords</h4>
+                <p>Keywords are reserved words that can not be used elsewhere in the program for naming a variable or a
+                    function. They have a specific function or task and they are solely used for that. Their
+                    functionalities are pre-defined.<br>
+
+                    One such example of a keyword could be return which is used to build return statements for
+                    functions. Other examples are auto, if, default, etc.<br>
+
+                    Whenever we write any keyword in IDE their colour slightly changes and it looks different from other
+                    variables or functions for example in turbo c all keywords are turns into white colour .</p>
+                <br><br>
+                <h4>Identifiers</h4>
+                <p>Identifiers are names given to variables or functions to differentiate them from one another. Their
+                    definitions are solely based on our choice but there are a few rules that we have to follow while
+                    naming identifiers. One such rule says that the name can not contain special symbols such as @, -,
+                    *, <, etc.<br>
+
+                        C is a case-sensitive language so an identifier containing a capital letter and another one
+                        containing a small letter in the same place will be different. For example, the three words:
+                        Code, code, and cOde can be used as three different identifiers.</p>
+
+                <b>Rules for naming identifier-</b>
+                <li id="li-title"><span> One should not name any identifier starting with numeric value or symbol. It
+                        should start only with underscore or alphabet </span></li>
+                <li id="li-title"><span> They should not contain space</span></li>
+                <li id="li-title"><span> Giving logical names is recommended as per our program</span></li>
+                <br><br>
+                <h4>Constants</h4>
+                <p>Constants are very similar to a variable and they can also be of any data type. The only difference
+                    between a constant and a variable is that a constant’s value never changes. We will see constants in
+                    more detail in the upcoming tutorial.</p>
+                <br><br>
+                <h4>String Literal</h4>
+                <p>String literals or string constants are a sequence of characters enclosed in double quotation marks.
+                    For example, “This is a string literal!” is a string literal. C method printf() utilizes the same to
+                    format the output.</p>
+                <br><br>
+                <h4>C Comments</h4>
+                <p>Comments can be used to insert any informative piece which a programmer does not wish to be executed.
+                    It could be either to explain a piece of code or to make it more readable. In addition, it can be
+                    used to prevent the execution of alternative code when the process of debugging is done.
+
+                    <br> Comments can be singled-lined or multi-lined.
+                </p>
+
+                <br><br>
+                <h4>Single Line Comments</h4>
+                <li id="li-title"><span>Single-line comments start with two forward slashes (//).</span></li>
+                <li id="li-title"><span>Any information after the slashes // lying on the same line would be ignored
+                        (will not be executed).</span></li>
+                <br>
+                <p>An example of how we use a single-line comment</p>
+                <img src="Image/img3.png" alt="img" id="image-id"><br><br>
+                <h4>Multi-line comments</h4>
+                <li id="li-title"><span>A multi-line comment starts with /* and ends with */.</span></li>
+                <li id="li-title"><span>Any information between /* and */ will be ignored by the compiler.</span></li>
+                <br>
+                <p>An example of how we use a multi-line comment</p>
+                <img src="Image/img4.png" alt="img" id="image-id"><br><br>
+                <br><br>
+
+                <h4>C Variables</h4>
+                <p>Variables are containers for storing data values.</p>
+                <b>In C, there are different types of variables.</b>
+                <p>For example</p>
+                <li id="li-title" style="margin-left:30px;"><span> an integer variable defined with the keyword int stores integers (whole numbers), without decimals, such as 91 or -13.</span></li>
+                <li id="li-title" style="margin-left:30px;"><span> a floating point variable defined with keyword float stores floating point numbers, with decimals, such as 99.98 or -1.23.</span></li>
+                <li id="li-title" style="margin-left:30px;"><span> a character variable defined with the keyword char stores single characters, such as 'A' or 'z'. Char values are bound to be surrounded by single quotes.</span></li>
+                <br><br>
+                <h4>Declaration</h4>
+                <p>We cannot declare a variable without specifying its data type. The data type of a variable depends on what we want to store in the variable and how much space we want it to hold. The syntax for declaring a variable is simple:</p>
+                <img src="Image/img5.png" alt="img" id="image-id">
+                <p>OR</p>
+                <img src="Image/img6.png" alt="img" id="image-id"><br><br>
+                <h4>Naming a Variable</h4>
+                <p>There is no limit to what we can call a variable. Yet there are specific rules we must follow while naming a variable:</p>
+                <li id="li-title" style="margin-left:30px;"><span> A variable name can only contain alphabets, digits, and underscores(_).</span></li>
+                <li id="li-title" style="margin-left:30px;"><span> A variable cannot start with a digit.</span></li>
+                <li id="li-title" style="margin-left:30px;"><span> A variable cannot include any white space in its name.</span></li>
+                <li id="li-title" style="margin-left:30px;"><span> The name should not be a reserved keyword or any special character.</span></li>
+                <br><br>
+                <p>A variable, as its name is defined, can be altered, or its value can be changed, but the same is not true for its type. If a variable is of integer type, then it will only store an integer value through a program. We cannot assign a character type value to an integer variable. We can not even store a decimal value into an integer variable.</p>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic2" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>C Data Types, Operators & User I/O</h2>
+               
+                <p>As explained previously, a variable in C must be a specified data type, and you must use a format specifier inside the printf function to display the value present in the variable
+
+                    The data type specifies the size and type of information the variable will store.</p>
+                <br><br>
+                <h4>Datatype</h4>
+                <p>It is the type of value which the variable holds.
+
+                    Here, we will focus on the most basic ones:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>Size</th>
+                                <th>Description</th>
+                                <th>Format Specifier</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>int</td>
+                                <td>2 or 4 bytes</td>
+                                <td>Stores whole numbers, without decimals</td>
+                                <td>%d or %i</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>4 bytes</td>
+                                <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits</td>
+                                <td>%f</td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>8 bytes</td>
+                                <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</td>
+                                <td>%lf</td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>1 byte</td>
+                                <td>Stores a single character/letter/number, or ASCII values</td>
+                                <td>%c</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                    <br><br><br>
+
+                    <p>Below are some sub datatypes</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>Size</th>
+                                <th>Description</th>
+                                <th>Format Specifier</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>short int</td>
+                                <td>2 bytes</td>
+                                <td>Stores whole numbers, without decimals</td>
+                                <td>%sd</td>
+                            </tr>
+                            <tr>
+                                <td>long int</td>
+                                <td>4 bytes</td>
+                                <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits</td>
+                                <td>%ld</td>
+                            </tr>
+                            <tr>
+                                <td>unsigned short int</td>
+                                <td>8 bytes</td>
+                                <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</td>
+                                <td>%usd</td>
+                            </tr>
+                            <tr>
+                                <td>unsigned long int</td>
+                                <td>4 bytes</td>
+                                <td>Stores a single character/letter/number, or ASCII values</td>
+                                <td>%uld</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <p>Here’s how we make use of the data type of a variable to print it.</p>
+                    <img src="Image/img7.png" alt="img" id="image-id"><br><br>
+                    <b>Output</b>
+                    <p>26</p>
+                    <p>39.320000</p>
+                    <p>A</p>
+                    <br><br><br>
+                    <h4>C Constants</h4>
+                    <li id="li-title" style="margin-left:30px;"><span>When you don't want the variables you declare to get modified intentionally or mistakenly in the later part of your program by you or others, you use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only).</span></li>
+                    <li id="li-title" style="margin-left:30px;"><span>You should always declare the variable as constant when you have values that are unlikely to change, like any mathematical constant as PI.</span></li>
+                    <li id="li-title" style="margin-left:30px;"><span>When you declare a constant variable, it must be assigned a value.</span></li>
+                    <br><br>
+                    <p>Here’s an example of how we declare a constant.</p>
+                    <img src="Image/img8.png" alt="img" id="image-id"><br><br>
+                    <h4>C Operators</h4>
+                    <p>Special symbols that are used to perform actions or operations are known as operators. They could be both unary or binary.
+
+                        For example, the symbol asterisk (*) is used to perform multiplication in C so it is an operator and it is a binary operator.
+                        
+                        This section covers all types of operators. </p>
+                    <br><br>
+                   <h4>Arithmetic Operators</h4>
+                   <p>Arithmetic operators are used to perform mathematical operations such as addition, subtraction, etc. A few of the simple arithmetic operators are</p>
+                   <table>
+                    <thead>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Division</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus</td>
+                            
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <br><br>
+                <p>We all must already know their purpose and how they are used in simple mathematics. Their purpose and functionality are the same.  
+
+                    Modulus(%) operator- this operator returns the remainder of two operands when they are been divided</p>
+                    <img src="Image/img9.png" alt="img" id="image-id">
+                    <p>Let’s see their implementation in C.</p>
+                    <img src="Image/img10.png" alt="img" id="image-id">
+                    <b>Output</b>
+                    <p>a + b = 5</p><br><br>
+                    <h4>Relational Operators</h4>
+                    <p>Relational operators are used for the comparison between two or more numbers or even expressions in cases. Same as Java, C also has six relational operators and their return value is of a Boolean type that is, either True or False (1 or 0).</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>></td>
+                                <td>Greater than</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><</td>
+                                <td>Less than</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>>=</td>
+                                <td>Greater than or equal to</td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                <td><=</td>
+                                <td>Less than or equal to</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>==</td>
+                                <td>Is equal to</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Is not equal to</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <p>Let’s see their implementation in C.</p>
+                    <img src="Image/img11.png" alt="img" id="image-id">
+                    <b>Output</b>
+                    <p> a == b = 0</p>
+                    <p>The output is 0, since a and b are not equal.</p>
+
+                    <br><br>
+                    <h4>Logical Operators</h4>
+                    <p>There are three logical operators i.e. AND, OR, and NOT. They can be used to compare Boolean values but are mostly used to compare conditions to see whether they are satisfying or not. </p>
+                    <li>AND: it returns true when both operators are true or 1.</li>
+                    <li>OR: it returns true when either operator is true or 1.</li>
+                    <li>NOT: it is used to reverse the logical state of the operand.</li><br>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&&</td>
+                                <td>AND Operator</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>OR Operator</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>!</td>
+                                <td>NOT Operator</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table><br>
+                    <p>Let’s see their implementation in C.</p>
+                    <img src="Image/img12.png" alt="img" id="image-id">
+                    <b>Output</b>
+                    <p>a or b = 1</p>
+                    <p>The output is 1, since either a or b is not equal to zero.</p>
+                    <br><br>
+                    <h4>Bitwise Operators</h4>
+                    <p>A bitwise operator is used to performing operations at the bit level. To obtain the results, they convert our input values into binary format and then process them using whatever operator they are being used with. </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&</td>
+                                <td>Bitwise AND</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>|</td>
+                                <td>Bitwise OR</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>^</td>
+                                <td>Bitwise XOR</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>~</td>
+                                <td>Bitwise Complement</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>>></td>
+                                <td>Shift Right Operator</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><<</td>
+                                <td>Shift Left Operator</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table><br>
+                    <p>Let’s see their implementation in C.</p>
+                    <img src="Image/img13.png" alt="img" id="image-id">
+                    <p>The output is 1, since a xor b is 01 in binary, which is 1 in decimal.</p>
+                    <br><br>
+                    <h4>Assignment Operators</h4>
+                    <p>Assignment operators are used to assign values. We will use them in almost every program we develop.</p>
+                    <b>int a = 0;</b><br>
+                    <b>int b = 1;</b>
+                    <p>Equal to (=) is the assignment operator here. It is assigning 0 to a and 1 to b in the above example.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>=</td>
+                                <td>It assigns the right side operand value to the left side operand.</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>+=</td>
+                                <td>It adds the right operand to the left operand and assigns the result to the left operand.</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>-=</td>
+                                <td>It subtracts the right operand from the left operand and assigns the result to the left operand.</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>*=</td>
+                                <td>It multiplies the right operand with the left operand and assigns the result to the left operand.</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>/=</td>
+                                <td>It divides the left operand with the right operand and assigns the result to the left operand.</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table><br><br><br>
+                    <h2>Format Specifiers & Escape Sequences</h2>
+                    <p>Whenever we write a program in C, we have to use format specifiers to define the variable type in input and output and escape characters to format the output.</p><br><br>
+                    <h4>Format Specifiers</h4>
+                    <p>A format specifier in C programming is used to define the type of data we are printing to the output or accepting through the input. Through this, we tell the compiler what type of variable we are using for input while using scanf() or output while using printf(). Some examples of format specifiers are %d, %c, %f, etc.</p><br><br>
+                    <p>Here is a list of almost all format specifiers</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Format Specifier</th>
+                                <th>Type</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>%c</td>
+                                <td>Used to print a character</td>
+                            </tr>
+                            <tr>
+                                <td>%d</td>
+                                <td>Used to print the signed integer</td>
+                            </tr>
+                            <tr>
+                                <td>%f</td>
+                                <td>Used to print the float values</td>
+                            </tr>
+                            <tr>
+                                <td>%i</td>
+                                <td>Used to print the unsigned integer</td>
+                            </tr>
+                            <tr>
+                                <td>%l</td>
+                                <td>Used to print the long integer</td>
+                            </tr>
+                            <tr>
+                                <td>%lf</td>
+                                <td>Used to print the double values</td>
+                            </tr>
+                            <tr>
+                                <td>%lu</td>
+                                <td>Used to print the unsigned integer or unsigned long integer</td>
+                            </tr>
+                            <tr>
+                                <td>%s</td>
+                                <td>Used to print the string</td>
+                            </tr>
+                            <tr>
+                                <td>%u</td>
+                                <td>Used to print the unsigned integer</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table><br><br>
+                    <b>One example is shown below.</b>
+                    <img src="Image/img14.png" alt="img" id="image-id">
+                    <b>Output</b>
+                    <img src="Image/img15.png"  alt="img" id="image-id"><br><br>
+                    <p>The %s used in the printf( ) is a format specifier. This format specifier tells printf( ) to consider it as a string and print accordingly. </p>
+
+                    <br><br>
+                    <h4>Escape Sequences</h4>
+                    <p>Many programming languages support the concept of Escape Sequences. An escape sequence is a sequence of characters that are used in formatting the output. They are not displayed on the screen while printing. Each character has its specific function. For example, \t is used to insert a tab, and \n is used to add a new line.</p>
+                   <br><br> <p>Here’s the list of all escape sequences</p>
+
+                   <table>
+                    <thead>
+                        <tr>
+                            <th>Escape Sequence</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>\t</td>
+                            <td>Inserts a tab space</td>
+                        </tr>
+                        <tr>
+                            <td>\b</td>
+                            <td>Inserts a backspace</td>
+                        </tr>
+                        <tr>
+                            <td>\n</td>
+                            <td>Inserts a new line</td>
+                        </tr>
+                        <tr>
+                            <td>\’’</td>
+                            <td>Inserts a double quote character</td>
+                        </tr>
+                        <tr>
+                            <td>\r</td>
+                            <td>Inserts a form feed</td>
+                        </tr>
+                        <tr>
+                            <td>\f</td>
+                            <td>Inserts a backspace</td>
+                        </tr>
+                        <tr>
+                            <td>\’</td>
+                            <td>Inserts a single quote character</td>
+                        </tr>
+                        <tr>
+                            <td>\\</td>
+                            <td>Inserts a backslash character</td>
+                        </tr>
+                    </tbody>
+                   </table><br><br>
+                   <b>One example is shown below,</b>
+                   <img src="Image/img16.png"  alt="img" id="image-id"><br><br>
+                   <b>Output</b>
+                   <img src="Image/img17.png"  alt="img" id="image-id"><br><br>
+
+                   <br><h2>User Input/Output</h2>
+                   <p>We have already learned how the printf() function is used to output values in C. Another method, which goes by the name, scanf(), is used to get user input.</p>
+                   <br><br>
+                   <b>The scanf() function takes two arguments:</b>
+                   <li id="li-title"><span>the format specifier of the variable (as shown in the example below)⁣</span></li>
+                   <li id="li-title"><span>the reference operator (&myNum), which stores the memory address of the variable. This is where the input data goes to.⁣</span></li>
+
+                   <br><br>
+                   <h4>Syntax</h4>
+                   <p>scanf("format specifier",&variable_name);</p>
+                   <p>&-specifes the address of the variable.</p>
+                   <p>One such example demonstrates how a program takes input from the user. </p>
+                   <img src="Image/img18.png"  alt="img" id="image-id"><br><br>
+                   <b>Input</b>
+                   <img src="Image/img19.png"  alt="img" id="image-id"><br><br>
+                   <b>Output</b>
+                   <img src="Image/img20.png"  alt="img" id="image-id"><br><br>
+                   <p>You must note that we didn’t have to specify the reference operator (&) in cases of strings if we have specified the size of the strings already. This is an exception.</p>
+                   <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic3" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Conditional Statements</h2>
+                <h4>C if...else statements</h4>
+                <p>Sometimes, we wish to execute one set of instructions if a particular condition is met, and another set of instructions if it is not. This kind of situation is dealt with in C language using a decision control system. 
+
+                    The condition for the if statement is always enclosed within a pair of parentheses. If the condition is true, then the set of statements following the if statement will execute. And if the condition evaluates to false, then the statement will not execute, instead, the program skips that enclosed part of the code.<br>An expression in if statements are defined using relational operators. Comparing two values using relational operators allows us to determine whether they are equal, unequal, greater than, or less than.<br>If we want to execute a particular code in some situation and its vice versa /opposite/or different code if that situation doesn’t occurs then if..else statements can be used. Its all depend on the condition. If the condition returns true value the situation has occurred and the true part of code will be executed and if condition returns false value false part of the code will be executed</p>
+                <br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Condition</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>a==b</th>
+                            <th>a is equal to b</th>
+                        </tr>
+                        <tr>
+                            <th>a!=b</th>
+                            <th>a is not equal to b</th>
+                        </tr>
+                        <tr>
+                            <th>a&lt;b<b</th>
+                            <th>a is less than b</th>
+                        </tr>
+                        <tr>
+                            <th>a>b</th>
+                            <th>a is greater than b</th>
+                        </tr>
+                        <tr>
+                            <th>a<=b</th>
+                            <th>a is less than or equal to b</th>
+                        </tr>
+                        <tr>
+                            <th>a>=b</th>
+                            <th>a is greater than or equal to b</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <p>The statement written in an if block will execute when the expression following if evaluates to true. But when the if block is followed by an else block, then when the condition written in the if block turns to be false, the set of statements in the else block will execute.
+
+                    Following is the<b>syntax of if-else statements:</b></p>
+                    <img src="Image/img21.png" alt="img" id="image-id">
+                    <br><br>
+                    <p>One example where we could use the if-else statement is:</p>
+                    <img src="Image/img22.png" alt="img" id="image-id">
+                    <b>Output</b>
+                    <img src="Image/img23.png" alt="img" id="image-id"><br><br>
+                    <b>Ladder if-else</b>
+                    <p>If we want to check the multiple conditions then ladder if else can used. If the previous condition returns false then only next condition will be checked.</p>
+                    <p>syntax-</p>
+                    <img src="Image/img24.png" alt="img" id="image-id"><br><br>
+                    <b>Nested if-else</b>
+                    <p>We can also write an entire if-else statement within either the body of another if statement or the body of an else statement. This is called the ‘nesting’ of ifs.</p>
+                    <img src="Image/img25.png" alt="img" id="image-id"><br><br><br><br>
+                    <h2>Switch Case Statements</h2>
+                    <h4>What is Switch?</h4>
+                    <p>The control statement that allows us to make a decision effectively from the number of choices is called a switch, or a switch case-default since these three keywords go together to make up the control statement. The expression in switch returns an integral value, which is then compared with different cases. Switch executes that block of code, which matches the case value. If the value does not match with any of the cases, then the default block is executed. </p>
+                    <br><br>
+                    <p>Following is the syntax of switch case-default statements:</p>
+                    <img src="Image/img26.png" alt="img" id="image-id"><br><br>
+                    <h4>Understanding the syntax:</h4>
+                    <p>The expression following the switch can be an integer expression or a character expression. The case value 1, and 2 are case labels that are used to identify each case individually. Remember, that case labels should be unique for each of the cases. If it is the same, it may create a problem while executing a program. At the end of the case labels, we always use a colon ( : ). Each case is associated with a block. A block contains multiple statements that are grouped together for a particular case.<br>Whenever the switch is executed, the value of test-expression is compared with all the cases present in switch statements. When the case is found, the block of statements associated with that particular case will execute. The break keyword indicates the end of a particular case. If we do not put the break in each case, then even though the specific case is executed, C's switch will continue to execute all the cases until the end is reached. The default case is optional. Whenever the expression's value is not matched with any of the cases inside the switch, then the default case will be executed. </p><br><br>
+
+                    <p>One example where we could use the switch case statement is,</p>
+                    <img src="Image/img27.png" alt="img" id="image-id">
+                    <b>Output</b>
+                    <img src="Image/img28.png" alt="img" id="image-id"><br><br>
+                    <h4>Different to if-else. How?</h4>
+                    <p>There is one problem with the if statement: the program's complexity increases whenever the number of if statements increases. If we use multiple if-else statements in the program, the code might become difficult to read and comprehend. Sometimes it also even confuses the developer who himself wrote the program. Using the switch statement is the solution to this problem.
+
+                        Furthermore,</p>
+                        <li id="li-title"><span>Switch statements cannot evaluate float conditions, and the test expression can only be an integer or a character, whereas if statements can evaluate float conditions as well.⁣</span></li>
+                        <li id="li-title"><span>Switch statements cannot evaluate relational operators hence they are not allowed in switch statements, whereas if statements can evaluate relational operators.⁣</span></li>
+                        <li id="li-title"><span>Cases in the switch can never have variable expressions; for example, we cannot write case a +3: ⁣</span></li><br><br>
+                    
+                    <h4>Rules for Switch statements</h4>
+                    <li id="li-title"><span>The test expression of Switch must necessarily be an int or char.</span></li>
+                    <li id="li-title"><span>The value of the case should be an integer or character.</span></li>
+                    <li id="li-title"><span>Cases should only be inside the switch statement.</span></li>
+                    <li id="li-title"><span>Using the break keyword in the switch statement is not necessary.</span></li>
+                    <li id="li-title"><span>The case label values inside the switch should be unique. </span></li>
+                        <br><br>
+                    <p>It is not necessary to use the break keyword after every case. Break keywords should only be used when we want to terminate our case at that time, otherwise we won’t.</p>
+                    <p>We can also use nested switch statements i.e., switch inside another switch. Also, the case constants of the inner and outer switch may have common values without any conflicts.</p>
+                    <div class="navigation-buttons">
+                        <button onclick="previousContent()">Previous</button>
+                        <button onclick="nextContent()" id="next">Next</button>
+                    </div>
+                </div>
+
+
+
+            <div id="topic4" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Iteration Statements</h2>
+                <h4>C Loops</h4>
+                <p>In programming, we often have to perform an action, again and again, with little or no variations in the details each time they are executed. This need is met by a mechanism known as a loop.
+
+                    The versatility of the computer lies in its ability to perform the set of instructions repeatedly. This involves repeating some code in the program, either a specified number of times or until a particular condition is satisfied. Loop-controlled instructions are used to perform this repetitive operation efficiently ensuring the program doesn’t look redundant at the same time due to the repetitions.</p>
+                 <br><br>
+                 <p>Following are the three types of loops in C programming.</p>   
+                <li>For loop</li>
+                <li>While loop</li>
+                <li>do-while loop</li>
+                <br><br>
+                <h4>Types of Loops</h4>
+                <br>
+                <b>Entry Controlled loops</b>
+                <p>In entry controlled loops, the test condition is evaluated before entering the loop body. The for Loop and the while Loop are examples of entry-controlled loops.</p>
+                <b>Exit Controlled Loops</b>
+                <p>In exit-controlled loops, the test condition is tested at the end of the loop. Regardless of whether the test condition is true or false, the loop body will execute at least once. The do-while loop is an example of an exit-controlled loop.</p>
+                <br><br>
+                <h4>For Loop</h4>
+                <p>A for loop is a repetition control structure that allows us to efficiently write a loop that will execute a specific number of times. The for loop working is as follows:</p>
+                <li id="li-title"><span>The initialization statement is executed only once; in this statement, we initialize a variable to some value.</span></li>
+                <li id="li-title"><span>In the second step, the test expression is evaluated. Suppose the test expression is evaluated to be true. In that case, the for loop keeps running, and the test expression is re-evaluated, but if the test expression is evaluated to false, then the for loop terminates.</span></li>
+                <li id="li-title"><span>The loop keeps executing until the test expression is false. When the test expression is false, then the loop terminates. </span></li>
+                <br><br>
+                <h4>While loop</h4>
+                <p>While loop is called a pre-tested loop. The while loop allows code to be executed multiple times, depending upon a boolean condition that is given as a test expression. While introducing for loops, we saw that the number of iterations is known, whereas while loops are used in situations where we do not know the exact number of iterations of the loop. The while loop execution is terminated based on the test condition which evaluates to either true or false.</p>
+                    <br><br>
+                    <h4>do-while loop</h4>
+                    <p>In do-while loops, the execution is terminated based on the test condition, very similar to how it is done in a while loop. The main difference between the do-while loop and while loop is that, in the do-while loop, the condition is tested at the end of the loop body, whereas the other two loops are entry-controlled. In a do-while loop, the loop body will execute at least once irrespective of the test condition.</p>
+
+                <br><p>Sometimes, while executing a loop, it becomes necessary to jump out of the loop. For this, we make use of the break statement and the continue statement.</p>
+                <br><br>
+                <h4>break statement</h4>
+                <p>Whenever a break statement is encountered in a loop, the loop is terminated regardless of what kind of loop we are in and the program continues with the statement following the loop.</p>
+                <br><br>
+                <h4>continue statement</h4>
+                <p>Whenever a continue statement is encountered in a loop, it will cause the control to go directly to the test condition which is where the loop starts, ignoring any piece of code following the continue statement. 
+
+                </p>
+                <br><br>
+                <h4>while Loop</h4>
+                <p>A While loop is also called a pre-tested loop. A while loop allows a piece of code in a program to be executed multiple times, depending upon a given test condition which evaluates to either true or false. The while loop is mostly used in cases where the number of iterations is not known. If the number of iterations is known, then we could also use a for loop.</p>
+                <br><br>
+                <p> The syntax for using a while loop,</p>
+                <img src="Image/img29.png" alt="img" id="image-id">
+                <p>The body of a while loop can contain a single statement or a block of statements. The test condition may be any expression that should evaluate as either true or false. The loop iterates while the test condition evaluates to true.When the condition becomes false, the program control passes to the line immediately following the loop, which means, it terminates.</p>
+                <br><br>
+                <p>One such example to demonstrate how a while loop works is,</p>
+                <img src="Image/img30.png" alt="img" id="image-id">
+                <b>Output</b>
+                <img src="Image/img31.png" alt="img" id="image-id">
+                <br><br>
+                <h4>Properties of the while loop:</h4>
+                <p>Following are some of the properties of the while loop.</p>
+                <li id="li-title"><span>A conditional expression written in the brackets of while is used to check the condition. The Set of statements defined inside the while loop will execute until the given condition returns false.</span></li>
+                <li id="li-title"><span>The condition will return 0 if it is true. The condition will be false if it returns any nonzero number.</span></li>
+                <li id="li-title"><span>In the while loop, we cannot execute the loop until we do not specify the condition expression.</span></li>
+                <li id="li-title"><span>It is possible to execute a while loop without any statements. This will give no error.</span></li>
+                <li id="li-title"><span>We can have multiple conditional expressions in a while loop.</span></li>
+                <li id="li-title"><span>Braces are optional if the loop body contains only one statement.</span></li>
+                <br><br>
+                <h4>do-while Loop</h4>
+                <p>A do-while loop is a little different from a normal while loop. A do-while loop, unlike what happens in a while loop, executes the statements inside the body of the loop before checking the test condition.<br>So even if a condition is false in the first place, the do-while loop would have already run once. A do-while loop is very much similar to a while loop, except for the fact that it is guaranteed to execute the body at least once.</p>
+                <br><br>
+                <p>Unlike for and while loops, which test the loop condition first, then execute the code written inside the body of the loop, the do-while loop checks its condition at the end of the loop. </p>
+                <br><br>
+                <b>Following is the syntax of the do-while loop.</b>>
+                <img src="Image/img32.png" alt="img" id="image-id"><br><br>
+                <p>If the test condition returns true, the flow of control jumps back up to the do part, and the set of statements in the loop executes again. This process repeats until the given test condition becomes false.</p>
+
+                <br><br>
+                <h4>How does the do-while loop work?</h4>
+                <li id="li-title"><span>First, the body of the do-while loop is executed once. Only then, the test condition is evaluated.</span></li>
+                <li id="li-title"><span>If the test condition returns true, the set of instructions inside the body of the loop is executed again, and the test condition is evaluated.</span></li>
+                <li id="li-title"><span>The same process goes on until the test condition becomes false.</span></li>
+                <li id="li-title"><span>If the test condition returns false, then the loop terminates.</span></li>
+                <br><br>
+                <p>One such example to demonstrate how a do-while loop works is</p>
+                <img src="Image/img33.png" alt="img" id="image-id">
+                <b>Output</b>
+                <img src="Image/img34.png" alt="img" id="image-id">
+                <br><br>
+                <p>As it was already mentioned at the beginning of this tutorial, a do-while loop runs for at least once even if the test condition returns false, because the test condition is evaluated only after the first execution of the instructions in the body of the loop.</p>
+                <br><br>
+                <h4>Difference between a while and a do-while loop</h4>
+                <p>A While loop is executed every time the given test condition returns true, whereas, a do-while loop is executed for the first time irrespective of the test condition being true or false because the test condition is checked only after executing the loop for the first time.</p>
+                <br><br>
+                <p></p>
+                <h4>for Loop</h4>
+                <p>The "For" loop is used to repeat a specific piece of code in a program until a specific condition is satisfied. The for loop statement is very specialized. We use a for loop when we already know the number of iterations of that particular piece of code we wish to execute. Although, when we do not know about the number of iterations, we use a while loop. </p>
+                <br><br>
+                <b>Here is the syntax of a for loop in C programming.</b>
+                <img src="Image/img35.png" alt="img" id="image-id">
+                <b>Here,</b>
+                <li id="li-title"><span><b>initialize counter:</b> It will initialize the loop counter value. It is usually i=0.</span></li>
+                <li id="li-title"><span><b>test counter:</b> This is the test condition, which if found true, the loop continues, otherwise terminates.</span></li>
+                <li id="li-title"><span><b>Increment/decrement counter:</b>Incrementing or decrementing the counter.</span></li>
+                <li id="li-title"><span><b>Set of statements:</b> This is the body or the executable part of the for loop or the set of statements that has to repeat itself.</span></li>
+                <br><br>
+                <p>One such example to demonstrate how a for loop works is,</p>
+                <img src="Image/img36.png" alt="img" id="image-id">
+                <b>Output</b>
+                <img src="Image/img37.png" alt="img" id="image-id">
+                <br><br>
+                <li id="li-title"><span>First, the initialization expression will initialize loop variables. The expression i=0 executes once when the loop starts. Then the condition i < num is checked. If the condition is true, then the statements inside the body of the loop are executed. After the statements inside the body are executed, the control of the program is transferred to the increment of the variable i by 1. The expression i++ modifies the loop variables. Iteratively, the condition i < num is evaluated again. </span></li>
+                <li id="li-title"><span>If the condition is still evaluated true, the body of the loop will execute once again. The for loop terminates when i finally becomes less than num, therefore, making the condition i&lt;num false.</span></li>
+                <li id="li-title"><span>Just as if statement, we can have a for loop inside another for loop. This is known as a nested for loop. Similarly, while loop and do while loop can also be nested.</span></li>
+                <br><br>
+                <h4>Why for loops if we already have while loops?</h4>
+                <p>It is clear to a developer exactly how many times the loop will execute. So, if the developer has to dry run the code, it will become easier. </p>
+                <br><br>
+                <h2>C Break/Continue</h2>
+                <h4>Break Statement</h4>
+                <li id="li-title"><span>Break statement is used to break the loop or switch case statements execution and brings the control to the next block of code after that particular loop or switch case it was used in.</span></li>
+                <li id="li-title"><span>Break statements are used to bring the program control out of the loop it was encountered in.</span></li>
+                <li id="li-title"><span>The break statement is used inside loops or switch statements in C Language.</span></li>
+
+                <br><br>
+                <p>One such example to demonstrate how a break statement works is,</p>
+                <img src="Image/img38.png" alt="img" id="image-id">
+                <b>Output</b>
+                <img src="Image/img39.png" alt="img" id="image-id">
+                <br><br>
+                <p>Here, when i became 6, the break statement got executed and the program came out of the while loop.</p>
+                <br><br>
+                <h4>Continue Statement</h4>
+                <li id="li-title"><span>The continue statement is used inside loops in C Language. When a continue statement is encountered inside the loop, the control jumps to the beginning of the loop for the next iteration, skipping the execution of statements inside the body of the loop after the continue statement.</span></li>
+                <li id="li-title"><span>It is used to bring the control to the next iteration of the loop.</span></li>
+                <li id="li-title"><span>Typically, the continue statement skips some code inside the loop and lets the program move on with the next iteration.</span></li>
+                <li id="li-title"><span>It is mainly used for a condition so that we can skip some lines of code for a particular condition.</span></li>
+                <li id="li-title"><span>It forces the next iteration to follow in the loop unlike a break statement, which terminates the loop itself the moment it is encountered. </span></li>
+                <br>One such example to demonstrate how a continue statement works is<br>
+                <img src="Image/img40.png" alt="img" id="image-id">
+                <b>Output</b>
+                <img src="Image/img41.png" alt="img" id="image-id">
+                <br><br>
+                <p>Here, the continue statement was continuously executing while i remained less than 5. For all the other values of i, we got the print statement working.</p>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+            
+
+            
+            <div id="topic5" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Array Basics</h2>
+                <p>An array is a collection of data items of the same data type. And it is also known as a subscript variable.</p>
+                <li>Items are stored at contiguous memory locations in arrays.</li>
+                <li>It can also store the collection of derived data types such as pointers, structures, etc.</li>
+                <li>The C Language places no limits on the number of dimensions in an array. This means we can create arrays of any number of dimensions. It could be a 2D array or a 3D array or more.</li>
+                <br><br>
+                <h4>Dimensions of an array</h4>
+                <li>A one-dimensional array is like a list.</li>
+                <li>A two-dimensional array is like a table.</li>
+                <br>
+                <p>Some texts refer to one-dimensional arrays as vectors and two-dimensional arrays as matrices and use the general term arrays when the number of dimensions is unspecified or unimportant.</p>
+                <br><br>
+                <h4>How do Arrays help?</h4>
+                <p>Programs that use arrays for managing a large number of the same data type variables are more organized and readable in comparison to creating different variables of the same type for each data element. </p>
+                <p>Arrays allow us to create many variables by just a single line. It means there is no need to create or specify every variable.</p>
+                <br><br>
+                <h4>Advantages of Arrays?</h4>
+                <li>It is used to represent multiple data items of the same type by using only a single name.</li>
+                <li>Accessing any random item at any random position in a given array is very fast in an array.</li>
+                <li>There is no case of memory shortage or overflow in the case of arrays since the size is fixed and elements are stored in contiguous memory locations.</li>
+                <h4>Properties of Arrays</h4>
+                <li>An array stores data be it of any data type in contiguous memory locations in RAM.</li>
+                <li>Each element of an array is of the same size i.e. their data types are the same so the memory consumed by each is also the same.</li>
+                <li>Any element of the array with a given index can be accessed very quickly by using its address which can be calculated using the base address and the index number.</li><br>
+                <li><b>Index Number:</b>– It is the special type of number which allows us to access variables of arrays.  Index number provides a method to access each element of an array in a program.
+                </li>
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic6" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+<h2>Array Operations</h2><br><br>
+<h4>Defining an array</h4>
+<b>1. Without specifying the size of the array</b>
+<code><pre>
+    int arr[] = {1, 2, 3};
+</pre></code>
+<p>Here, we can leave the square brackets empty, although the array cannot be left empty in this case. It must have elements in it.</p>
+<b>2. With specifying the size of the array</b>
+<code><pre>
+    int arr[3];
+    arr[0] = 1, arr[1] = 2, arr[2] = 3;
+</pre></code>
+<p>Here, we can specify the size of the array in its definition itself. We can then put array elements later as well.</p>
+<br><br>
+<h4>Accessing an array element</h4>
+
+<p>An element in an array can easily be accessed through its index number. This must be remembered that the index number starts from 0 and not one.</p>
+<b>Example</b>
+<code><pre>
+    #include <stdio.h>
+
+        int main()
+        
+        {
+        
+            int arr[] = {1, 5, 7, 2};
+        
+            printf("%d ", arr[2]); //printing element on index 2
+        
+        }  
+</pre></code>
+<b>Output</b>
+<code><pre>
+    7
+</pre></code>
+<br><br>
+
+<h4>Changing an array element </h4>
+<p>An element in an array can be overwritten using its index number.</p>
+<b>Example:</b>
+<code><pre>
+    #include <stdio.h>
+
+        int main()
+        
+        {
+        
+            int arr[] = {1, 5, 7, 2};
+        
+            arr[2] = 8; //changing the element on index 2
+        
+            printf("%d ", arr[2]); //printing element on index 2
+        
+        }
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    8
+</pre></code>
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic7" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h2>String Basics</h2><br>
+                <h4>What are Strings?</h4>
+                <p>A string is an array of characters. Data of the same type are stored in an array, for example, integers can be stored in an integer array, similarly, a group of characters can be stored in a character array. This character array is also known as strings. A string is a one-dimensional array of characters that is terminated by a null (‘\0’).</p>
+                <br><br>
+                <h4>Declaration of Strings:</h4>
+                <p>Declaring a string is very simple, the same as declaring a one-dimensional array. It’s just that we are considering it as an array of characters.</p>
+                <p>Below is the syntax for declaring a string.</p>
+                <code><pre>
+char string_name[string_size];
+                </pre></code>
+<p>In the above syntax, string_name is any name given to the string variable, and size is used to define the length of the string, i.e the number of characters that the strings will store. Keep in mind that there is an extra terminating character which is the null character (‘\0’) that is used to indicate the termination of the string.</p>
+<b>Example of String</b>
+<code><pre>
+    #include <stdio.h>
+        int main()
+        {
+            // declare and initialise string
+            char str[] = "Sandeep Ray";
+            printf("%s", str);
+            return 0;
+        }
+</pre></code>
+<b>Output:</b>
+<code><pre>
+   Sandeep Rai
+</pre></code>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic8" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                            <h2>String Functions</h2>
+                            <p>We can use C's string handling library functions to handle strings. The string.h library is used to perform string operations. It provides several functions for manipulating strings. 
+
+                            <br>Following are some commonly used string handling functions:</p>
+                                <br><br>
+                                <h4>1. strcat():</h4>
+                                <p>This function is used to concatenate the source string to the end of the target string. This function expects two parameters, first, the base address of the source string and then the base address of the target string. For example, “Hello” and “World” on concatenation would result in a string “HelloWorld”. </p>
+                                <p>Here is how we can use the strcat( ) function:</p>
+<code><pre>
+    #include &lt;stdio.h>
+        #include &lt;string.h>
+        int main()
+        {
+            char s[] = "Hello";
+            char t[] = "World";
+            strcat(s, t);
+            printf("String = %s", s);
+        }
+</pre></code>
+<b>Output</b>
+<code><pre>
+    String  = HelloWorld; 
+</pre></code>
+
+<br><br>
+<h4>2. strlen():</h4>
+<p>This function is used to count the number of characters present in a string.</p>
+<p>Here is how we can use the strlen( ) function:</p>
+<code><pre>
+    #include &lt;stdio.h>
+        #include &lt;string.h>
+        int main()
+        {
+            char s[] = "Hello";
+            int len = strlen(s);
+            printf("Length = %d", len);
+        }
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    Length  = 5
+</pre></code>
+<br><br>
+<h4>3. strcpy():</h4>
+<p>This function is used to copy the contents of one string into the other. This function expects two parameters, first, the base address of the source string and then the base address of the target string.</p>
+<p>Here is how we can use the strcpy( ) function:</p>
+<code><pre>
+    #include &lt;stdio.h>
+        #include &lt;string.h>
+        int main()
+        {
+            char s[] = "CodeWithHarry";
+            char t[50];
+            strcpy(t, s);
+            printf("Source string = %s\n", s);
+            printf("Target string = %s", t);
+        }
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    Source string  = CodeWithHarry
+    Target string  = CodeWithHarry
+ 
+</pre></code>
+<br><br>
+<h4>4. strcmp():</h4>
+<p>The strcmp() function is used to compare two strings to find out whether they are the same or different. It takes two strings as two of its parameter. It will compare two strings, character by character until there is a mismatch or the iterator reaches the end of one of the strings. </p>
+<p>If both of the strings are identical, strcmp( ) returns a value of zero. If they are not identical, it will return a value less than zero, considering the ASCII value of the mismatched character in the first string is less than the mismatched character in the second string. Else, it will return a value greater than 0.</p>
+<p>Here is how we can use the strcmp( ) function:</p>
+<code><pre>
+    #include &lt;stdio.h>
+        #include &lt;string.h>
+        int main()
+        {
+            char s[] = "Hello";
+            char t[] = "World";
+            int cmp = strcmp(s, t);
+            printf("Comparison result = %d", cmp);
+        }
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    Comparison result = -1
+</pre></code>
+<br><br>
+<h4>5. strrev():</h4>
+<p>This function is used to return the reverse of the string. </p>
+<p>Here is how we can use the strrev( ) function:</p>
+<code><pre>
+    #include &lt;stdio.h>
+        #include &lt;string.h>
+        int main()
+        {
+            char s[] = "Hello";
+            printf("Reversed string = %s", strrev(s));
+        }  
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    Reversed string  = olleH
+</pre></code>
+
+
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic9" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Function Basics</h2>
+                <br>
+                <h4>Functions:</h4>
+                <li>Functions are used to divide a large C program into smaller and less complex pieces.</li>
+                <li>Function can be called multiple or several times to providereusability and modularity to the C program.</li>
+                <li>Functions are also called procedures or subroutines or methods.</li>
+                <li>A function is also a piece of code that performs a specific task.</li>
+                <br><br>
+                <b>A function is nothing but a group of code put together and given a name and it can be called anytime without writing the whole code again and again in a program.</b>
+                <p>I know its syntax is a bit difficult to understand but don’t worry after reading this whole information about Functions you will know each and every term or thing related to Functions.</p>
+                <br><br>
+                <h4>Advantages of Functions</h4>
+                <li>The use of functions allows us to avoid re-writing the same logic or code over and over again.</li>
+                <li>With the help of functions, we can divide the work among the programmers.</li>
+                <li>We can easily debug or can find bugs in any program using functions.</li>
+                <li>They make code readable and less complex.</li>
+                <br><br>
+                <h4>Aspects of a function</h4>
+                <b>1. Declaration</b>
+                <p>This is where a function is declared to tell the compiler about its existence.</p>
+                <br>
+                <b>2. Definition</b>
+                <p>A function is defined to get some task executed. (It means when we define a function, we write the whole code of that function and this is where the actual implementation of the function is done.)</p>
+                <br>
+                <b>3. Call</b>
+                <p>This is where a function is called in order to be used.</p>
+                <br><br>
+                <h4>Types of functions</h4>
+                <b>1. Library Function:-</b>
+                <p>Library functions are pre-defined functions in C Language. These are the functions that are included in C header files prior to any other part of the code in order to be used.
+
+                    E.g. printf(), scanf(), etc.</p>
+                    <br>
+                <b>2. User-defined functions</b>
+                <p>User-defined functions are functions created by the programmer for the reduction of the complexity of a program. Rather, these are functions that the user creates as per the requirements of a program.</p>
+                <p>E.g. Any function created by the programmer.</p>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic10" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Function Parameters</h2>
+                <P>A parameter or an argument of a function is the information we wish to pass to the function when it is called to be executed. Parameters act as variables inside the function.
+
+                    Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.</P>
+                    <br>
+                    <b>Here’s the basic syntax of a function</b>
+<code><pre>
+    return_type functionName(parameter1, parameter2) {
+        // body of the function
+      }
+</pre></code>
+<br>
+<b>What is the return_type?</b>
+<p>Return type specifies the data type the function should return after its execution. It could also be a void where the function is required to return nothing.</p>
+<br><br>
+<h4>Different ways to define a function</h4>
+<b>1. Without arguments and without return value</b>
+<p>In this function we don’t have to give any value to the function (argument/parameters) and even don’t have to take any value from it in return.</p>
+<p>One example of such functions could be,</p>
+<code><pre>
+    #include &lt;stdio.h>
+ 
+        void func()
+        {
+            printf("This function doesn't return anything.");
+        }
+         
+        int main()
+        {
+            func();
+        }
+          
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    This function doesn’t return anything.
+</pre></code>
+
+<br><br>
+<b>2. Without arguments and with the return value.</b>
+<p>In these types of functions, we don’t have to give any value or argument to the function but in return, we get something from it i.e. some value.</p>
+<p>One example of such functions could be,</p>
+<code><pre>
+    #include &lt;stdio.h>
+ 
+        int func()
+        {
+            int a, b;
+            scanf("%d", &a);
+            scanf("%d", &b);
+            return a + b;
+        }
+         
+        int main()
+        {
+            int ans = func();
+            printf("%d", ans);
+        }
+        
+</pre></code>
+<b>Input:</b>
+<code><pre>
+    5
+    6
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    11
+</pre></code><br>
+<p>The function func when called, asks for two integer inputs and returns the sum of them. The function’s return type is an integer.</p>
+<br>
+<b>3. With arguments and without a return value.</b>
+<P>In this type of function, we give arguments or parameters to the function but we don’t get any value from it in return.</P>
+<p>One example of such functions could be,</p>
+<code><pre>
+    #include &lt;stdio.h>
+ 
+        void func(int a, int b)
+        {
+            printf("%d", a * b);
+        }
+         
+        int main()
+        {
+            func(2, 3);
+        }
+        
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    6
+</pre></code>
+<br>
+<p> 
+
+    The function’s return type is void. And it takes two integers as its parameters and prints the product of them while returning nothing.
+    
+     </p>
+     <b>4. With arguments and with the return value</b>
+     <p>In these functions, we give arguments to a function and in return, we also get some value from it.</p>
+     <p>One example of such functions could be,</p>
+     <code><pre>
+        #include &lt;stdio.h>
+ 
+            int func(int a, int b)
+            {
+                return a + b;
+            }
+             
+            int main()
+            {
+                int ans = func(2, 3);
+                printf("%d", ans);
+            }
+            
+     </pre></code>
+<b>Output:</b>
+<code><pre>
+    5
+</pre></code>
+<p>
+    The function func takes two integers as its parameters and return an integer which is their sum.
+</p>
+<b>Make sure the return statement and the return_type of the functions are the same.</b>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="c.js"></script>
+</body>
+
+</html>
