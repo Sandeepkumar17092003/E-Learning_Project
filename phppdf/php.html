@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="php.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="../cpdf/c.html">C</a></li>
+                                <li><a class="dropdown-item " href="../htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="../cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="../javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="../reactpdf/react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+
+
+
+    <div class="containerjs">
+        <!-- Sidebar -->
+        <div class="sidebarjs">
+            <ul id="topicListjs">
+                <li data-topic="topic1"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to PHP</li>
+                <li data-topic="topic2"><i class="fas fa-book read-icon"></i>&nbsp;Data Types & Operators</li>
+                <li data-topic="topic3"><i class="fas fa-book read-icon"></i>&nbsp;Conditional & Iterative Statements
+                </li>
+                <li data-topic="topic4"><i class="fas fa-book read-icon"></i>&nbsp;PHP Functions</li>
+                <li data-topic="topic5"><i class="fas fa-book read-icon"></i>&nbsp;PHP Arrays</li>
+                <li data-topic="topic6"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to OOPS</li>
+                <li data-topic="topic7"><i class="fas fa-book read-icon"></i>&nbsp;Classes</li>
+                <li data-topic="topic8"><i class="fas fa-book read-icon"></i>&nbsp;Object</li>
+                <li data-topic="topic9"><i class="fas fa-book read-icon"></i>&nbsp;Inheritance</li>
+                <li data-topic="topic10"><i class="fas fa-book read-icon"></i>&nbsp;Constructors & Desctructors</li>
+
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="contentjs">
+            <div id="topic1" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Introduction to PHP</h2>
+                <h4>PHP Overview</h4>
+                <p>PHP is a server-side scripting language, which is used to manage dynamic web pages, databases and
+                    build websites with features like session tracking and e-commerce. On a day of 1995, Rasmus Lerdorf
+                    unleashed the first version of “Hypertext Preprocessor” also known as the PHP language. It is also
+                    integrated with several popular databases like MySQL, PostgreSQL, Microsoft SQL Server, Oracle etc.
+                </p>
+                <h4>Uses of PHP</h4>
+                <p>PHP can perform several system functions like opening files, CRUD operations on data stores,
+                    general-purpose scripting, etc. Besides system operations, there are also other uses like</p>
+                <p>1. Handling Forms : PHP can handle form operations. It can gather data, save data to a file and send
+                    data through emails.</p>
+                <p>2. Database Operations : PHP can also create, read, update and delete elements in your database.</p>
+                <p>3. Encryption : It can perform advanced encryption and encrypt data for you.</p>
+                <p>4. Dynamic Page Content : It can generate dynamic page content.
+                </p>
+                <h4>Basic Syntax PHP</h4>
+                <p>A PHP script can be written anywhere inside the HTML document. A PHP script starts with
+                    <?php tag and ends with ?>. We can write our logic inside this tag and it will be executed
+                    accordingly.
+                </p>
+                <img src="Image/img1.png" alt="img1" class="responsive-image"><br><br>
+                <h4>Displaying output in php</h4>
+                <p>In php,Output is displayed on the browser using echo as follows:</p>
+                <img src="Image/img2.png" alt="img2" class="responsive-image"><br><br>
+                <h4>Hello World</h4>
+                <p>A basic PHP Hello World program looks something like this. We will use a built-in PHP function “echo”
+                    to output the text “Hello World!” on our webpage.</p>
+                <img src="Image/img3.png" alt="img3" class="responsive-image"><br><br>
+                <h4>PHP Comments</h4>
+                <p>A comment is a part of the coding file that the programmer does not want to execute, rather the
+                    programmer uses it to either explain a block of code or to avoid the execution of a specific part of
+                    code while testing.
+                </p>
+
+                <h4>PHP supports several ways of commenting:</h4>
+                <h5>Single Line Comments</h5>
+                <img src="Image/img4.png" alt="img4" id="image-id"><br><br>
+                <h5>Multiple-Line Comments</h5>
+                <img src="Image/img5.png" alt="img5" id="image-id"><br><br>
+
+                <h4>Variables in PHP</h4>
+                <h5>Variables are containers that can store information which can be manipulated or referenced later by
+                    the programmer within the code.</h5>
+                <p>In PHP, we don’t need to declare the variable type explicitly. The type of variable is determined by
+                    the value it stores. There are some important things to know about variables in PHP.</p>
+                <li><span>All variables should be denoted with a Dollar Sign ($)</span></li>
+                <li><span>Variables are assigned with the = operator, with the variable on the
+                        left-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hand side and the expression to be evaluated on the
+                        right.</span></li>
+                <li><span>Variable names can only contain alpha-numeric characters and
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscores (A-z, 0-9, and _ ).</span></li>
+                <li><span>Variables must start with a letter or the underscore “_” character.</span></li>
+                <li><span>Variables are case sensitive</span></li>
+                <li><span>Variable names cannot start with a number.</span></li>
+                <img src="Image/img6.png" alt="img6" id="image-id"><br><br>
+
+                <h4>Variable Scope</h4>
+                <p>The scope of the variable is the area within which the variable has been created. Based on this a
+                    variable can either have a local scope or a global scope or a static scope in PHP.</p>
+                <h4>Global Variable:</h4>
+                <p>A variable which was created in the main body of the code and that can be accessed anywhere in the
+                    program is called Global Variable. Global variables can be directly accessed or used in or outside
+                    of a function with GLOBAL keyword before variable. However, we can also call them without the global
+                    keyword. </p>
+                <h3>For Example</h3>
+                <p><br>&nbsp;&nbsp;$name="Sandeep Rai" //Global Variable<br>{
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global $name;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo
+                    "Variable inside the function: ". $name;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "< /br>"; <br>}<br>global_var(); <br>echo "Variable
+                        outside the function: ". $name; <br>
+                        <?</p><br><br>
+                <h4>Local Variable:</h4>
+                <p>A local variable is created within a function and can be only used inside the function. This means that these variables cannot be accessed outside the function, as they have local scope.</p>
+                <h5>For Example:</h5>
+                <img src="Image/img7.png" alt="img7" id="image-id"><br><br>
+
+                    <h5>Output</h5>
+                    <p>Capital of India is: Delhi </p>
+                <h4>Static Variable:</h4>
+                <p>PHP has a feature that deletes the variable once it has finished execution and frees the memory. When we need a local variable which can store its value even after the execution, we use the static keyword before it and the variable is called static variable. 
+
+                    These variables only exist in a local function and do not get deleted after the execution has been completed. </p>
+                <h5>For Example:</h5>
+                <img src="Image/img8.png" alt="img8" id="image-id"><br><br>
+                <h5>Output:</h5>
+                <img src="Image/img9.png" alt="img9" id="image-id"><br><br>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic2" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>PHP DataTypes</h2>
+                <p>Data type specifies the type of value a variable requires to do various operations without causing an error. By default, PHP provides the following built-in data types:</p>
+                
+                <p>
+                    <li>String</li>
+                    <li>Integer</li>
+                    <li>Float</li>
+                    <li>Boolean</li>
+                    <li>Array</li>
+                    <li>NULL</li>
+                </p>
+                <h4>1. String</h4>
+                <p>A string is a sequence of characters that holds letters and numbers. It can be anything written inside single or double quotes. </p>
+                <h5>For Example</h5>
+                <img src="Image/img10.png" alt="img10" class="responsive-image"><br><br>
+                <h4>2. Integer</h4>
+                <p>An integer is a non-decimal number typically ranging between  -2,147,483,648 and 2,147,483,647. </p>
+                <img src="Image/img11.png" alt="img11" class="responsive-image"><br><br>
+                <img src="Image/img12.png" alt="img12" class="responsive-image"><br><br>
+                
+                <h4>4. Boolean</h4>
+                <p>A Boolean represents two values: True or False. </p>
+                <img src="Image/img13.png" alt="img13" class="responsive-image"><br><br>
+
+                <h4>5. Array</h4>
+                <p>Array is a collection of similar data elements stored in a single variable.</p>
+                <img src="Image/img14.png" alt="img14" class="responsive-image"><br><br>
+
+                <h4>6. NULL</h4>
+                <p>Null is a special data type with only one value which is NULL. In PHP, if a variable is created without passing a value, it will automatically assign itself a value of NULL.</p>
+                <img src="Image/img15.png" copied alt="img15" class="responsive-image"><br><br>
+
+                <h4>PHP Operators</h4>
+                <p>PHP has different types of operators for different operations. They are as follows:</p>
+                <h4>1. Arithmetic Operators</h4>
+                <p>Arithmetic operators are used to perform arithmetic operations.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Addition</td>
+                            <td>+</td>
+                            <td>$x + $y</td>
+                        </tr>
+                        <tr>
+                            <td>Subtraction</td>
+                            <td>-</td>
+                            <td>$x - $y</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Multiplication</td>
+                            <td>*</td>
+                            <td>$x * $y</td>
+                        </tr>
+                        <tr>
+                            <td>Division</td>
+                            <td>/</td>
+                            <td>$x / $y</td>
+                        </tr>
+                        <tr>
+                            <td>Modulus</td>
+                            <td>%</td>
+                            <td>$x % $y</td>
+                        </tr>
+                        <tr>
+                            <td>Exponentiation</td>
+                            <td>**</td>
+                            <td>$x ** $y</td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+                
+                <h4>2. Assignment Operators</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Evaluated as</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>=</td>
+                            <td>a = b</td>
+                        </tr>
+                        <tr>
+                          
+                            <td>+=</td>
+                            <td>a = a + b</td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>-=</td>
+                            <td>a = a - b</td>
+                        </tr>
+                        <tr>
+                           
+                            <td>*=</td>
+                            <td>a = a * b</td>
+                        </tr>
+                        <tr>
+                           
+                            <td>/=</td>
+                            <td>a = a / b</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>%=</td>
+                            <td>a = a % b</td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+                
+
+                <h4>3. Comparison Operators</h4>
+                <p>These operators are used to compare two values.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Equal</td>
+                            <td>==</td>
+                            <td>$x==$y</td>
+                        </tr>
+                        <tr>
+                            <td>Identical</td>
+                            <td>===</td>
+                            <td>$x===$y</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Not equal</td>
+                            <td>!=</td>
+                            <td>$x!=$y</td>
+                        </tr>
+                        <tr>
+                            <td>Not equal</td>
+                            <td><></td>
+                            <td>$x<>$y</td>
+                        </tr>
+                        <tr>
+                            <td>Not Identical</td>
+                            <td>!===</td>
+                            <td>$x!===$y</td>
+                        </tr>
+                        <tr>
+                            <td>Greater than</td>
+                            <td>></td>
+                            <td>$x>$y</td>
+                        </tr>
+                        <tr>
+                            <td>Less than</td>
+                            <td><</td>
+                            <td>$x<$y</td>
+                        </tr>
+                        <tr>
+                            <td>Greater than or equal to</td>
+                            <td>>=</td>
+                            <td>$x >= $y</td>
+                        </tr>
+                        <tr>
+                            <td>Less than or equal to</td>
+                            <td><=</td>
+                            <td>$x <= $y</td>
+                        </tr>
+                        <tr>
+                            <td>Spaceship</td>
+                            <td><=></td>
+                            <td>$x <=> $y</td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+
+                <h4>4. PHP Increment/ Decrement Operators</h4>
+                <p>These operators are used to increment/ decrement variable’s value. </p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pre-Increment</td>
+                            
+                            <td>++$x</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-decrement</td>
+                          
+                            <td>-–$x</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Post-Increment</td>
+                            <td>$x++</td>
+                        </tr>
+                        <tr>
+                            <td>Post-decrement</td>
+                            
+                            <td>$x- -</td>
+                        </tr>
+                       
+                    </tbody>
+                </table><br><br>
+
+                <h4>5. PHP Logical Operators</h4>
+                <P>These are the logical operators that combine conditional statements.</P>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>And</td>
+                            <td>and</td>
+                            <td>$x and $y</td>
+                        </tr>
+                        <tr>
+                            <td>Or</td>
+                            <td>or</td>
+                            <td>$x or $y</td>
+                        </tr>
+                        <tr>
+                            <td>Xor</td>
+                            <td>xor</td>
+                            <td>$x xor $y</td>
+                        </tr>
+                        <tr>
+                            <td>Or</td>
+                            <td>||</td>
+                            <td>$x || $y</td>
+                        </tr>
+                        <tr>
+                            <td>Not</td>
+                            <td>!</td>
+                            <td>!&x</td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+
+                <h4>6. PHP String Operators</h4>
+                <p>PHP has these two operators designed for strings.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>Concatenation</td>
+                            <td>.</td>
+                            <td>$text1 . $text2</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Concatenation Assignment</td>
+                            <td>.=</td>
+                            <td>$text1 .= $text2</td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+
+                <h4>7. PHP Array Operators</h4>
+                <p>These Operators are used to compare arrays.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Union</td>
+                            <td>+</td>
+                            <td>$x + $y</td>
+                        </tr>
+                        <tr>
+                            <td>Equality</td>
+                            <td>==</td>
+                            <td>$x == $y</td>
+                        </tr>
+                        <tr>
+                            <td>Identity</td>
+                            <td>===</td>
+                            <td>$x === $y</td>
+                        </tr>
+                        <tr>
+                            <td>Inequality</td>
+                            <td>!=</td>
+                            <td>$x != $y</td>
+                        </tr>
+                        <tr>
+                            <td>Inequality</td>
+                            <td><></td>
+                            <td>$x <> $y</td>
+                        </tr>
+                        <tr>
+                            <td>Non-Identity</td>
+                            <td>!==</td>
+                            <td>$x !== $y</td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+
+                <h4>8. PHP Conditional Operators</h4>
+                <p>These operators assign values to operands based on the outcome of a certain condition. </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>Ternary</td>
+                            <td>?:</td>
+                            <td>$x = exp1 ? exp2 : exp3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Null Coalescing</td>
+                            <td>??</td>
+                            <td>$x = exp1 ?? exp2</td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic3" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Conditional & Iterative Statements</h2>
+                <h4>PHP Conditional Statements</h4>
+                <p>Conditional Statements are used to perform actions based on different conditions. Sometimes when we write a program, we want to perform some different actions for different actions. We can solve this by using conditional statements. </p>
+                <h5>In PHP we have these conditional statements:-</h5>
+
+                <li>if Statement.</li>
+                <li>if-else Statement</li>
+                <li>If-elseif-else Statement</li>
+                <li>Switch statement</li>
+                <br><br>
+                <h4>1. if Statement</h4>
+                <p>This statement executes the block of code inside the if statement if the expression is evaluated as True. </p>
+                <h5>Example</h5>
+                <img src="Image/img16.png" alt="img14" class="responsive-image"><br><br>
+                <h4>2. if-else Statement</h4>
+                <p>This statement executes the block of code inside the if statement if the expression is evaluated as True and executes the block of code inside the else statement if the expression is evaluated as False. </p>
+                <h5>Example</h5>
+                <img src="Image/img17.png" alt="img" id="image-id"><br><br>
+
+                <h4>3. If-else-if-else</h4>
+                <p>This statement executes different expressions for more than two conditions.</p>
+                <h5>Example</h5>
+                <img src="Image/img18.png" alt="img" id="image-id"><br><br>
+                <h4>4. Switch Statement</h4>
+                <p>This statement allows us to execute different blocks of code based on different conditions. Rather than using if-elseif-if, we can use the switch statement to make our program. </p>
+                <h5>Example</h5>
+                <img src="Image/img19.png" alt="img" id="image-id"><br><br><br><br>
+                <h2>PHP Iterative Statements</h2>
+                <p>Iterative statements are used to run same block of code over and over again for a certain number of times. </p>
+                <h5>In PHP, we have the following loops:</h5>
+                <li>while Loop</li>
+                <li>do-while Loop</li>
+                <li>for Loop</li>
+                <li>foreach loop</li>
+
+                <br><br>
+
+                <h4>1. While Loop</h4>
+                <p>The While loop in PHP is used when we need to execute a block of code again and again based on a given condition. If the condition never becomes false, the while loop keeps getting executed. Such a loop is known as an infinite loop. </p>
+                <h5>Example</h5>
+                <img src="Image/img20.png" alt="img" id="image-id"><br><br>
+                <h4>2. Do-While Loop</h4>
+                <p>The do-while loop is similar to a while loop except that it is guaranteed to execute at least once. After executing a part of a program for once, the rest of the code gets executed based on a given boolean condition.</p>
+                <h5>Example</h5>
+                <img src="Image/img21.png" alt="img" id="image-id"><br><br>
+
+                <h4>3. For Loop</h4>
+                <p>The for loop is used to iterate a block of code multiple times. </p>
+                <h5>Example</h5>
+                <img src="Image/img22.png" alt="img" id="image-id"><br><br>
+
+                <h4>4. Foreach loop</h4>
+                <p>The foreach loop in PHP can be used to access the array indexes in PHP. It only works on arrays and objects. </p>
+                <h5>Example:</h5>
+                <img src="Image/img23.png" alt="img" id="image-id"><br><br>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            
+            </div>
+
+
+
+            <div id="topic4" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>PHP Function</h2>
+                <h4>Function Basics</h4>
+                <p>Function arguments are variables of some supported data type that are processed within the body of the function. It can take input as an argument and return value. 
+
+                   <br> PHP has more than 1000 built-in functions, and in addition, you can also create your own functions. </p>
+                
+                <h4>Advantages:</h4>
+                <li>Functions reduce the complexity of a program and give it a modular structure.</li>
+                <li>A function can be defined only once and called many times. </li>
+                <li>It saves a lot of code writing because you don't need to write the same logic multiple times, you can write the logic once and reuse it. </li>
+
+                <br>
+
+                <span><b>Built-in Functions:</b>PHP has thousands of built-in functions. For a complete reference and examples, you can go to this link<br> <a href="https://www.php.net/manual/en/funcref.php"> Click here</a></span>
+                <br><br><span><b>User Defined Functions: </b>Apart from built-in functions, We can also create our own functions and call them easily. A user-defined function looks something like this:</span>
+                <img src="Image/img24.png" alt="img" id="image-id"><br>
+                <span><b>Note:</b>A function name should only start with letters and underscore only. It can’t start with numbers and special symbols.  </span>
+                <br><br>
+                <h5>Example</h5>
+                <img src="Image/img25.png" alt="img" id="image-id"><br><br>
+                <h4>Function Arguments</h4>
+                <span><b>Function Arguments:</b>Argument is just like a variable which can be used to pass through information to functions. <br>
+                    PHP supports Call by Value, Call by Reference, Default Argument Values and Variable-length argument.</span>
+
+                <br><br>
+                <h4>1. Call by Value</h4>
+                <p>In Call by Value, the value of a variable is passed directly. This means if the value of a variable within the function is changed, it does not get changed outside of the function. </p>
+
+                <h5>Example</h5>
+                <img src="Image/img26.png" alt="img" id="image-id">
+                <h5>Output</h5>
+                <img src="Image/img27.png" alt="img" id="image-id"><br><br>
+
+                <h4>2. Call by Reference</h4>
+                <p>In call by reference, the address of a variable (their memory location) is passed. In the case of call by reference, we prepend an ampersand (&) to the argument name in the function definition. Any change in variable value within a function can reflect the change in the original value of a variable.</p>
+                <h5>Example:</h5>
+                <img src="Image/img28.png" alt="img" id="image-id">
+                <h5>Output</h5>
+                <img src="Image/img29.png" alt="img" id="image-id"><br><br>
+                <h4>3. Default Argument Values</h4>
+                <p>If we call a function without arguments, then PHP function takes the default value as an argument. </p>
+                <h5>Example</h5>
+                <img src="Image/img30.png" alt="img" id="image-id">
+                <h5>Output</h5>
+                <img src="Image/img31.png" alt="img" id="image-id"><br><br>
+                <h4>4. Variable Length Argument</h4>
+                <p>It is used when we need to pass n number of arguments in a function. To use this, we need to write three dots inside the parenthesis before the argument. </p>
+                <h5>Example</h5>
+                <img src="Image/img32.png" alt="img" id="image-id">
+                <h5>Output</h5>
+                <img src="Image/img33.png" alt="img" id="image-id"><br><br>
+           
+            <!-- Add more content sections as needed -->
+            
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+        </div>
+
+        <div id="topic5" class="content-section">
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+
+            <h2>Arrays</h2>
+            <p>An array is a collection of data items of the same data type. And it is also known as a subscript variable.</p>
+            <b>Example:</b>
+            <code><pre>
+&lt;?php
+$age = array("Virat"=>"35", "Arshdeep"=>"37", "Rohit"=>"43");
+echo "Virat is " . $age['Virat'] . " years old.";
+?>
+
+            </pre></code>
+<br>
+<p>There are three different kinds of arrays.</p>
+<br>
+<h4>1. Numeric Array</h4>
+<p>These are arrays with a numeric index where values are stored and accessed in a linear fashion. </p>
+<b>Example:</b>
+<code><pre>
+    &lt;?php
+    $bike = array("TVS", "YAMAHA", "RAJDOOT");
+    echo "I like " . $bike[0] . ", " . $bike[1] . " and " . $bike[2] . ".";
+    ?>
+    
+</pre></code>
+<br>
+<h4>2. Associative Array</h4>
+<p>These are arrays with string as an index where it stores element values associated with key values.</p>
+<b>Example:</b>
+<code><pre>
+&lt;?php
+$age = array("Ben"=>"35", "Stokes"=>"37", "Jimi"=>"43");
+echo "Ben is " . $age['Ben'] . " years old.";
+?>
+
+</pre></code><br>
+<h4>3. Multidimensional Arrays</h4>
+<p>A multidimensional Array is an array containing one or more arrays where values are accessed using multiple indices.</p>
+<b>Example:</b>
+<code><pre>
+&lt;?php
+  $cars = array (
+  array("Volvo",22,18),
+  array("BMW",15,13),
+  array("Saab",5,2),
+  array("Land Rover",17,15)
+);
+echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2]";
+?>
+
+</pre></code>
+
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+        </div>
+
+        <div id="topic6" class="content-section">
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+
+            <h2>Introduction to OOPS</h2>
+            <p>OOP stands for Object-Oriented Programming. </p>
+            <p>Object-oriented programming is a core of PHP Programming, which is used for designing a program using classes and objects that contain both data and functions. </p>
+            <br><br>
+
+            <h4>Advantages of OOPS</h4>
+            <li>Programs are faster to execute.</li>
+            <li>Better code reusability. </li>
+            <li>Easy to understand code structure. </li>
+            <li>Very easy to partition the work in a project based on objects.</li>
+            <li>Easy to make fully reusable programs with less code and less development time. </li>
+            <br><br>
+            <h4>Disadvantages of OOPS</h4>
+            <li>OOPS cannot be applied everywhere as it is not a universal language.</li>
+            <li>Need to have a good understanding of classes and objects to apply OOPS. </li>
+            <li>It takes a lot of effort to create. </li>
+            <li>It is slower than other programs.</li>
+            <li>OOPS programs are large in size when compared to normal programs. </li>
+
+
+
+
+
+
+
+
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+        </div>
+
+        <div id="topic7" class="content-section">
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+            <h2>Classes</h2>
+            <p>Classes are the blueprint of objects. Classes hold their own data members and member functions, which can be accessed and used by creating an instance of that class. In PHP class is defined using the <b>class</b> keyword, followed by the name of classes and curly braces ({}). </p>
+          <b>Example:</b>
+            <code><pre>
+&lt;?php
+class class_name {
+  // code goes here...
+}
+?>
+            </pre></code>
+
+            <br>
+            <h4>Creating a Class in PHP</h4>
+            <p>We will create a class Employee where we will have two properties and two methods for setting and getting the property.</p>
+<code><pre>
+&lt;?php
+    class Employee {
+      // Properties
+      public $name;
+      public $surname;
+    
+      // Methods
+      function set_name($name) {
+        $this->name = $name;
+      }
+      function get_name() {
+        return $this->name;
+      }
+    }
+?>
+
+</pre></code>
+
+<br>
+<b>Note: The $this keyword refers to the current object, and is only available inside methods.</b>
+
+
+
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+        </div>
+
+        <div id="topic8" class="content-section">
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+            <h2>Objects</h2>
+            <p>Object is an instance of class. An Object is a self-contained component which consists of methods and properties to make a particular type of data useful. We can create multiple objects from a class and each object will have all the properties and methods defined in the class, but they will have different property values. To declare an object in PHP we use the <b>new</b> keyword. </p>
+            <b>Example:</b>
+<code><pre>
+    $object_name = new ClassName();
+</pre></code>
+<br><br>
+<h4>Creating an Object in PHP</h4>
+<p>We will create two objects in the following example. </p>
+
+<code><pre>
+    &lt;?php
+    class Employee {
+      // Properties
+      public $name;
+      public $surname;
+    
+      // Methods
+      function set_name($name) {
+        $this->name = $name;
+      }
+      function get_name() {
+        return $this->name;
+      }
+    }
+    
+    $emp1 = new Employee();
+    $emp2= new Employee();
+    $emp1->set_name('Harry');
+    $emp2->set_name('Shayan');
+    
+    echo $emp1->get_name();
+    echo "&lt;br>";
+    echo $emp2->get_name();
+    ?> 
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    Harry
+    Shayan
+</pre></code>
+
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+        </div>
+
+        <div id="topic9" class="content-section">
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+                <h2>Inheritance</h2>
+                <p>When a class is defined by inheriting the existing function of a parent class then it is called inheritance. Here child class will inherit all or a few member functions and variables of a parent class. We can define an inherited class by using the <b>extends</b> keyword. 
+
+                    Inheritance has three types Single, Multiple and Multilevel Inheritance but PHP only supports single inheritance, where only one class can be derived from a single parent class.
+                    
+                     </p>
+                     <b>Example:</b>
+<code><pre>
+&lt;?php  
+    class exm {  
+        public function func1()  
+        {  
+            echo "example of inheritance  ";  
+        }     
+    }  
+    class exm1 extends exm {  
+        public function func2()  
+        {  
+            echo "in php";  
+        }     
+    }  
+    $obj= new exm1();  
+    $obj->func1();  
+    $obj->func2();  
+?>
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    example of inheritance in php
+</pre></code>
+
+<h4>Final Keyword</h4>
+<p>The <b>final</b> keyword can be used to prevent method overriding or to prevent class inheritance. </p>
+<b>Example:</b>
+<code><pre>
+&lt;?php
+    final class Employee {
+      // some code
+    }
+    // This will result in error as the final keyword is used
+    class human extends Employee {
+      // some code
+    }
+?>
+</pre></code>
+
+
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+        </div>
+
+        <div id="topic10" class="content-section">
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+
+            <h2>Constructors and Destructors</h2>
+            <br><br>
+            <h4>Constructor</h4>
+            <p>In PHP, a constructor allows you to initialize an object's properties upon the creation of the object. The constructor function starts with two underscores (__) and if we create a <b>_ _construct()</b> function, then PHP will automatically call this function when we create an object from a class. </p>
+            <b>Example:</b>
+<code><pre>
+&lt;?php
+    class Employee {
+      public $name;
+      public $surname;
+    
+      function __construct($name) {
+        $this->name = $name;
+      }
+      function get_name() {
+        return $this->name;
+      }
+    }
+    $emp1= new Employee("Lovish");
+    echo $emp1->get_name();
+?>   
+</pre></code>
+<b>Output</b>
+<code><pre>
+    Lovish
+</pre></code><br><br>
+<h4>Destructor</h4>
+
+<p>Destructor is a special member function which is exactly the reverse of the constructor method. When it is called an instance of the class is deleted from the memory. The Destructor function starts with two underscores (__) and if we create a <b>_ _destruct()</b> function, then PHP will automatically call this function at the end of the script. </p>
+<b>Example:</b>
+<code><pre>
+&lt;?php
+    class Employee {
+      public $name;
+    
+      function __construct($name) {
+        $this->name = $name;
+      }
+      function __destruct() {
+        echo "Employee name is {$this->name}.";
+      }
+    }
+    
+    $emp1= new Employee("Izhaan");
+?>  
+</pre></code>
+          <b>Output:</b>
+<code><pre>
+    Employee name is Izhaan.
+</pre></code>
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()" id="next">Next</button>
+            </div>
+        </div>
+
+     
+
+
+        </div>
+    </div>
+
+    <script src="php.js"></script>
+</body>
+
+</html>
