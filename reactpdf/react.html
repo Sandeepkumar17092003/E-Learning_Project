@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="react.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="../phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="../cpdf/c.html">C</a></li>
+                                <li><a class="dropdown-item " href="../htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="../cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="../javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+
+
+
+    <div class="containerjs">
+        <!-- Sidebar -->
+        <div class="sidebarjs">
+            <ul id="topicListjs">
+                <li data-topic="topic1"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to React</li>
+                <li data-topic="topic2"><i class="fas fa-book read-icon"></i>&nbsp;React Home</li>
+                <li data-topic="topic3"><i class="fas fa-book read-icon"></i>&nbsp;React Setup<li>
+                <li data-topic="topic4"><i class="fas fa-book read-icon"></i>&nbsp;React Getting Started</li>
+                <li data-topic="topic5"><i class="fas fa-book read-icon"></i>&nbsp;React ES6</li>
+                <li data-topic="topic6"><i class="fas fa-book read-icon"></i>&nbsp;React Render HTML</li>
+                <li data-topic="topic7"><i class="fas fa-book read-icon"></i>&nbsp;React  JSX<li>
+                <li data-topic="topic8"><i class="fas fa-book read-icon"></i>&nbsp;React Components</li>
+                <li data-topic="topic9"><i class="fas fa-book read-icon"></i>&nbsp;React Class<li>
+                <li data-topic="topic10"><i class="fas fa-book read-icon"></i>&nbsp;React Props</li>
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="contentjs">
+            <div id="topic1" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+                <h2 id="10">Introduction to React</h2>
+    
+                <div id="11">
+                    <h4>Overview of React</h4>
+                    <p>React is a popular open-source JavaScript library used for building user interfaces, particularly single-page applications where data changes over time. Developed and maintained by Facebook, React allows developers to create large web applications that can update and render efficiently in response to data changes. React’s key feature is the ability to break down complex UI into simpler components, which can be reused throughout the application. It emphasizes declarative programming, where the UI is described as a function of the application state.</p>
+                </div>
+            
+                <div id="12">
+                    <h4>History and Evolution</h4>
+                    <p>React was first developed by Jordan Walke, a software engineer at Facebook, and was initially deployed on Facebook’s newsfeed in 2011. It was later open-sourced at the JSConf US conference in May 2013. Since its release, React has undergone significant evolution:</p>
+                    <ul>
+                        <li>2013: Initial release of React (React 0.3.0).</li>
+                        <li>2014: Introduction of the React component lifecycle and improved server-side rendering.</li>
+                        <li>2015: Release of React 0.14, separating React and ReactDOM, enabling the use of React Native.</li>
+                        <li>2016: Introduction of the Context API and React 15 with a focus on more accurate and consistent handling of components.</li>
+                        <li>2017: Release of React 16 (codenamed "Fiber"), which brought major improvements in performance, error boundaries, and introduced portals.</li>
+                        <li>2018: Introduction of React Hooks, providing a new way to use state and other React features without writing a class.</li>
+                        <li>2020: React 17 ("No New Features") focused on making it easier to upgrade React itself, enabling gradual upgrades.</li>
+                        <li>2022: Introduction of React 18, featuring concurrent rendering, automatic batching, and more.</li>
+                    </ul>
+                    <p>React’s evolution has focused on performance improvements, better developer experience, and enhancing the capability of building scalable and maintainable applications.</p>
+                </div>
+            
+                <div id="13">
+                    <h4>Advantages of Using React</h4>
+                    <p>React offers several advantages that make it a preferred choice for developers:</p>
+                    <ul>
+                        <li><strong>Component-Based Architecture:</strong> React’s component-based structure allows developers to build encapsulated components that manage their state and compose them to make complex UIs. This modularity improves code maintainability and reusability.</li>
+                        <li><strong>Virtual DOM:</strong> React uses a Virtual DOM, which is a lightweight copy of the real DOM. When the state of an object changes, React updates only the Virtual DOM first. Then, it compares the new Virtual DOM with a pre-updated version and updates only the parts of the actual DOM that have changed, resulting in better performance.</li>
+                        <li><strong>Declarative UI:</strong> React makes it easy to design interactive UIs with its declarative approach. Developers simply describe how the UI should look based on the application’s state, and React takes care of updating the UI when the state changes.</li>
+                        <li><strong>Unidirectional Data Flow:</strong> React’s unidirectional data flow ensures that data moves in a single direction, making it easier to debug and understand how data changes affect the application’s state and UI.</li>
+                        <li><strong>Rich Ecosystem and Community Support:</strong> React has a vast ecosystem of tools, libraries, and a large community that contributes to its growth and provides support for developers.</li>
+                        <li><strong>React Native:</strong> React can be used to build mobile applications using React Native, allowing developers to use the same design principles and components to create cross-platform apps for iOS and Android.</li>
+                        <li><strong>SEO-Friendly:</strong> With React's server-side rendering capabilities, developers can create applications that are more SEO-friendly, allowing better indexing by search engines.</li>
+                    </ul>
+                </div>
+            
+                <div id="14">
+                    <h4>React vs. Other Front-End Frameworks</h4>
+                    <p>React is often compared with other popular front-end frameworks such as Angular, Vue.js, and Svelte. Here’s how React stands out:</p>
+                    <ul>
+                        <li><strong>React vs. Angular:</strong>
+                            <ul>
+                                <li><strong>Flexibility:</strong> React is a library focused on building UI components, giving developers the flexibility to integrate other libraries as needed. Angular is a full-fledged framework with a more opinionated structure, providing everything out of the box.</li>
+                                <li><strong>Learning Curve:</strong> React’s learning curve is generally considered less steep than Angular’s, as it only requires knowledge of JavaScript and a few core concepts like components, state, and props.</li>
+                                <li><strong>Performance:</strong> Both React and Angular offer good performance, but React’s Virtual DOM and the ability to fine-tune updates give it an edge in certain scenarios.</li>
+                            </ul>
+                        </li>
+                        <li><strong>React vs. Vue.js:</strong>
+                            <ul>
+                                <li><strong>Adoption and Ecosystem:</strong> React has broader adoption and a larger ecosystem compared to Vue.js, which can be advantageous for finding libraries, tools, and support.</li>
+                                <li><strong>Flexibility:</strong> Vue.js also offers a component-based architecture and is similar to React in many ways. However, React’s unidirectional data flow contrasts with Vue’s two-way data binding, giving React more predictable state management.</li>
+                                <li><strong>Learning Curve:</strong> Vue.js is often praised for its simplicity and ease of integration with existing projects, making it a good choice for smaller applications or those transitioning from a different technology.</li>
+                            </ul>
+                        </li>
+                        <li><strong>React vs. Svelte:</strong>
+                            <ul>
+                                <li><strong>Performance:</strong> Svelte takes a different approach by compiling components into highly efficient imperative code that manipulates the DOM directly, often resulting in better performance than React’s Virtual DOM.</li>
+                                <li><strong>Popularity:</strong> React has a much larger community and ecosystem compared to Svelte, making it easier to find resources, libraries, and developers familiar with it.</li>
+                                <li><strong>Development Experience:</strong> Svelte offers a more straightforward development experience by eliminating the need for a Virtual DOM and using more concise syntax. However, React’s ecosystem and maturity make it a more reliable choice for large-scale applications.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>React’s simplicity, flexibility, and strong community support make it a powerful tool for modern web development, and its continued evolution ensures it remains relevant and competitive in the rapidly changing front-end landscape.</p>
+                </div>
+
+                
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic2" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>React Home</h2>
+                <h4>What is ReactJS?</h3>
+                <p>ReactJS is a JavaScript library used to build User Interfaces(UI). It significantly decreases the code with it's components, states i.e. hooks, etc. </p>
+                <br><br>
+                <h4>Creating react app</h3>
+                <p>Open your terminal in the directory you would like to create your application. Run this command to create a React application named my-react-app:</p>
+                <code><pre>npx create-react-app my-react-app</pre></code>    
+                <p>OR, you can directly make your application without specifying a name, like this:</p>
+                <code><pre>npx create-react-app .</pre></code>
+                <p>In this case, all files will be kept in the current directory. </p>
+                <b>Note :</b><span>When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions. </span>
+                <p>Once base application is created, if folder specified you just have to enter the folder. You can use this command to enter:</p>
+                <code><pre>cd directory-name</pre></code>
+                <p>Then just start up the application with this command:</p>
+                <code><pre>npm start</pre></code>
+                <p>and you are good to go! </p>
+                <h1>Hello World</h1>
+                <code><pre>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(&lt;h1>Hello, world!&gt;);
+                </pre></code>
+                <p>In this we are just putting &lt;h1&gt; tag in a div with id 'root'. That's it! In div with id 'root' everything will be rendered. We can also change it from 'root' to something else, as we are just getting an element and putting HTML in it. </p>
+
+
+
+
+
+
+                
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+            <div id="topic3" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>React Setup</h2>
+                <br>
+                <h3>Node.js</h3>
+                <p>You can download it from: <a href="https://nodejs.org/en/">click here</a> </p>
+                <h4>Creating our first react app</h4>
+                <p>Open your terminal in the directory you would like to create your application. Run this command to create a React application named my-react-app:</p>
+                <code><pre>
+npx create-react-app my-react-app         
+                </pre></code>
+                <p>OR, you can directly make your application without specifying a name, like this:</p>
+                <code><pre>
+npx create-react-app  
+                </pre></code>
+                <p>In this case, all files will be kept in the current directory. </p>
+                <b>Note :</b><span>When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions. </span>
+                <br>
+                <p>Once base application is created, if folder specified you just have to enter the folder. You can use this command to enter:</p>
+                <code><pre>cd directory-name</pre></code>
+                <p>Then just start up the application with this command:</p>
+                <code><pre>npm start</pre></code>
+                <p>and you are good to go! </p>
+
+
+
+                
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic4" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                
+                <h2>React Getting Started</h2>
+                <br>
+                <h4>Run and Check</h4>
+                <p>Run the React Application with this command:
+
+                    A new browser window will pop up, if it does't then go on <a href="http://localhost:3000/.">http://localhost:3000/.</a> Check if it is showing the same page:</p>
+                    <img src="Image/1.png" alt="img" id="rai">
+                    <p>If it's the same page then you are good to go! </p>
+                    <br>
+                    <h3>Hello World</h3>
+                    <p>For this first you need to navigate to src/App.js, it will look like: </p>
+                    <img src="Image/2.png" alt="img" id="rai">
+                    <p>Whatever you put in return will be rendered as HTML on the page, you can change it like: </p>
+                    <img src="Image/3.png" alt="img" id="rai">
+                    <b>Note: </b><span>Remember to wrap whole return value in an HTML element as you can't return multiple elements but you can return multiple elements in one element.</span>
+                    <p>Page would look like this:</p>
+                    <img src="Image/4.png" alt="img" id="rai">
+
+
+
+
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic5" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>React ES6</h2>
+                <h4>What is ES6?</h4>
+                <p>ES6 stands for ECMAScript 6. ECMAScript is a JavaScript standard intended to ensure a common language across different browsers. ES6 is the 6th version of ECMAScript. </p>
+                <br>
+                <h4>Why ES6? / Features of ES6 / Upgrades in ES6</h4>
+                <p>React uses ES6 and all of these new features will make your coding experience in react much much better. You will be able to do things with much more ease and in very less lines! Features like: </p>
+               <li>Arrow Functions:</li> 
+                <code><pre>
+const hello = () => {
+    return "Hello World!";
+}
+                </pre></code>
+                <p>Or</p>
+                <code><pre>const hello = () => "Hello World!";</pre></code>
+
+                <br>
+                <li><b>.map():</b><span>.map can be used for alot of things, one of it's use case is, we can make any number of cards through loop and just put it in jsx, like this:</span></li>
+                <code><pre>
+const data = ['title1', 'title2', 'title3'];
+let cards = data.map((item) => <card>{item}</card>)
+                </pre></code>
+
+                <li><b>Destructuring:</b><br><span>Old way:</span></li>
+                <code><pre>
+const languages = ['JS', 'Python', 'Java'];
+const js = languages[0]
+const python = languages[1]
+const java = languages[2]
+                </pre></code>
+                <br>
+                <p>New Ways:</p>
+                <code><pre>
+const languages = ['JS', 'Python', 'Java'];
+const [ js, python, java ] = languages 
+                </pre></code>
+                <li><b>Ternary Operator: </b><span>With this, you can write if/else conditions in one line. It's syntax is fairly simple like this:</span></li>
+                <code><pre>
+condition ? &lt;expression if true&gt; : &lt;expression if false&gt;
+                </pre></code>
+                <br>
+                <p>Example:</p>
+                <code>
+                    <pre>
+let loading = false; 
+const data = loading ? &lt;div&gt;Loading...&lt;/div&gt; : &lt;div&gt;Data&lt;/div&gt;
+                    </pre>
+                </code>
+                <li><b>Spread Operator: </b></li>
+                <code>
+                    <pre>
+const languages = ['JS', 'Python', 'Java'];
+const morelanguages = ['C', 'C++', 'C#']
+
+const allLanguages = [...languages, ...morelanguages]
+
+                    </pre>
+                </code>
+
+                <p>Output:</p>
+                <code><pre>
+["JS","Python","Java","C","C++","C#"]
+                </pre></code>
+<p>and many more like, classes, modules.</p>
+
+
+
+                
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic6" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>React Render HTML</h2>
+                <p>React renders HTML to the web page by using a function called ReactDOM.render().</p>
+                <h4>ReactDOM.render()</h4>
+                <p>This function takes two arguments, HTML content which you want to show on page and HTML element where you want to put the HTML content(first argument). </p>
+                <p>But where will it find that element? It will find it inside "index.html" located in "public" folder. There you will notice a div with id "root". That is where all this will be rendered! </p>
+                <code><pre>
+ReactDOM.render(&lt;p&gt;Hello&lt;/p&gt;, document.getElementById('root'));
+                </pre></code>
+                <img src="Image/5.png" alt="img" id="rai">
+
+                
+
+                
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic7" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h2>React JSX</h2>
+                <h4>What is JSX?</h4>
+                <p>JSX stands for JavaScript XML. It is similar in appearance to HTML, hence provides a way to easily write HTML in react. </p>
+                <br>
+                <h4>Coding in JSX</h4>
+                <p>Earlier we had to make an HTML element or append it into existing ones with methods like createElement() / appendChild() </p>
+                <code><pre>
+const elem = React.createElement('h1', {}, 'Hello World!');
+                </pre></code>
+                <p>Now we can just do it directly, like this: </p>
+                <code><pre>
+const elem = &lt;h1&gt;Hello World!&lt;/h1&gt;
+                </pre></code>
+                <br>
+                <h4>Expressions in JSX</h4>
+                <p>You can write the expression in {}</p>
+                <p>You can write simple mathematical operations to variable to states to complicated operations with ternary operators and it will return the result, like:</p>
+                <b>Mathematical Operations:</b>
+                <code><pre>
+const elem = &lt;h1>React was released in {2010+3}&lt;/h1>
+                </pre></code>
+                <br>
+                <b>Variables/States:</b>
+                <code><pre>
+const name = "CWH"
+const elem = &lt;h1>My name is {name}&lt;/h1>
+                </pre></code>
+                <br>
+                <b>Ternary Operators:</b>
+                <code><pre>
+const elem = &lt;h1>Hello {name ? name : 'World'}&lt;/h1>
+                </pre></code>
+               
+            
+
+                
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+            <div id="topic8" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            
+
+                <h2>React Components</h2>
+                <p>There are two types of components:</p>
+                <ul>
+                    <li>Class Based Components</li>
+                    <li>Function Based Components</li>
+                </ul>
+                <br>
+                <h4>Class Based Components</h4>
+                <p>Before making class based component we need to inherit functions from React.Component and this can be done with extends, like this:</p>
+                <code><pre>
+class Cat extends React.Component {
+        render() {
+                return &lt;h1&gt;Meow&lt;/h1&gt;;
+            }
+}
+                </pre></code>
+
+                <p>it also requires a render method which returns HTML. </p>
+                <br>
+                <h4>Function Based Components</h4>
+                <p>In function it's simpler, we just need to return the HTML, like this:</p>
+                <code><pre>
+function Cat() {
+    return &lt;h1>Meow&gt;/h1>;
+}
+                </pre></code>
+
+                <b>Note:</b><span>Component's name must start with uppercase letter. </span>
+                <br>
+                <h4>Rendering a Component</h4>
+                <p>We made a component, now we want to render/use it. Syntax for using a component is: </p>
+                <code><pre>
+&lt;ComponentName />
+                </pre></code>
+                <br>
+                <h4>Components in Files</h4>
+                <p>To have less mess inside main file(with all the components in the same file) and to resuse components on different pages, we have to make them separately. So that we can just import them in any file and use them! </p>
+                <p>For that we will just make a new file called Cat.js, make class or function based component there and export default that class/function! Like this:
+
+                </p>
+                <code><pre>
+function Cat() {
+    return &lt;h1>Meow&lt;/h1>;
+}
+                      
+export default Cat;
+                </pre></code>
+                <b>Note:</b><span>File name must start with uppercase letter.</span>
+                <br>
+                <h4>Props</h4>
+                <p>As mentioned earlier, we can import the same component in different files and use it, but maybe in different files some changes in the component is needed. For that, we can use props! Like this: </p>
+                <b>Component:</b>
+                <code><pre>
+function Cat(props) {
+    return &lt;h1>Meow's color is {props.color}&lt;/h1>;
+}
+
+                </pre></code>
+                <br>
+                <b>Main file</b>
+                <code><pre>
+&lt;Cat color="purple" />  
+                </pre></code>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+            
+
+
+            <div id="topic9" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h2>React Class</h2>
+                <br>
+                <h4>Class Based Components</h4>
+                <p>Before making class based component we need to inherit functions from React.Component and this can be done with extends, like this:</p>
+                <code><pre>
+class Cat extends React.Component {
+    render() {
+        return &lt;h1>Meow&lt;/h1>;
+    }
+}
+                </pre></code>
+<p>it also requires a render method which returns HTML. </p>
+<b>Note: </b><span>Component's name must start with uppercase letter. </span>
+<h4>Component Constructor</h4>
+<p>Constructor gets called when the component is initiated. This is where you initiate the component's properties. In React we have states which update on page without reload. Constructor properties are kept in state. </p>
+<p>We also need to add super() statement, which executes the parent component's constructor and component gets access to all the functions of the parent component, like this:</p>
+<code><pre>
+class Cat extends React.Component {
+    constructor() {
+        super();
+        this.state = { color: "orange" };
+    }
+    render() {
+        return &lt;h1>Meow's color is {this.state.color}&gt;/h1>;
+    }
+} 
+</pre></code>
+
+
+
+
+
+
+
+
+                
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic10" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>React Props</h2>
+                <p>Props are arguments passed to React components via HTML attributes. Example: </p>
+                <b>Component:</b>
+<code><pre>
+function Cat(props) {
+    return &lt;h1>Meow's color is {props.color}&lt;/h1>;
+}
+</pre></code>
+
+<b>Main file:</b>
+<code><pre>
+    &lt;Cat color="purple" />
+</pre></code>
+<p>Output:</p>
+<img src="Image/6.png" alt="img" id="rai">
+                 <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+        
+
+
+
+        </div>
+    </div>
+
+    <script src="react.js"></script>
+</body>
+
+</html>

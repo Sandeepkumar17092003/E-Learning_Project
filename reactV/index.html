@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="../phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="c.html">C</a></li>
+                                <li><a class="dropdown-item " href="../htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="../cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="../javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="../reactpdf/react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+    <br><br>
+
+    <div class="container_video_1">
+        <div class="left_side_container">
+            <div class="video_player">
+                <!-- Initial video to display -->
+                <iframe id="video" src="https://www.youtube.com/embed/rQoqCP7LX60" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video_description">
+                <h2 id="video_title">Video Title 1</h2>
+                <p id="video_desc"></p>
+            </div>
+        </div>
+        <div class="right_side_container">
+            <ul id="video_list">
+                <!-- Example Video 1 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=1&pp=iAQB" 
+                    data-title="React JS roadmap | chai aur react series" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">React JS roadmap | chai aur react series</span>
+                    </a>
+                </li>
+                <!-- Example Video 2 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=k3KqQvywToE&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=2&pp=iAQB" 
+                    data-title="Create react projects | chai aur react" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">Create react projects | chai aur react</span>
+                    </a>
+                </li>
+                <!-- Example Video 3 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=yNbnA5pryMg&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=3&pp=iAQB" 
+                    data-title="Understand the react flow and structure" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">Understand the react flow and structure</span>
+                    </a>
+                </li>
+                <!-- Example Video 4 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=kAOuj6o7Kxs&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=4&pp=iAQB" 
+                    data-title="Create your own react library and JSX" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">Create your own react library and JSX</span>
+                    </a>
+                </li>
+
+                <!-- Example Video 5 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=lI7IIOWM0Mo&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=5&pp=iAQB" 
+                    data-title="Why you need hooks and project" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">Why you need hooks and project</span>
+                    </a>
+                </li>
+
+                <!-- Example Video 6 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=MPCVGFvgVEQ&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=6&pp=iAQB" 
+                    data-title="06 Virtual DOM, Fibre and reconciliation" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">06 Virtual DOM, Fibre and reconciliation</span>
+                    </a>
+                </li>
+
+                <!-- Example Video 7 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=bB6707XzCNc&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=7&pp=iAQB" 
+                    data-title="Tailwind and Props in reactjs" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">Tailwind and Props in reactjs</span>
+                    </a>
+                </li>
+
+                <!-- Example Video 8 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=tOYkV6Yhrhs&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=8&pp=iAQB" 
+                    data-title="A react interview question on counter" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">A react interview question on counter</span>
+                    </a>
+                </li>
+
+                <!-- Example Video 9 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=_lJ3KNMue3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=9&pp=iAQB" 
+                    data-title="Building a react project | bgChanger" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">Building a react project | bgChanger</span>
+                    </a>
+                </li>
+
+                <!-- Example Video 10 -->
+                <li>
+                    <a href="#" data-video-url="https://www.youtube.com/watch?v=Lt4vy8hfc-s&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=10&pp=iAQB" 
+                    data-title="seEffect, useRef and useCallback with 1 project" 
+                    data-desc="">
+                        <img src="logo.jpg" alt="Thumbnail" class="thumbnail">
+                        <span class="video_title">seEffect, useRef and useCallback with 1 project</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
