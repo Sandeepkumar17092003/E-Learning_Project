@@ -1,0 +1,484 @@
+/* navbar Design Start here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+/* navbar */
+#logo-title{
+    font-size:30px;
+    font-family:sans-serif;
+}
+#topNavbar{
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+    background-color: white;
+    border-radius: 0.25rem;
+	box-shadow: 0 0.3rem 0.4rem rgba(211, 211, 211, 0.986);
+  
+}
+.navbar-brand{
+    font-size:30px;
+    font-family: sans-serif;
+}
+.nav-item{
+    color:#333;
+    font-family: sans-serif;
+    font-size:18px;
+    font-weight:600;
+}
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+    padding-bottom: 5px;
+    position: relative;
+}
+.nav-item a:hover{
+    transform: translateY(-8px);
+    color:red;
+}
+
+.navbar-toggler-icon{
+    font-size:18px;
+    border-radius:5px;
+}
+
+
+#closeIcon:hover{
+    background-color:white !important;
+}
+
+
+.dropdown-menu .dropdown-item:hover{
+  border-radius: 10px;
+}
+#mainContent{
+  display:flex;
+}
+
+#mainContent .left{
+  /* border:1px solid red; */
+  width:50%;
+}
+
+#mainContent .right{
+  /* border:1px solid red; */
+  width:50%;
+}
+/* end navbar */
+
+
+/* Navbar meadia query */
+@media(max-width:992px){
+	#offcanvasNavbar {
+        background-color: rgba(15, 13, 13, 0.661); /* Semi-transparent background */
+        backdrop-filter: blur(20px); /* Blur effect */ 
+        color:white;/* Text color */
+    }
+   
+    .nav-item a{
+        color:white;
+        width:30%;
+    }
+    .nav-item a:hover{
+        color:red;
+    }
+    .dropdown-menu{
+        background-color: rgba(42, 41, 41, 0.661) !important;
+        backdrop-filter: blur(40px);
+        border:none;
+        width:10%;
+       
+         
+    }
+    .dropdown-menu li a{
+        /* border:1px solid red; */
+        width:50%;
+    }
+    .dropdown-menu li a:hover{
+        color:red;
+        background:none;
+    }
+   #mainContent{
+    width:100%;
+    flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+} 
+
+/* Navbar design end here */
+
+
+/* General Styles */
+.c {
+    margin-top: 100px;
+    margin-left: 33px;
+    margin-right: 33px;
+    
+}
+
+#text-head {
+    border-radius:10px;
+    width: 100%;
+    background-color:lightgrey !important;
+    color: orangered !important;
+    text-align: center;
+    font-family: sans-serif;
+    font-size:20px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0px 4px 8px lightgrey; /* Added box shadow */
+}
+
+.all_upload_data {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    gap: 20px; /* Add space between columns */
+}
+
+.left_upload_data {
+    flex: 0 1 60%; /* Flex-grow: 1 to take up remaining space, flex-basis: 70% */
+    margin: 20px;
+    overflow-x:scroll;
+    box-shadow: 0px 4px 8px lightgrey; /* Optional: Add box shadow */
+}
+
+.right_upload_data {
+    flex: 0 1 30%; /* Flex-grow: 1 to take up remaining space, flex-basis: 30% */
+    margin: 20px;
+    box-shadow: 0px 4px 8px lightgrey; /* Optional: Add box shadow */
+}
+
+/* Responsive styles */
+@media (max-width: 1166px) {
+    .left_upload_data, .right_upload_data {
+        flex: 0 1 100%; /* Full width on smaller screens */
+    }
+}
+
+.file-preview {
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.file-preview img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upload-form, .file-display {
+    width: 100%;
+    /* box-shadow: 0px 4px 8px lightgrey; Added box shadow */
+}
+/* General Table Styles */
+table {
+    border-radius: 15px; /* Rounded corners */
+    border-collapse: separate; /* Ensure borders don't collapse into each other */
+    border-spacing: 0; /* Remove spacing between cells */
+    overflow-x: scroll; /* Ensure content respects the border-radius */
+    width: 100%; /* Full width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    background-color: #fff; /* Background color */
+}
+
+/* Table Header Styles */
+th {
+    background-color: #007bff; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 10px 15px; /* Padding inside header cells */
+    text-align: left; /* Align text to the left */
+    font-weight: bold; /* Bold text */
+    border-bottom: 2px solid #0056b3; /* Stronger bottom border for the header */
+}
+
+/* Table Cell Styles */
+td {
+    padding: 10px 15px; /* Padding inside data cells */
+    border-top: 1px solid #ddd; /* Subtle top border for rows */
+    border-bottom: 1px solid #ddd; /* Subtle bottom border for rows */
+    color: #333; /* Text color */
+    font-size: 14px; /* Font size */
+}
+
+/* Optional: Remove last row's bottom border */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Optional: Hover Effect */
+tr:hover td {
+    background-color: #f4f4f4; /* Light grey background on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 10px; /* Adjust padding for smaller screens */
+        font-size: 13px; /* Slightly smaller font size */
+    }
+}
+
+
+
+.icon-button {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-button i {
+    font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .c {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .all_upload_data {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .left_upload_data, .right_upload_data {
+        flex-basis: 100%; /* Full width for smaller screens */
+        margin: 10px 0; /* Reduce margin */
+    }
+    
+    #text-head {
+        font-size: 1rem; /* Adjust the font size */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 435px) {
+    .left_upload_data {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 356px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+
+#form-container{
+    padding:20px 20px;
+    font-family: sans-serif;
+    font-weight:600;
+}
+#form-container input{
+    padding:6px;
+    border:1px solid lightgrey;
+    width:100%;
+    max-width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+    background-color:lightgrey;
+}
+
+#form-container input:focus{
+    border:1px solid dark;
+    outline:none;
+}
+#form-container input::placeholder {
+    color: #424242; 
+    font-family:sans-serif;
+    font-weight:500;
+}
+
+#form-container textarea{
+    padding:6px;
+    font-family:sans-serif;
+    width:100%;
+    max-width:100%;
+    border-radius:10px;
+    border:1px solid lightgrey;
+    margin-bottom:15px;
+    background-color:lightgrey;
+    height:100px;
+}
+
+#form-container textarea::placeholder{
+    color: #292929; 
+    font-family:sans-serif;
+    font-weight:500;
+}
+#form-container textarea:focus{
+    border:1px solid dark;
+    outline:none;
+}
+
+#file_upload{
+    background-color:lightgrey;
+}
+
+
+input[name="choosefile"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgrey; /* Border color */
+    background-color: #1c1b1b; /* Background color */
+    color: #333; /* Text color */
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 600;
+    width: 100%;
+    max-width: 300px; /* Adjust max-width as needed */
+    box-sizing: border-box;
+    border-color:lightgrey;
+}
+
+input[name="choosefile"]:hover {
+    background-color: #222222; /* Slight background change on hover */
+ 
+}
+
+input[name="choosefile"]:focus {
+    outline: none;
+    border-color:lightgrey; /* Focus border color */
+}
+
+
+#button-form button {
+    width: 100%;
+    max-width: 100%;
+    padding: 7px 20px; /* Add padding for better spacing */
+    border-radius: 10px;
+    border: none; /* Remove the default border */
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* White text color */
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 1px; /* Add spacing between letters */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+#button-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 91, 187, 0.3); /* Subtle shadow on hover */
+}
+
+#button-form button:active {
+    background-color: #004494; /* Even darker shade when active */
+    box-shadow: 0 2px 4px rgba(0, 91, 187, 0.5); /* Slightly less shadow when active */
+    transform: translateY(2px); /* Button presses down slightly */
+}
+
+
+/* Ensure images inside the table are responsive */
+.file-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust icon sizes and spacing */
+.icon-button i {
+    font-size: 1.5rem; /* Adjust the size of the icons */
+}
+
+/* For smaller screens, make sure the table scrolls */
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.9rem; /* Adjust the font size for smaller screens */
+    }
+
+    .icon-button i {
+        font-size: 1.2rem; /* Adjust the icon size for smaller screens */
+    }
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="index.html" style="font-size:30px;font-family: sans-serif;">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="cpdf/c.html">C</a></li>
+                                <li><a class="dropdown-item " href="htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="reactpdf/react.html">React</a></li>
+
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- main body start here -->
+    <div class="contain-service">
+        <div class="service-header">
+            <h3>Our Service</h3>
+        </div>
+        <div class="service-contain">
+            <div class="first-contain">
+                <img src="img/program.jpg" alt="Image">
+            </div>
+            <div class="first-contain">
+                <div class="data">
+                    <p>We offer free, high-quality notes and video tutorials for all major programming languages,
+                        including C, C++, Java, Python, HTML, CSS, JavaScript, PHP, and React etc. Our resources cater
+                        to both beginners and advanced learners, providing comprehensive content to help you master
+                        programming skills at your own pace.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="service-header">
+            <h3>Our Projects</h3>
+        </div> --><br><br><br>
+        <div class="service-contain">
+            <div class="first-contain">
+                <div class="data" id="second-data">
+                    <p>We deliver customized projects tailored to your specific requirements, ensuring high-quality
+                        solutions that meet your needs. Our services encompass full project development across various
+                        programming languages and platforms, offering end-to-end support from concept to deployment. We
+                        prioritize delivering practical, user-focused outcomes with efficiency and a high level of
+                        professionalism.</p>
+                </div>
+            </div>
+            <div class="first-contain" id="second-data">
+                <img src="img/project.jpeg" alt="Image">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="contain-service1">
+        <div class="service-header">
+            <h3>Our Projects</h3>
+        </div>
+        <div class="project-image-container">
+            <div class="First">
+               <h5>Project Name: Portfolio</h5>
+               <p>I have developed a comprehensive portfolio that highlights my skills, projects, and achievements, effectively demonstrating my expertise and creativity to prospective employers and clients.</p>
+               <button type="button" id="button"><a href="https://sandeepkumarrai.netlify.app/">Visit Here</a></button>
+            </div>
+            <div class="First">
+                <h5>Project Name: E-Learning</h5>
+                <p>My current project, E-Learning, offers a wide range of free courses. This platform allows anyone to learn at their own pace, providing access to educational content whenever needed.</p>
+                <button type="button" id="button"><a href="../index.html">Visit Here</a></button>
+            </div>
+            <!-- <div class="First" style="border:2px dotted orangered;">
+                <h5>Project Name: E-Commerce</h5>
+            </div> -->
+
+        </div>
+    </div>
+    <!-- main body end here -->
+
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container3">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>E-Learning</h4>
+                    <ul>
+                        <li><a href="../about/Demo.html" id="l1">about us</a></li>
+                        <li><a href="service.html" id="l1">our services</a></li>
+                        <li><a href="../Privacy/privacy.html" id="l1">privacy policy</a></li>
+                        <li><a href="#" id="copyright">&copy; copyright reserved 2030</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                        <li><a href="../phppdf/php.html">PHP</a></li>
+                        <li><a href="../cpdf/c.html">C</a></li>
+                        <li><a href="../htmlpdf/Fhtml.html">HTML</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="../javapdf/java.html">Java</a></li>
+                        <li><a href="../pythonpdf/python.html">Python</a></li>
+                        <li><a href="../cpluspdf/cplus.html">C++</a></li>
+                        <li><a href="../reactpdf/react.html">React</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/channel/UCKBsiuy5g4N5j-vmERSINwQ" target="_blank" id="ij"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100041645491728" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://sandeepkumarrai.netlify.app" target="_blank"><i class="fa-sharp fa-solid fa-user-tie"></i></a>
+                        <a href="https://www.instagram.com/r_sandy_s/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sandeep-rai-b2a782242/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+<!-- footer end -->
+
+
+
+
+
+
+
+</body>
+
+</html>
