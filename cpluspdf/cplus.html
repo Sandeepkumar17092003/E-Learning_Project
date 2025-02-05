@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="cplus.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="../phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="../cpdf/c.html">C</a></li>
+                                <li><a class="dropdown-item " href="../htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="../javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="../reactpdf/react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+
+
+
+    <div class="containerjs">
+        <!-- Sidebar -->
+        <div class="sidebarjs">
+            <ul id="topicListjs">
+                <li data-topic="topic1"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to C++</li>
+                <li data-topic="topic2"><i class="fas fa-book read-icon"></i>&nbsp;Getting Started with C++
+                </li>
+                <li data-topic="topic3"><i class="fas fa-book read-icon"></i>&nbsp;Basic Syntax and Structure
+                <li>
+                <li data-topic="topic4"><i class="fas fa-book read-icon"></i>&nbsp;Data Types and Variables</li>
+                <li data-topic="topic5"><i class="fas fa-book read-icon"></i>&nbsp;Operators</li>
+                <li data-topic="topic6"><i class="fas fa-book read-icon"></i>&nbsp;Control Flow</li>
+                <li data-topic="topic7"><i class="fas fa-book read-icon"></i>&nbsp;Functions</li>
+                <li data-topic="topic8"><i class="fas fa-book read-icon"></i>&nbsp;Arrays and Strings</li>
+                <li data-topic="topic9"><i class="fas fa-book read-icon"></i>&nbsp;Pointers and References</li>
+                <li data-topic="topic10"><i class="fas fa-book read-icon"></i>&nbsp;Object-Oriented Programming (OOP)
+                </li>
+
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="contentjs">
+            <div id="topic1" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                                
+
+<section id="history">
+    <h2>Brief History and Evolution of C++</h2>
+    <p>C++ is a general-purpose programming language that was developed by Bjarne Stroustrup at Bell
+        Labs in Murray Hill, New Jersey, during the early 1980s. The language was designed as an
+        enhancement to the C language, aiming to provide a more flexible and powerful set of features
+        while retaining the efficiency and performance of C.</p>
+
+    <h3>Early Development:</h3>
+    <ul>
+        <li><strong>1979:</strong> Bjarne Stroustrup begins working on "C with Classes," an extension of
+            the C language that introduces object-oriented programming (OOP) concepts.</li>
+        <li><strong>1983:</strong> "C with Classes" is renamed C++ to reflect its evolution from C. The
+            name C++ symbolizes the language's progression, with the "++" operator denoting an increment
+            in C's capabilities.</li>
+    </ul>
+
+    <h3>Significant Versions:</h3>
+    <ul>
+        <li><strong>C++98:</strong> The first standardized version of C++, adopted by the International
+            Organization for Standardization (ISO) in 1998. It formalized the language features and
+            libraries.</li>
+        <li><strong>C++03:</strong> A minor revision of C++98, addressing some defects and ambiguities
+            in the language.</li>
+        <li><strong>C++11:</strong> Introduced significant enhancements, including auto keyword,
+            range-based for loops, lambda expressions, and smart pointers.</li>
+        <li><strong>C++14:</strong> Added minor improvements and bug fixes over C++11.</li>
+        <li><strong>C++17:</strong> Brought new features like std::optional, std::variant, and parallel
+            algorithms.</li>
+        <li><strong>C++20:</strong> Introduced concepts, ranges, calendar and time zone libraries, and
+            coroutines.</li>
+        <li><strong>C++23:</strong> Continues to improve the language with features like improved
+            constexpr, expanded standard library components, and better support for modules.</li>
+    </ul>
+</section>
+
+<section id="features">
+    <h2>Key Features of C++</h2>
+    <h3>Object-Oriented Programming (OOP):</h3>
+    <ul>
+        <li><strong>Classes and Objects:</strong> C++ supports encapsulation, inheritance, and
+            polymorphism, allowing for the creation of complex systems through the use of classes and
+            objects.</li>
+        <li><strong>Inheritance:</strong> Enables the creation of new classes that are based on existing
+            classes, promoting code reusability.</li>
+        <li><strong>Polymorphism:</strong> Allows for methods to do different things based on the object
+            that invokes them.</li>
+    </ul>
+
+    <h3>Low-Level Manipulation:</h3>
+    <ul>
+        <li><strong>Pointers and References:</strong> C++ allows direct memory manipulation through
+            pointers and references, providing powerful control over system resources and performance.
+        </li>
+    </ul>
+
+    <h3>Standard Template Library (STL):</h3>
+    <ul>
+        <li><strong>Containers:</strong> Includes various container classes like vectors, lists, maps,
+            and queues that help in efficient data management.</li>
+        <li><strong>Algorithms:</strong> Provides a set of algorithms that can be applied to containers,
+            such as sorting and searching.</li>
+    </ul>
+
+    <h3>Type Safety and Templates:</h3>
+    <ul>
+        <li><strong>Templates:</strong> C++ supports function and class templates, allowing for generic
+            programming. This means that you can write code that works with any data type.</li>
+    </ul>
+
+    <h3>Exception Handling:</h3>
+    <ul>
+        <li><strong>Try, Catch, and Throw:</strong> C++ includes a robust mechanism for handling errors
+            through exception handling, allowing for more reliable and maintainable code.</li>
+    </ul>
+
+    <h3>Operator Overloading:</h3>
+    <ul>
+        <li><strong>Custom Operators:</strong> C++ allows operators to be overloaded so that they can
+            work with user-defined classes, making it easier to work with complex data types.</li>
+    </ul>
+
+    <h3>Namespaces:</h3>
+    <ul>
+        <li><strong>Organizing Code:</strong> Namespaces help in organizing code and avoiding name
+            conflicts in large projects.</li>
+    </ul>
+
+    <h3>RAII (Resource Acquisition Is Initialization):</h3>
+    <ul>
+        <li><strong>Automatic Resource Management:</strong> C++ uses RAII to manage resource allocation
+            and deallocation automatically, which helps in avoiding resource leaks.</li>
+    </ul>
+</section>
+
+<section id="importance">
+    <h2>Importance and Applications of C++</h2>
+    <h3>Performance and Efficiency:</h3>
+    <p>C++ is known for its performance and efficiency, making it suitable for system-level programming,
+        real-time applications, and performance-critical systems.</p>
+
+    <h3>System Software:</h3>
+    <p><strong>Operating Systems:</strong> C++ is used in the development of operating systems and
+        system-level applications due to its close-to-hardware capabilities and performance.</p>
+
+    <h3>Game Development:</h3>
+    <p><strong>Graphics and Games:</strong> C++ is widely used in game development for its performance
+        and control over system resources, particularly in graphics-intensive applications.</p>
+
+    <h3>Embedded Systems:</h3>
+    <p><strong>Hardware Interaction:</strong> C++ is used in embedded systems where low-level hardware
+        interaction is required.</p>
+
+    <h3>High-Performance Computing:</h3>
+    <p><strong>Scientific Computing:</strong> The language's performance features make it suitable for
+        applications in scientific computing and simulations.</p>
+
+    <h3>Finance and Trading Systems:</h3>
+    <p><strong>Real-Time Processing:</strong> C++ is employed in high-frequency trading systems and
+        financial applications that require real-time processing and low latency.</p>
+
+    <h3>Software Development:</h3>
+    <p><strong>Applications and Libraries:</strong> Many large-scale applications and libraries are
+        written in C++ due to its efficiency, flexibility, and extensive standard library support.</p>
+
+    <h3>Cross-Platform Development:</h3>
+    <p><strong>Portability:</strong> C++ supports cross-platform development, allowing for the creation
+        of applications that can run on different operating systems with minimal modifications.</p>
+</section>
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic2" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                            
+
+
+
+
+<h1>Getting Started with C++</h1>
+
+<section id="overview-of-compilers">
+    <h2>1. Overview of Compilers</h2>
+    <p>A compiler is a tool that translates code written in a high-level programming language (like C++)
+        into machine code that the computer can execute. Here are some popular C++ compilers:</p>
+    <ul>
+        <li><strong>GCC (GNU Compiler Collection):</strong> A widely used open-source compiler for C,
+            C++, and other languages. It is available on multiple platforms, including Windows, macOS,
+            and Linux.</li>
+        <li><strong>Clang:</strong> A compiler based on LLVM (Low-Level Virtual Machine). It provides
+            fast compilation and excellent diagnostic messages. It is also available on multiple
+            platforms and is known for its modular architecture.</li>
+        <li><strong>MSVC (Microsoft Visual C++):</strong> A compiler provided by Microsoft, part of the
+            Visual Studio suite. It is specifically designed for Windows and integrates well with other
+            Microsoft tools and libraries.</li>
+    </ul>
+</section>
+
+<section id="installation-instructions">
+    <h2>2. Installation Instructions</h2>
+    <h3>a. Windows</h3>
+    <h4>GCC (via MinGW):</h4>
+    <ul>
+        <li>Download the MinGW installer from the MinGW website or the MinGW-w64 project.</li>
+        <li>Run the installer and follow the instructions. Make sure to select the mingw32-base and
+            mingw-gcc-g++ packages.</li>
+        <li>Add the path to the MinGW bin directory (e.g., <code>C:\MinGW\bin</code>) to your system’s
+            PATH environment variable.</li>
+    </ul>
+    <h4>Clang:</h4>
+    <ul>
+        <li>Download the LLVM installer from the LLVM website.</li>
+        <li>Run the installer and follow the instructions.</li>
+        <li>Ensure the LLVM bin directory is added to your system’s PATH.</li>
+    </ul>
+    <h4>MSVC:</h4>
+    <ul>
+        <li>Download and install Visual Studio from the Microsoft website.</li>
+        <li>During installation, select the "Desktop development with C++" workload.</li>
+        <li>Follow the installation instructions, and MSVC will be set up as part of Visual Studio.</li>
+    </ul>
+
+    <h3>b. macOS</h3>
+    <h4>GCC:</h4>
+    <ul>
+        <li>Install Homebrew if you haven’t already (visit Homebrew’s website for instructions).</li>
+        <li>Open Terminal and run <code>brew install gcc</code>.</li>
+        <li>Homebrew will install GCC and make it available in your PATH.</li>
+    </ul>
+    <h4>Clang:</h4>
+    <ul>
+        <li>Clang comes pre-installed with Xcode Command Line Tools.</li>
+        <li>Install Xcode Command Line Tools by running <code>xcode-select --install</code> in Terminal.
+        </li>
+    </ul>
+    <h4>MSVC:</h4>
+    <ul>
+        <li>MSVC is not natively available on macOS. You might consider using a cross-platform
+            development environment or alternative options like remote development tools.</li>
+    </ul>
+
+    <h3>c. Linux</h3>
+    <h4>GCC:</h4>
+    <ul>
+        <li>Most Linux distributions come with GCC pre-installed. You can check this by running
+            <code>gcc --version</code> in Terminal.</li>
+        <li>If not installed, use the package manager for your distribution. For example, on Ubuntu, run
+            <code>sudo apt-get install build-essential</code>.</li>
+    </ul>
+    <h4>Clang:</h4>
+    <ul>
+        <li>Install Clang using your distribution’s package manager. For example, on Ubuntu, run
+            <code>sudo apt-get install clang</code>.</li>
+    </ul>
+    <h4>MSVC:</h4>
+    <ul>
+        <li>MSVC is not available on Linux. Consider using GCC or Clang for C++ development on Linux.
+        </li>
+    </ul>
+</section>
+
+<section id="integrated-development-environments">
+    <h2>Integrated Development Environments (IDEs)</h2>
+    <p>An IDE provides a comprehensive environment for writing, compiling, and debugging code. Here are
+        some popular IDEs for C++:</p>
+
+    <h3>a. Code::Blocks:</h3>
+    <h4>Installation:</h4>
+    <ul>
+        <li>Download the Code::Blocks installer from the Code::Blocks website.</li>
+        <li>Run the installer and follow the instructions.</li>
+        <li>Code::Blocks can be configured to use different compilers by going to Settings -> Compiler
+            and selecting the installed compiler.</li>
+    </ul>
+    <h4>Features:</h4>
+    <ul>
+        <li>Lightweight and customizable.</li>
+        <li>Supports multiple compilers.</li>
+        <li>Integrated debugger and code completion.</li>
+    </ul>
+
+    <h3>b. Visual Studio:</h3>
+    <h4>Installation:</h4>
+    <ul>
+        <li>Download the Visual Studio installer from the Visual Studio website.</li>
+        <li>Run the installer and select the "Desktop development with C++" workload.</li>
+        <li>Follow the instructions to complete the installation.</li>
+    </ul>
+    <h4>Features:</h4>
+    <ul>
+        <li>Comprehensive tools for C++ development.</li>
+        <li>Integrated debugger and profiler.</li>
+        <li>Rich set of libraries and tools.</li>
+    </ul>
+
+    <h3>c. CLion:</h3>
+    <h4>Installation:</h4>
+    <ul>
+        <li>Download the CLion installer from the JetBrains website.</li>
+        <li>Run the installer and follow the setup instructions.</li>
+    </ul>
+    <h4>Features:</h4>
+    <ul>
+        <li>Smart C++ editor with code analysis.</li>
+        <li>Integrated debugger and terminal.</li>
+        <li>Supports CMake as the build system.</li>
+    </ul>
+</section>
+
+<section id="basic-setup-and-configuration">
+    <h2>Basic Setup and Configuration</h2>
+    <h3>Configure the Compiler:</h3>
+    <ul>
+        <li>In your chosen IDE, configure the paths to your compiler if not automatically detected.</li>
+        <li>Set up build options and include directories if needed.</li>
+    </ul>
+    <h3>Create a New Project:</h3>
+    <ul>
+        <li>Use the IDE's project wizard to create a new C++ project.</li>
+        <li>Configure project settings such as compiler flags and libraries.</li>
+    </ul>
+    <h3>Write and Run a Sample Program:</h3>
+    <p>Create a new C++ source file (e.g., <code>main.cpp</code>). Write a simple program to test the
+        setup, such as:</p>
+    <pre><code>#include &lt;iostream&gt;
+
+int main() {
+std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+return 0;
+}
+</code></pre>
+    <p>Build and run the program within the IDE to ensure everything is working correctly.</p>
+</section>
+
+
+
+
+
+                
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+
+            <div id="topic3" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+                <h1>Basic Syntax and Structure in C++</h1>
+
+                <h2>1. Program Structure</h2>
+            
+                <h3>a. #include Directive</h3>
+                <p>The <code>#include</code> directive is used to include header files in your program. These header files contain declarations for functions, classes, and objects that you can use in your code.</p>
+                <div class="example">
+                    <code>#include &lt;iostream&gt;   // For standard input/output stream<br>
+            #include "myheader.h" // For user-defined header files</code>
+                </div>
+                <p><code>&lt;iostream&gt;</code> is a standard library header that provides functionality for input and output. <code>"myheader.h"</code> is an example of a user-defined header file that you might include in your program.</p>
+            
+                <h3>b. main() Function</h3>
+                <p>The <code>main()</code> function is the entry point of a C++ program. It is where the execution of the program begins. Every C++ program must have a <code>main()</code> function.</p>
+                <div class="example">
+                    <code>int main() {<br>
+                // code to be executed<br>
+                return 0;  // Return 0 to indicate successful execution<br>
+            }</code>
+                </div>
+                <p><code>int</code> indicates that the <code>main()</code> function returns an integer value. <code>return 0;</code> signifies successful execution of the program. Other return values can be used to indicate different statuses or errors.</p>
+            
+                <h3>c. Basic Input/Output using <code>cin</code> and <code>cout</code></h3>
+                <p>C++ provides standard objects for input and output operations:</p>
+                <ul>
+                    <li><code>cout</code> for output to the console</li>
+                    <li><code>cin</code> for input from the console</li>
+                </ul>
+                <div class="example">
+                    <code>#include &lt;iostream&gt;  // Include iostream for input/output<br>
+            <br>
+            int main() {<br>
+                std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl; // Output text to console<br>
+                int number;<br>
+                std::cin &gt;&gt; number; // Input number from console<br>
+                std::cout &lt;&lt; "You entered: " &lt;&lt; number &lt;&lt; std::endl; // Output the entered number<br>
+                return 0;<br>
+            }</code>
+                </div>
+                <p><code>std::cout</code> is used to output data to the console. <code>&lt;&lt;</code> is the insertion operator. <code>std::cin</code> is used to receive input from the console. <code>&gt;&gt;</code> is the extraction operator. <code>std::endl</code> is used to insert a newline character and flush the output buffer.</p>
+            
+                <h2>2. Comments</h2>
+            
+                <h3>a. Single-Line Comments (<code>//</code>)</h3>
+                <p>Single-line comments begin with <code>//</code> and continue to the end of the line. They are used for brief comments or explanations.</p>
+                <div class="example">
+                    <code>// This is a single-line comment<br>
+            int x = 10;  // Initialize x with 10</code>
+                </div>
+            
+                <h3>b. Multi-Line Comments (<code>/* ... */</code>)</h3>
+                <p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>. They can span multiple lines and are useful for longer explanations or temporary code disablement.</p>
+                <div class="example">
+                    <code>/*<br>
+             * This is a multi-line comment.<br>
+             * It can span multiple lines.<br>
+             */<br>
+            int y = 20;</code>
+                </div>
+                <p>Multi-line comments cannot be nested within each other. They are often used for detailed descriptions or to temporarily disable blocks of code during debugging.</p>
+            
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+
+            <div id="topic4" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+
+                <h1>Data Types and Variables in C++</h1>
+
+    <h2>1. Primitive Data Types</h2>
+    <p>Primitive data types are the basic data types provided by C++ that represent single values. Here are the fundamental primitive data types:</p>
+    
+    <ul>
+        <li><strong>int</strong>: Represents integer values.
+            <div class="example">Size: Typically 4 bytes (32 bits) but can vary based on the system.<br>
+            Example: <code>int age = 25;</code></div>
+        </li>
+        <li><strong>float</strong>: Represents floating-point numbers (numbers with decimal points).
+            <div class="example">Size: Typically 4 bytes (32 bits).<br>
+            Precision: Up to 6 decimal places.<br>
+            Example: <code>float temperature = 36.6f;</code></div>
+        </li>
+        <li><strong>double</strong>: Represents double-precision floating-point numbers.
+            <div class="example">Size: Typically 8 bytes (64 bits).<br>
+            Precision: Up to 15 decimal places.<br>
+            Example: <code>double pi = 3.141592653589793;</code></div>
+        </li>
+        <li><strong>char</strong>: Represents a single character.
+            <div class="example">Size: Typically 1 byte (8 bits).<br>
+            Example: <code>char grade = 'A';</code></div>
+        </li>
+        <li><strong>bool</strong>: Represents Boolean values, which can be either true or false.
+            <div class="example">Size: Typically 1 byte (8 bits).<br>
+            Example: <code>bool isPassed = true;</code></div>
+        </li>
+    </ul>
+
+    <h2>2. Type Modifiers</h2>
+    <p>Type modifiers are keywords used to modify the meaning of basic data types. They allow you to define the size and signedness of a variable.</p>
+    
+    <ul>
+        <li><strong>short</strong>: Reduces the size of an integer type.
+            <div class="example">Size: Typically 2 bytes (16 bits).<br>
+            Example: <code>short smallNumber = 32000;</code></div>
+        </li>
+        <li><strong>long</strong>: Increases the size of an integer type.
+            <div class="example">Size: Typically 4 bytes (32 bits) or 8 bytes (64 bits), depending on the system.<br>
+            Example: <code>long largeNumber = 100000L;</code></div>
+        </li>
+        <li><strong>signed</strong>: Specifies that the variable can hold both positive and negative values. It is the default for integer types.
+            <div class="example">Example: <code>signed int balance = -500;</code></div>
+        </li>
+        <li><strong>unsigned</strong>: Specifies that the variable can only hold non-negative values. It effectively doubles the range of positive values compared to its signed counterpart.
+            <div class="example">Example: <code>unsigned int age = 30;</code></div>
+        </li>
+    </ul>
+
+    <h2>3. Variable Declaration and Initialization</h2>
+    <p>Variable Declaration: In C++, variables must be declared before they are used. Declaration tells the compiler the type and name of the variable.</p>
+    <p>Variable Initialization: Initialization involves assigning an initial value to the variable at the time of declaration.</p>
+
+    <div class="example">
+        <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    // Primitive Data Types
+    int age = 25;               // Integer
+    float height = 5.9f;        // Floating-point
+    double pi = 3.1415926535;   // Double precision floating-point
+    char grade = 'A';           // Character
+    bool isPassed = true;       // Boolean
+
+    // Type Modifiers
+    short smallNumber = 32000;  // Short integer
+    long largeNumber = 100000L; // Long integer
+    signed int balance = -500;  // Signed integer
+    unsigned int ageUnsigned = 30; // Unsigned integer
+
+    // Output values
+    std::cout &lt;&lt; "Age: " &lt;&lt; age &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Height: " &lt;&lt; height &lt;&lt; std::endl;
+    std::cout &lt;&lt; "PI: " &lt;&lt; pi &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Grade: " &lt;&lt; grade &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Passed: " &lt;&lt; isPassed &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Small Number: " &lt;&lt; smallNumber &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Large Number: " &lt;&lt; largeNumber &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Balance: " &lt;&lt; balance &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Unsigned Age: " &lt;&lt; ageUnsigned &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <div class="key-points">
+        <p><strong>Key Points:</strong></p>
+        <ul>
+            <li>The size of data types can vary between different systems and compilers.</li>
+            <li>Floating-point types (float and double) are used for representing numbers with fractional parts.</li>
+            <li>char is used for single characters and typically occupies 1 byte of memory.</li>
+            <li>bool is used for boolean values, taking up 1 byte but storing true or false.</li>
+            <li>Type modifiers adjust the size and sign of variables to suit different needs.</li>
+        </ul>
+    </div>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+
+            <div id="topic5" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+                <h1>C++ Operators</h1>
+
+                <div class="section">
+                    <h2>1. Arithmetic Operators</h2>
+                    <p>Arithmetic operators are used to perform basic arithmetic operations.</p>
+                    <div class="code">
+                        <p><strong>Addition (+):</strong> Adds two operands.</p>
+                        <code>
+                            int a = 5, b = 3;<br>
+                            int sum = a + b; // sum = 8
+                        </code>
+                        <p><strong>Subtraction (-):</strong> Subtracts the second operand from the first.</p>
+                        <code>
+                            int difference = a - b; // difference = 2
+                        </code>
+                        <p><strong>Multiplication (*):</strong> Multiplies two operands.</p>
+                        <code>
+                            int product = a * b; // product = 15
+                        </code>
+                        <p><strong>Division (/):</strong> Divides the first operand by the second.</p>
+                        <code>
+                            int quotient = a / b; // quotient = 1
+                        </code>
+                        <p><strong>Modulus (%):</strong> Returns the remainder of the division of the first operand by the second.</p>
+                        <code>
+                            int remainder = a % b; // remainder = 2
+                        </code>
+                    </div>
+                </div>
+        
+                <div class="section">
+                    <h2>2. Relational Operators</h2>
+                    <p>Relational operators are used to compare two values and determine their relationship.</p>
+                    <div class="code">
+                        <p><strong>Equal to (==):</strong> Checks if two operands are equal.</p>
+                        <code>
+                            bool isEqual = (a == b); // isEqual = false
+                        </code>
+                        <p><strong>Not equal to (!=):</strong> Checks if two operands are not equal.</p>
+                        <code>
+                            bool isNotEqual = (a != b); // isNotEqual = true
+                        </code>
+                        <p><strong>Greater than (>):</strong> Checks if the first operand is greater than the second.</p>
+                        <code>
+                            bool isGreater = (a > b); // isGreater = true
+                        </code>
+                        <p><strong>Less than (<):</strong> Checks if the first operand is less than the second.</p>
+                        <code>
+                            bool isLess = (a < b); // isLess = false
+                        </code>
+                        <p><strong>Greater than or equal to (>=):</strong> Checks if the first operand is greater than or equal to the second.</p>
+                        <code>
+                            bool isGreaterOrEqual = (a >= b); // isGreaterOrEqual = true
+                        </code>
+                        <p><strong>Less than or equal to (<=):</strong> Checks if the first operand is less than or equal to the second.</p>
+                        <code>
+                            bool isLessOrEqual = (a <= b); // isLessOrEqual = false
+                        </code>
+                    </div>
+                </div>
+        
+                <div class="section">
+                    <h2>3. Logical Operators</h2>
+                    <p>Logical operators are used to combine or invert boolean expressions.</p>
+                    <div class="code">
+                        <p><strong>Logical AND (&&):</strong> Returns true if both operands are true.</p>
+                        <code>
+                            bool andResult = (a > 2 && b < 4); // andResult = true
+                        </code>
+                        <p><strong>Logical OR (||):</strong> Returns true if at least one of the operands is true.</p>
+                        <code>
+                            bool orResult = (a > 2 || b > 4); // orResult = true
+                        </code>
+                        <p><strong>Logical NOT (!):</strong> Inverts the boolean value of the operand.</p>
+                        <code>
+                            bool notResult = !(a > 2); // notResult = false
+                        </code>
+                    </div>
+                </div>
+        
+                <div class="section">
+                    <h2>4. Assignment Operators</h2>
+                    <p>Assignment operators are used to assign values to variables.</p>
+                    <div class="code">
+                        <p><strong>Assignment (=):</strong> Assigns the value on the right to the variable on the left.</p>
+                        <code>
+                            int x = 10; // x = 10
+                        </code>
+                        <p><strong>Addition assignment (+=):</strong> Adds the right operand to the left operand and assigns the result to the left operand.</p>
+                        <code>
+                            x += 5; // x = x + 5; x = 15
+                        </code>
+                        <p><strong>Subtraction assignment (-=):</strong> Subtracts the right operand from the left operand and assigns the result to the left operand.</p>
+                        <code>
+                            x -= 3; // x = x - 3; x = 12
+                        </code>
+                        <p><strong>Multiplication assignment (*=):</strong> Multiplies the left operand by the right operand and assigns the result to the left operand.</p>
+                        <code>
+                            x *= 2; // x = x * 2; x = 24
+                        </code>
+                        <p><strong>Division assignment (/=):</strong> Divides the left operand by the right operand and assigns the result to the left operand.</p>
+                        <code>
+                            x /= 4; // x = x / 4; x = 6
+                        </code>
+                        <p><strong>Modulus assignment (%=):</strong> Takes the modulus of the left operand by the right operand and assigns the result to the left operand.</p>
+                        <code>
+                            x %= 4; // x = x % 4; x = 2
+                        </code>
+                    </div>
+                </div>
+        
+                <div class="section">
+                    <h2>5. Increment and Decrement Operators</h2>
+                    <p>Increment and decrement operators are used to increase or decrease the value of a variable by one.</p>
+                    <div class="code">
+                        <p><strong>Increment (++):</strong> Increases the value of the operand by one.</p>
+                        <p><strong>Prefix (++x):</strong> Increments the value before using it.</p>
+                        <code>
+                            int y = 5;<br>
+                            int z = ++y; // y = 6, z = 6
+                        </code>
+                        <p><strong>Postfix (x++):</strong> Increments the value after using it.</p>
+                        <code>
+                            int y = 5;<br>
+                            int z = y++; // y = 6, z = 5
+                        </code>
+                        <p><strong>Decrement (--):</strong> Decreases the value of the operand by one.</p>
+                        <p><strong>Prefix (--x):</strong> Decrements the value before using it.</p>
+                        <code>
+                            int y = 5;<br>
+                            int z = --y; // y = 4, z = 4
+                        </code>
+                        <p><strong>Postfix (x--):</strong> Decrements the value after using it.</p>
+                        <code>
+                            int y = 5;<br>
+                            int z = y--; // y = 4, z = 5
+                        </code>
+                    </div>
+                </div>
+        
+                <div class="section">
+                    <h2>6. Bitwise Operators</h2>
+                    <p>Bitwise operators perform operations on the binary representations of numbers.</p>
+                    <div class="code">
+                        <p><strong>AND (&):</strong> Performs a bitwise AND operation.</p>
+                        <code>
+                            int a = 12; // 1100 in binary<br>
+                            int b = 7;  // 0111 in binary<br>
+                            int result = a & b; // result = 4 (0100 in binary)
+                        </code>
+                        <p><strong>OR (|):</strong> Performs a bitwise OR operation.</p>
+                        <code>
+                            int result = a | b; // result = 15 (1111 in binary)
+                        </code>
+                        <p><strong>XOR (^):</strong> Performs a bitwise XOR operation.</p>
+                        <code>
+                            int result = a ^ b; // result = 11 (1011 in binary)
+                        </code>
+                        <p><strong>Complement (~):</strong> Performs a bitwise NOT operation.</p>
+                        <code>
+                            int result = ~a; // result = -13 (inverts all bits of 12)
+                        </code>
+                        <p><strong>Left Shift (<<):</strong> Shifts the bits of the first operand to the left by the number of positions specified by the second operand.</p>
+                        <code>
+                            int result = a << 2; // result = 48 (1100 << 2 = 110000 in binary)
+                        </code>
+                        <p><strong>Right Shift (>>):</strong> Shifts the bits of the first operand to the right by the number of positions specified by the second operand.</p>
+                        <code>
+                            int result = a >> 2; // result = 3 (1100 >> 2 = 0011 in binary)
+                        </code>
+                    </div>
+                </div>
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic6" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+                <section>
+                    <h2>1. Conditional Statements</h2>
+                    <h3>a. if, else if, else</h3>
+                    <p>Conditional statements let you execute certain blocks of code based on a condition.</p>
+                    <div class="example">
+                        <pre><code>if (condition) {
+            // Code to execute if condition is true
+        } else if (another_condition) {
+            // Code to execute if another_condition is true
+        } else {
+            // Code to execute if none of the above conditions are true
+        }</code></pre>
+                    </div>
+                    <p>Example:</p>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        int main() {
+            int number = 15;
+        
+            if (number > 0) {
+                cout &lt;&lt; "The number is positive." &lt;&lt; endl;
+            } else if (number &lt; 0) {
+                cout &lt;&lt; "The number is negative." &lt;&lt; endl;
+            } else {
+                cout &lt;&lt; "The number is zero." &lt;&lt; endl;
+            }
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                    <h3>b. switch Statement</h3>
+                    <p>The switch statement is used to select one of many code blocks to be executed.</p>
+                    <div class="example">
+                        <pre><code>switch (expression) {
+            case value1:
+                // Code to execute if expression equals value1
+                break;
+            case value2:
+                // Code to execute if expression equals value2
+                break;
+            default:
+                // Code to execute if expression doesn't match any case
+        }</code></pre>
+                    </div>
+                    <p>Example:</p>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        int main() {
+            int day = 3;
+        
+            switch (day) {
+                case 1:
+                    cout &lt;&lt; "Monday" &lt;&lt; endl;
+                    break;
+                case 2:
+                    cout &lt;&lt; "Tuesday" &lt;&lt; endl;
+                    break;
+                case 3:
+                    cout &lt;&lt; "Wednesday" &lt;&lt; endl;
+                    break;
+                case 4:
+                    cout &lt;&lt; "Thursday" &lt;&lt; endl;
+                    break;
+                case 5:
+                    cout &lt;&lt; "Friday" &lt;&lt; endl;
+                    break;
+                case 6:
+                    cout &lt;&lt; "Saturday" &lt;&lt; endl;
+                    break;
+                case 7:
+                    cout &lt;&lt; "Sunday" &lt;&lt; endl;
+                    break;
+                default:
+                    cout &lt;&lt; "Invalid day" &lt;&lt; endl;
+            }
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                </section>
+                <section>
+                    <h2>2. Loops</h2>
+                    <h3>a. for Loop</h3>
+                    <p>The for loop is used when you know in advance how many times you need to execute a statement or a block of statements.</p>
+                    <div class="example">
+                        <pre><code>for (initialization; condition; update) {
+            // Code to execute repeatedly
+        }</code></pre>
+                    </div>
+                    <p>Example:</p>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        int main() {
+            for (int i = 0; i &lt; 5; ++i) {
+                cout &lt;&lt; "Iteration " &lt;&lt; i &lt;&lt; endl;
+            }
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                    <h3>b. while Loop</h3>
+                    <p>The while loop is used when you need to repeat a block of code as long as a condition remains true.</p>
+                    <div class="example">
+                        <pre><code>while (condition) {
+            // Code to execute repeatedly
+        }</code></pre>
+                    </div>
+                    <p>Example:</p>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        int main() {
+            int count = 0;
+        
+            while (count &lt; 5) {
+                cout &lt;&lt; "Count is " &lt;&lt; count &lt;&lt; endl;
+                ++count;
+            }
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                    <h3>c. do-while Loop</h3>
+                    <p>The do-while loop is similar to the while loop, but it guarantees that the code block will be executed at least once.</p>
+                    <div class="example">
+                        <pre><code>do {
+            // Code to execute repeatedly
+        } while (condition);</code></pre>
+                    </div>
+                    <p>Example:</p>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        int main() {
+            int count = 0;
+        
+            do {
+                cout &lt;&lt; "Count is " &lt;&lt; count &lt;&lt; endl;
+                ++count;
+            } while (count &lt; 5);
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                </section>
+                <section>
+                    <h2>3. Break and Continue Statements</h2>
+                    <h3>a. break Statement</h3>
+                    <p>The break statement is used to exit from a loop or switch statement prematurely.</p>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        int main() {
+            for (int i = 0; i &lt; 10; ++i) {
+                if (i == 5) {
+                    break; // Exit the loop when i equals 5
+                }
+                cout &lt;&lt; "i = " &lt;&lt; i &lt;&lt; endl;
+            }
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                    <h3>b. continue Statement</h3>
+                    <p>The continue statement is used to skip the current iteration of a loop and proceed to the next iteration.</p>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        int main() {
+            for (int i = 0; i &lt; 10; ++i) {
+                if (i % 2 == 0) {
+                    continue; // Skip even numbers
+                }
+                cout &lt;&lt; "i = " &lt;&lt; i &lt;&lt; endl;
+            }
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                </section>
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+            <div id="topic7" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h1>C++ Functions</h1>
+
+                <div class="section" id="declaration-definition">
+                    <h2>1. Function Declaration and Definition</h2>
+                    <p><strong>Function Declaration:</strong> A function declaration (also known as a function prototype) tells the compiler about the function's name, return type, and parameters, but does not define what the function does.</p>
+                    <pre><code>return_type function_name(parameter_list);</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>int add(int, int);  // Function declaration</code></pre>
+                    <p><strong>Function Definition:</strong> A function definition provides the actual body of the function, specifying what the function does.</p>
+                    <pre><code>return_type function_name(parameter_list) {
+            // function body
+        }</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>int add(int a, int b) {
+            return a + b;
+        }</code></pre>
+                    <p><strong>Usage:</strong></p>
+                    <pre><code>int main() {
+            int result = add(5, 3);  // Calling the function
+            std::cout << "Sum: " << result << std::endl;
+            return 0;
+        }</code></pre>
+                </div>
+        
+                <div class="section" id="overloading">
+                    <h2>2. Function Overloading</h2>
+                    <p>Function overloading allows you to have multiple functions with the same name but different parameter lists. The correct function is chosen based on the number and type of arguments passed.</p>
+                    <pre><code>return_type function_name(parameters);</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>#include &lt;iostream&gt;
+        
+        int add(int a, int b) {
+            return a + b;
+        }
+        
+        double add(double a, double b) {
+            return a + b;
+        }
+        
+        int main() {
+            std::cout << "Sum of integers: " << add(5, 3) << std::endl;
+            std::cout << "Sum of doubles: " << add(5.5, 3.3) << std::endl;
+            return 0;
+        }</code></pre>
+                </div>
+        
+                <div class="section" id="default-arguments">
+                    <h2>3. Default Arguments</h2>
+                    <p>Default arguments allow you to omit certain arguments when calling a function. If an argument is omitted, the default value specified in the function declaration or definition is used.</p>
+                    <pre><code>return_type function_name(parameter_list = default_value);</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>#include &lt;iostream&gt;
+        
+        int add(int a, int b = 10) {
+            return a + b;
+        }
+        
+        int main() {
+            std::cout << "Sum with two arguments: " << add(5, 3) << std::endl;
+            std::cout << "Sum with one argument: " << add(5) << std::endl;  // Uses default value for b
+            return 0;
+        }</code></pre>
+                </div>
+        
+                <div class="section" id="recursion">
+                    <h2>4. Recursion</h2>
+                    <p>Recursion occurs when a function calls itself to solve a problem. A recursive function must have a base case to end the recursion.</p>
+                    <pre><code>return_type function_name(parameters) {
+            if (base_condition) {
+                return base_case_value;
+            } else {
+                return function_name(modified_parameters);
+            }
+        }</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>#include &lt;iostream&gt;
+        
+        int factorial(int n) {
+            if (n <= 1) {
+                return 1;  // Base case
+            } else {
+                return n * factorial(n - 1);  // Recursive case
+            }
+        }
+        
+        int main() {
+            std::cout << "Factorial of 5: " << factorial(5) << std::endl;
+            return 0;
+        }</code></pre>
+                </div>
+        
+                <div class="section" id="inline-functions">
+                    <h2>5. Inline Functions</h2>
+                    <p>Inline functions suggest to the compiler to insert the function's code directly into the calling code rather than making a function call. This can reduce function call overhead, but may increase the size of the binary if overused.</p>
+                    <pre><code>inline return_type function_name(parameters) {
+            // function body
+        }</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>#include &lt;iostream&gt;
+        
+        inline int square(int x) {
+            return x * x;
+        }
+        
+        int main() {
+            std::cout << "Square of 5: " << square(5) << std::endl;
+            return 0;
+        }</code></pre>
+                    <p><strong>Note:</strong> The inline keyword is a suggestion to the compiler. The compiler may choose to ignore it and use a regular function call if it deems appropriate.</p>
+                </div>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+            <div id="topic8" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <main>
+                    <section id="arrays">
+                        <h2>Arrays</h2>
+                        
+                        <h3 id="declaration-initialization-access">1. Declaration, Initialization, and Access</h3>
+                        <p><strong>Declaration:</strong> Arrays are declared by specifying the type of elements and the number of elements.</p>
+                        <pre><code>int arr[5]; // Declares an array of 5 integers</code></pre>
+                        <p><strong>Initialization:</strong> Arrays can be initialized at the time of declaration or afterward.</p>
+                        <pre><code>int arr[5] = {1, 2, 3, 4, 5}; // Initializes with values</code></pre>
+                        <p>If not initialized, the array elements will contain garbage values.</p>
+                        <p><strong>Access:</strong> Elements are accessed using indices, starting from 0.</p>
+                        <pre><code>int firstElement = arr[0]; // Accesses the first element
+            arr[2] = 10; // Sets the third element to 10</code></pre>
+                        <p><strong>Example:</strong></p>
+                        <pre><code>#include &lt;iostream&gt;
+            using namespace std;
+            
+            int main() {
+                int arr[5] = {1, 2, 3, 4, 5};
+            
+                // Access and print elements
+                for (int i = 0; i &lt; 5; i++) {
+                    cout &lt;&lt; "Element at index " &lt;&lt; i &lt;&lt; " is " &lt;&lt; arr[i] &lt;&lt; endl;
+                }
+                
+                return 0;
+            }
+            </code></pre>
+                        
+                        <h3 id="multi-dimensional-arrays">2. Multi-dimensional Arrays</h3>
+                        <p><strong>Declaration:</strong> Multi-dimensional arrays can be declared similarly to single-dimensional arrays but with multiple sizes.</p>
+                        <pre><code>int matrix[3][4]; // Declares a 2D array (3 rows x 4 columns)</code></pre>
+                        <p><strong>Initialization:</strong> Multi-dimensional arrays can be initialized using nested braces.</p>
+                        <pre><code>int matrix[2][3] = {
+                {1, 2, 3},
+                {4, 5, 6}
+            };</code></pre>
+                        <p><strong>Access:</strong> Elements are accessed using multiple indices.</p>
+                        <pre><code>int value = matrix[1][2]; // Accesses element in second row, third column
+            matrix[0][0] = 10; // Sets element in the first row, first column to 10</code></pre>
+                        <p><strong>Example:</strong></p>
+                        <pre><code>#include &lt;iostream&gt;
+            using namespace std;
+            
+            int main() {
+                int matrix[2][3] = {
+                    {1, 2, 3},
+                    {4, 5, 6}
+                };
+            
+                // Access and print elements
+                for (int i = 0; i &lt; 2; i++) {
+                    for (int j = 0; j &lt; 3; j++) {
+                        cout &lt;&lt; "Element at [" &lt;&lt; i &lt;&lt; "][" &lt;&lt; j &lt;&lt; "] is " &lt;&lt; matrix[i][j] &lt;&lt; endl;
+                    }
+                }
+                
+                return 0;
+            }
+            </code></pre>
+                    </section>
+                    
+                    <section id="strings">
+                        <h2>Strings</h2>
+                        
+                        <h3 id="c-style-strings">1. C-style Strings (Character Arrays)</h3>
+                        <p><strong>Declaration:</strong> C-style strings are arrays of characters terminated by a null character ('\0').</p>
+                        <pre><code>char str[6] = "Hello"; // The size should be one more than the length of the string</code></pre>
+                        <p><strong>Access:</strong> Characters are accessed using indices.</p>
+                        <pre><code>char firstChar = str[0]; // Accesses the first character 'H'
+            str[1] = 'a'; // Changes the second character to 'a'</code></pre>
+                        <p><strong>String Functions:</strong> Functions from the &lt;cstring&gt; library can be used for operations.</p>
+                        <pre><code>#include &lt;cstring&gt;
+            
+            char str1[20] = "Hello";
+            char str2[20] = "World";
+            strcat(str1, str2); // Concatenates str2 to str1</code></pre>
+                        <p><strong>Example:</strong></p>
+                        <pre><code>#include &lt;iostream&gt;
+            #include &lt;cstring&gt;
+            using namespace std;
+            
+            int main() {
+                char str1[20] = "Hello";
+                char str2[] = "World";
+            
+                // Concatenate strings
+                strcat(str1, str2);
+            
+                cout &lt;&lt; "Concatenated string: " &lt;&lt; str1 &lt;&lt; endl;
+                
+                return 0;
+            }
+            </code></pre>
+                        
+                        <h3 id="cpp-string-class">2. C++ String Class (std::string)</h3>
+                        <p><strong>Declaration and Initialization:</strong> std::string is a class in the C++ Standard Library that manages string data dynamically.</p>
+                        <pre><code>#include &lt;string&gt;
+            
+            std::string str = "Hello, World!";</code></pre>
+                        <p><strong>Access:</strong> Strings are accessed using member functions or indices.</p>
+                        <pre><code>char firstChar = str[0]; // Accesses the first character 'H'
+            std::string subStr = str.substr(0, 5); // Gets substring "Hello"</code></pre>
+                        <p><strong>Common Operations:</strong></p>
+                        <ul>
+                            <li><strong>Concatenation:</strong> str1 + str2 or str1.append(str2)</li>
+                            <li><strong>Length:</strong> str.length() or str.size()</li>
+                            <li><strong>Comparison:</strong> str1.compare(str2)</li>
+                        </ul>
+                        <p><strong>Example:</strong></p>
+                        <pre><code>#include &lt;iostream&gt;
+            #include &lt;string&gt;
+            using namespace std;
+            
+            int main() {
+                string str1 = "Hello";
+                string str2 = "World";
+            
+                // Concatenate strings
+                string result = str1 + " " + str2;
+            
+                // Print result
+                cout &lt;&lt; "Concatenated string: " &lt;&lt; result &lt;&lt; endl;
+            
+                // Print length of the string
+                cout &lt;&lt; "Length of the string: " &lt;&lt; result.length() &lt;&lt; endl;
+                
+                return 0;
+            }
+            </code></pre>
+                    </section>
+                </main>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+            <div id="topic9" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h1>C++ Pointers and References</h1>
+    
+                <section id="pointers">
+                    <h2>1. Pointers</h2>
+            
+                    <h3>1.1 Declaration, Initialization, and Usage</h3>
+                    <p><strong>Declaration:</strong> A pointer is a variable that holds the memory address of another variable. To declare a pointer, use the <code>*</code> symbol.</p>
+                    <pre><code>int* ptr; // Declaration of a pointer to an integer</code></pre>
+                    
+                    <p><strong>Initialization:</strong> Pointers are often initialized to the address of a variable using the address-of operator (<code>&</code>).</p>
+                    <pre><code>int var = 10;   // Regular integer variable
+            int* ptr = &var; // Pointer initialized to the address of var</code></pre>
+                    
+                    <p><strong>Usage:</strong> To access the value pointed to by the pointer, use the dereference operator (<code>*</code>).</p>
+                    <pre><code>cout << *ptr; // Outputs the value of var, which is 10</code></pre>
+                    
+                    <p>To change the value of <code>var</code> through the pointer:</p>
+                    <pre><code>*ptr = 20; // Changes the value of var to 20</code></pre>
+                    
+                    <h3>1.2 Pointer Arithmetic</h3>
+                    <p>Increment and Decrement: Pointers can be incremented or decremented to point to the next or previous memory location of the data type they are pointing to.</p>
+                    <pre><code>int arr[] = {1, 2, 3, 4};
+            int* ptr = arr;
+            
+            cout << *ptr;   // Outputs 1
+            ptr++;          // Move to the next integer in the array
+            cout << *ptr;   // Outputs 2</code></pre>
+                    
+                    <p><strong>Pointer Arithmetic Example:</strong></p>
+                    <pre><code>int* ptr = arr;
+            for (int i = 0; i < 4; ++i) {
+                cout << *(ptr + i) << " "; // Outputs 1 2 3 4
+            }</code></pre>
+                    
+                    <h3>1.3 Dynamic Memory Allocation</h3>
+                    <p>Using <code>new</code> and <code>delete</code>: You can allocate memory dynamically on the heap using <code>new</code> and release it using <code>delete</code>.</p>
+                    <pre><code>// Allocating memory for a single integer
+            int* ptr = new int;
+            *ptr = 30;
+            
+            cout << *ptr; // Outputs 30
+            
+            delete ptr; // Freeing the allocated memory
+            
+            // Allocating memory for an array of integers
+            int* arr = new int[5];
+            for (int i = 0; i < 5; ++i) {
+                arr[i] = i * 10;
+            }
+            
+            for (int i = 0; i < 5; ++i) {
+                cout << arr[i] << " "; // Outputs 0 10 20 30 40
+            }
+            
+            delete[] arr; // Freeing the allocated memory for the array</code></pre>
+                </section>
+            
+                <section id="references">
+                    <h2>2. References</h2>
+            
+                    <h3>2.1 Declaration and Usage</h3>
+                    <p><strong>Declaration:</strong> A reference is an alias for another variable. It is declared using the <code>&</code> symbol.</p>
+                    <pre><code>int var = 10;
+            int& ref = var; // ref is a reference to var</code></pre>
+                    
+                    <p><strong>Usage:</strong> You can use the reference like a regular variable.</p>
+                    <pre><code>ref = 20; // Changes the value of var to 20
+            cout << var; // Outputs 20</code></pre>
+                    
+                    <h3>2.2 Reference vs. Pointer</h3>
+                    <p><strong>Syntax and Usage:</strong></p>
+                    <p>Pointers can be reassigned to point to different variables and can be null (i.e., not pointing to any variable).</p>
+                    <pre><code>int a = 10;
+            int b = 20;
+            int* ptr = &a; // Pointer to a
+            ptr = &b;      // Pointer can now point to b</code></pre>
+                    
+                    <p>References must be initialized when declared and cannot be null. Once a reference is set to a variable, it cannot be changed to refer to another variable.</p>
+                    <pre><code>int& ref = a;  // Reference to a
+            // ref = b;    // Error: Cannot reassign a reference to another variable</code></pre>
+                    
+                    <p><strong>Null Safety:</strong></p>
+                    <p>Pointers can be null and require checks to avoid dereferencing null pointers.</p>
+                    <pre><code>int* ptr = nullptr; // Null pointer
+            if (ptr) {
+                cout << *ptr; // Safe to dereference
+            }</code></pre>
+                    
+                    <p>References cannot be null and must always refer to a valid object.</p>
+                    <pre><code>int& ref = a; // Must be initialized to a valid variable</code></pre>
+                    
+                    <h3>2.3 Example of Reference in Function Arguments</h3>
+                    <pre><code>void increment(int& num) {
+                num++;
+            }
+            
+            int main() {
+                int value = 5;
+                increment(value); // Passes value by reference
+                cout << value; // Outputs 6
+                return 0;
+            }</code></pre>
+                </section>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+            <div id="topic10" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+
+                <h1>Object-Oriented Programming (OOP) in C++</h1>
+        
+                <section id="classes-objects">
+                    <h2>1. Classes and Objects</h2>
+                    <p><strong>Class:</strong> A blueprint for creating objects. It defines a type of object by bundling data and methods that operate on the data.</p>
+                    <p><strong>Object:</strong> An instance of a class.</p>
+                    <pre><code>class ClassName {
+        public:
+            // Public members
+            int publicVar;
+            void publicMethod() {
+                // code
+            }
+        
+        private:
+            // Private members
+            int privateVar;
+            void privateMethod() {
+                // code
+            }
+        
+        protected:
+            // Protected members
+            int protectedVar;
+            void protectedMethod() {
+                // code
+            }
+        };
+        
+        // Creating an object
+        ClassName obj;</code></pre>
+                    <div class="example">
+                        <pre><code>#include &lt;iostream&gt;
+        using namespace std;
+        
+        class Person {
+        public:
+            string name;
+            int age;
+        
+            void introduce() {
+                cout &lt;&lt; "My name is " &lt;&lt; name &lt;&lt; " and I am " &lt;&lt; age &lt;&lt; " years old." &lt;&lt; endl;
+            }
+        };
+        
+        int main() {
+            Person person1;
+            person1.name = "Alice";
+            person1.age = 30;
+            person1.introduce();
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                </section>
+                
+                <section id="access-specifiers">
+                    <h2>2. Access Specifiers</h2>
+                    <p><strong>Public:</strong> Members can be accessed from outside the class.</p>
+                    <p><strong>Private:</strong> Members can only be accessed within the class.</p>
+                    <p><strong>Protected:</strong> Members can be accessed within the class and by derived classes.</p>
+                    <pre><code>class Example {
+        public:
+            int publicVar;
+            
+            void setPrivateVar(int val) {
+                privateVar = val;
+            }
+        
+            int getPrivateVar() {
+                return privateVar;
+            }
+        
+        private:
+            int privateVar;
+        };</code></pre>
+                </section>
+                
+                <section id="constructors-destructors">
+                    <h2>3. Constructors and Destructors</h2>
+                    <p><strong>Constructor:</strong> A special member function that is called when an object is created. It initializes the object.</p>
+                    <p><strong>Destructor:</strong> A special member function that is called when an object is destroyed. It is used to release resources.</p>
+                    <pre><code>class MyClass {
+        public:
+            MyClass() {
+                // Constructor code
+            }
+        
+            ~MyClass() {
+                // Destructor code
+            }
+        };</code></pre>
+                    <div class="example">
+                        <pre><code>class Sample {
+        public:
+            Sample() {
+                cout &lt;&lt; "Constructor called" &lt;&lt; endl;
+            }
+        
+            ~Sample() {
+                cout &lt;&lt; "Destructor called" &lt;&lt; endl;
+            }
+        };
+        
+        int main() {
+            Sample obj;
+            return 0;
+        }</code></pre>
+                    </div>
+                </section>
+                
+                <section id="inheritance">
+                    <h2>4. Inheritance</h2>
+                    <p><strong>Base Class:</strong> The class being inherited from.</p>
+                    <p><strong>Derived Class:</strong> The class inheriting from the base class.</p>
+                    <pre><code>class Base {
+        public:
+            void baseMethod() {
+                // code
+            }
+        };
+        
+        class Derived : public Base {
+        public:
+            void derivedMethod() {
+                // code
+            }
+        };</code></pre>
+                    <div class="example">
+                        <pre><code>class Animal {
+        public:
+            void eat() {
+                cout &lt;&lt; "Eating" &lt;&lt; endl;
+            }
+        };
+        
+        class Dog : public Animal {
+        public:
+            void bark() {
+                cout &lt;&lt; "Barking" &lt;&lt; endl;
+            }
+        };
+        
+        int main() {
+            Dog dog;
+            dog.eat();  // Inherited method
+            dog.bark(); // Derived method
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                </section>
+                
+                <section id="polymorphism">
+                    <h2>5. Polymorphism</h2>
+                    <h3>Function Overloading</h3>
+                    <p><strong>Function Overloading:</strong> Multiple functions with the same name but different parameters.</p>
+                    <pre><code>void functionName(int x);
+        void functionName(double y);</code></pre>
+                    <div class="example">
+                        <pre><code>class Display {
+        public:
+            void show(int i) {
+                cout &lt;&lt; "Integer: " &lt;&lt; i &lt;&lt; endl;
+            }
+        
+            void show(double d) {
+                cout &lt;&lt; "Double: " &lt;&lt; d &lt;&lt; endl;
+            }
+        };
+        
+        int main() {
+            Display obj;
+            obj.show(5);
+            obj.show(3.14);
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                    <h3>Operator Overloading</h3>
+                    <p><strong>Operator Overloading:</strong> Customizing the behavior of operators for user-defined classes.</p>
+                    <pre><code>class Complex {
+        public:
+            int real, imag;
+        
+            Complex operator + (const Complex& other) {
+                Complex temp;
+                temp.real = real + other.real;
+                temp.imag = imag + other.imag;
+                return temp;
+            }
+        };</code></pre>
+                    <div class="example">
+                        <pre><code>class Complex {
+        public:
+            int real, imag;
+        
+            Complex(int r, int i) : real(r), imag(i) {}
+        
+            Complex operator + (const Complex& other) {
+                return Complex(real + other.real, imag + other.imag);
+            }
+        
+            void display() {
+                cout &lt;&lt; real &lt;&lt; " + " &lt;&lt; imag &lt;&lt; "i" &lt;&lt; endl;
+            }
+        };
+        
+        int main() {
+            Complex c1(3, 4), c2(1, 2);
+            Complex c3 = c1 + c2;
+            c3.display();
+        
+            return 0;
+        }</code></pre>
+                    </div>
+                </section>
+                
+                <section id="abstraction-encapsulation">
+                    <h2>6. Abstraction and Encapsulation</h2>
+                    <h3>Abstraction</h3>
+                    <p><strong>Abstraction:</strong> Hiding the implementation details and showing only the essential features of the object.</p>
+                    <pre><code>class AbstractClass {
+        public:
+            virtual void display() = 0; // Pure virtual function
+        };
+        
+        class ConcreteClass : public AbstractClass {
+        public:
+            void display() {
+                cout &lt;&lt; "Display implementation" &lt;&lt; endl;
+            }
+        };</code></pre>
+                    <h3>Encapsulation</h3>
+                    <p><strong>Encapsulation:</strong> Bundling data and methods that operate on the data into a single unit (class), and restricting access to some of the object's components.</p>
+                    <pre><code>class EncapsulatedClass {
+        private:
+            int privateData;
+        
+        public:
+            void setPrivateData(int value) {
+                privateData = value;
+            }
+        
+            int getPrivateData() {
+                return privateData;
+            }
+        };
+        
+        int main() {
+            EncapsulatedClass obj;
+            obj.setPrivateData(100);
+            cout &lt;&lt; obj.getPrivateData() &lt;&lt; endl;
+        
+            return 0;
+        }</code></pre>
+                </section>
+        
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <!-- Add more content sections as needed -->
+
+        </div>
+    </div>
+
+    <script src="cplus.js"></script>
+</body>
+
+</html>

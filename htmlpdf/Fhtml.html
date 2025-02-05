@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="html.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="../phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="../cpdf/c.html">C</a></li>
+                                <li><a class="dropdown-item " href="Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="../cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="../javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="../reactpdf/react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+
+
+
+    <div class="containerjs">
+        <!-- Sidebar -->
+        <div class="sidebarjs">
+            <ul id="topicListjs">
+                <li data-topic="topic1"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to HTML</li>
+                <li data-topic="topic2"><i class="fas fa-book read-icon"></i>&nbsp;HTML Working</li>
+                <li data-topic="topic3"><i class="fas fa-book read-icon"></i>&nbsp;HTML Installation</li>
+                <li data-topic="topic4"><i class="fas fa-book read-icon"></i>&nbsp;HTML Execution</li>
+                <li data-topic="topic5"><i class="fas fa-book read-icon"></i>&nbsp;HTML Page Structure</li>
+                <li data-topic="topic6"><i class="fas fa-book read-icon"></i>&nbsp;HTML Tags</li>
+                <li data-topic="topic7"><i class="fas fa-book read-icon"></i>&nbsp;HTML Elements</li>
+                <li data-topic="topic8"><i class="fas fa-book read-icon"></i>&nbsp;HTML Attributes</li>
+                <li data-topic="topic9"><i class="fas fa-book read-icon"></i>&nbsp;HTML Comments</li>
+                <li data-topic="topic10"><i class="fas fa-book read-icon"></i>&nbsp;HTML Id & Classes</li>
+
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="contentjs">
+            <div id="topic1" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h2>HTML Introduction</h2>
+                <h4>What is HTML?</h4>
+                <p>HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating
+                    web pages. It's a markup language used to structure content on the web, defining elements like
+                    headings, paragraphs, links, and images. HTML forms the backbone of web content. In layman's terms,
+                    HTML is like the skeleton of a website. It's a set of instructions that tells a web browser how to
+                    display text, images, videos, and other elements on a webpage. Think of it as the building blocks
+                    that create the structure and look of a website, similar to how bricks and mortar are used to build
+                    a house.
+
+                    In a nutshell:</p>
+                <li id="li-title"><span>HTML is the language of the web, used to create websites.</span></li>
+                <li id="li-title"><span>HTML defines the barebone structure or layout of web pages that we see on the
+                        Internet.</span></li>
+                <li id="li-title"><span>HTML consists of a set of tags contained within an HTML document, and the
+                        associated files typically have either a ".html" or ".htm" extension.</span></li>
+                <li id="li-title"><span>There are several versions of HTML, with HTML5 being the most recent
+                        version.</span></li>
+                <br><br>
+                <h4>Features of HTML</h4>
+                <li id="li-title"><span>It is platform-independent. For example, Chrome displays the same pages
+                        identically across different operating systems such as Mac, Linux, and Windows.</span></li>
+                <li id="li-title"><span>Images, videos, and audio can be added to a web page (For example - YouTube
+                        shows videos on their website)</span></li>
+                <li id="li-title"><span>HTML is a markup language and not a programming language.</span></li>
+                <li id="li-title"><span>It can be integrated with other languages like CSS, JavaScript, etc. to show
+                        interactive (or dynamic) web pages</span></li>
+                <br><br>
+
+                <h4>Why the Term HyperText & Markup Language?</h4>
+                <p>The term 'Hypertext Markup Language' is composed of two main words: 'hypertext' and 'markup
+                    language.' 'Hypertext' refers to the linking of text with other documents, while 'markup language'
+                    denotes a language that utilizes a specific set of tags.
+
+                    Thus, HTML is the practice of displaying text, graphics, audio, video etc. in a certain way using
+                    special tags.
+
+                    <br><b>Note: </b>Tags are meaningful texts enclosed in angle braces, like '<...>'. For example, the
+                        '
+
+                        <head>' tag. Each tag has a unique meaning and significance in building an HTML page, and it can
+                            influence the web page in various ways.
+                </p>
+
+                <h4>A beautiful analogy to understand HTML, CSS, and JavaScript:</h4>
+                <img src="Image/1.png" alt="img" id="image-id">
+
+                <br>
+                <p>In building a webpage, think of HTML, CSS, and JavaScript as different parts of a car. HTML is like
+                    the car's skeleton, forming the basic structure and frame. CSS adds the paint and finishing touches,
+                    making the car look appealing with color, style, and design. JavaScript is similar to the engine and
+                    mechanical parts, infusing the car with functionality, movement, and interactive features.
+                    Similarly, when developing a website, HTML lays out the structure, CSS enhances its visual appeal,
+                    and JavaScript provides interactivity and dynamic content
+                </p>
+
+                <br><br>
+                <h4>History of HTML:</h4>
+                <li id="id-title"><span>In 1989, Tim Berners-Lee established the World Wide Web (www), and in 1991, he
+                        created the first version of HTML.</span></li>
+                <li id="id-title"><span>From 1995 to 1997, further work was done to develop and refine different
+                        versions of HTML.</span></li>
+                <li id="id-title"><span>In 1999, a committee was organized that standardized HTML 4.0, a version still
+                        used by many today.</span></li>
+                <li id="id-title"><span>The latest and most stable version of HTML is 5, also known as HTML5.</span>
+                </li>
+                <br>
+                <P>Feel free to read more history of HTML here on the <a
+                        href="https://en.wikipedia.org/wiki/HTML#:~:text=HTML%20version%20timeline">HTML Wikipedia
+                        page</a>
+                    but I will move ahead and cover important aspects of HTML.
+
+                    In the next tutorial, we'll continue our journey and understand how websites work</P>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic2" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>HTML Working</h2>
+                <p>You must have heard of frontend and backend. Frontend refers to the visible part of a website or app
+                    that users interact with, like the tables, images, and buttons. It's built using languages like
+                    HTML, CSS, and JavaScript. The backend, on the other hand, handles behind-the-scenes operations like
+                    storing and processing data when users interact with the frontend. It uses languages like Python,
+                    Ruby, and Java. In essence, frontend is what users see, while backend manages the functionality.</p>
+                <br><br>
+                <h4>How do websites work?</h4>
+                <p>When we want to access any information on the internet, we search for it using a web browser. The web
+                    browser retrieves the content from web servers, where it is stored in the form of HTML documents.
+
+                    An HTML document is created by writing code with specific tags in a code editor of your choice. The
+                    document is then saved with the '.html' extension. Once saved, the browser interprets the HTML
+                    document, reads it, and renders the web page.</p>
+
+                <img src="Image/2.png" alt="img" id="image-id"><br>
+                <p>The text editor has the HTML code of a website. This website can now be viewed in a beautifully
+                    rendered format using a computer program known as a web browser.</p>
+                <br><br>
+                <h4>What is a Web Browser?</h4>
+                <p>A web browser is a program that understands HTML tags and renders them in a human-readable format
+                    that is easily viewable by people visiting the website. Developers write code in HTML because it's a
+                    straightforward way to instruct the web browser on what to display. In the next section, I'll show
+                    you how to set up VS Code for writing your own HTML code and rendering it in a web browser.</p>
+                <br><br>
+                <h4>What is an HTML Document?</h4>
+                <p>An HTML document is a text document saved with the '.html' or '.htm' extension, containing text and
+                    specific tags enclosed in '<>'. These tags provide the necessary instructions for configuring the
+                        web page. The tags themselves are standardized and fixed. The structure of an HTML document will
+                        be explained later in this HTML tutorial.</p>
+                <br><br>
+                <h4>What is a Rendered Page:</h4>
+                <p>The rendered page is the output screen of our HTML Document which is the page displayed on the
+                    browser. </p>
+                <br><br>
+                <h4>How does a basic website work?</h4>
+                <li id="li-title"><span>Web Browser(client) requests websites like E-learning from the web
+                        server.</span></li>
+                <li id="li-title"><span>Web server in return sends HTML, CSS, and JavaScript files to it.</span></li>
+                <li id="li-title"><span>HTML, CSS, and JavaScript files are parsed by a web browser which is responsible
+                        for showing you a beautiful website.</span></li>
+                <br><br>
+                <h4>How does a browser work?</h4>
+                <p>A web browser plays a crucial role in parsing and rendering HTML code to the client. A web browser is
+                    a complex program that performs many tasks behind the scenes. Here's a summary of how it works:</p>
+                <li id="li-title"><span>A browser is an application that reads HTML documents and displays them as web
+                        pages. Browsers can't access the content directly from where it's stored; this is where servers
+                        come into play.</span></li>
+                <li id="li-title"><span>A server acts as an intermediary, listening to browser requests and fulfilling
+                        them by delivering the HTML document to the browser.</span></li>
+                <li id="li-title"><span>Web browsers perform two main tasks: parsing and rendering.</span></li>
+                <li id="li-title"><span>During the parsing stage, the browser receives raw bytes, which are converted
+                        into characters. These characters are then converted into tokens, which in turn are transformed
+                        into nodes. These nodes are organized into a tree-like data structure known as the DOM (Document
+                        Object Model). </span></li>
+                <li id="li-title"><span>Once the DOM tree is constructed, the browser moves on to the rendering stage.
+                        At this point, each node in the DOM tree is rendered and displayed on the screen.</span></li>
+                <br>
+                <p>Dont worry about how browser exactly works just yet. Rather focus on learning HTML. In the next
+                    tuotrial we will install VS Code and some extensions for writing our HTML code.</p>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+
+
+            <div id="topic3" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>HTML Installation</h2>
+                <p>Let's get our hands dirty and start preparing to write some code. In this tutorial, we will install
+                    VS Code and some related extensions for faster and more efficient HTML development.</p>
+                <br><br>
+                <h4>What are the prerequisites to learning HTML?</h4>
+                <p>I can safely say that there are no prerequisites to learning HTML. HTML is the language of the web
+                    and is often the first step that web developers take in learning to code.</p>
+                <br><br>
+                <h4>Tools needed to make an HTML page: </h4>
+                <p>1] HTML Editor: It's a straightforward tool where every piece of HTML content must be written. You
+                    can use any text editor of your choice. In this tutorial, we're using Visual Studio Code because
+                    it's lightweight and open-source.Popular editors for HTML development include text editors like
+                    Notepad++ and TextEdit, code editors such as Sublime Text and Visual Studio Code, and full-fledged
+                    IDEs like WebStorm and Eclipse. Online platforms like CodePen and JSFiddle are also commonly used
+                    for quick HTML editing and testing.<br><br></p>
+                <b>Note: You can write HTML even in a Notepad. Text editors like VS code make these things easier.</b>
+                <p>2] Browser: HTML tags are not displayed by browsers; instead, they are read and interpreted to render
+                    the web page. In a web browser, HTML structures are displayed in a styled and visually appealing
+                    form. In this tutorial, we are using Google Chrome. Other commonly used browsers include Chromium,
+                    Firefox, Safari on Mac, and Microsoft Edge.</p>
+                <br><br>
+                <h4>Installation & Setup of Visual Studio Code for HTML:</h4>
+                <p>We will install and set up HTML to optimize its utility for creating web pages. Additionally, we'll
+                    install extensions in Visual Studio Code to enhance its functionality. If you're unsure about which
+                    editor to use, you can confidently start with Visual Studio Code. You won't regret it; it's one of
+                    the best free code editors available in the market.</p>
+                <li id="li-title"><span>Search for "Visual Studio Code download" on Google</span></li>
+                <li id="li-title"><span>And download the Visual studio code <a
+                            href="https://code.visualstudio.com/download">&nbsp;[Click Here] according to your operating
+                            system </a></span></li>
+                <br>
+                <p>Here is a quick video showing VS Code Installation:</p>
+                <div class="video-container">
+                    <video controls autoplay muted>
+                        <source src="Image/download-vscode.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <br><br>
+                <h4>Live Server Extension</h4>
+                <p>In addition, we'll be installing the Live Server extension in our Visual Studio Code editor to view
+                    live reload pages.</p>
+                <p>The Live Server extension is used to launch a local development server with a live reload feature for
+                    HTML pages.</p>
+                <p>Here is a quick video showing the installation of the VS Code 'Live Server' extension:</p>
+                <div class="video-container">
+                    <video controls autoplay muted>
+                        <source src="Image/live-server-installation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <p>In the next lesson, we will start writing some code and review the document structure of HTML pages.
+                </p>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+
+
+            <div id="topic4" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>HTML Execution</h2>
+                <h4>Your Journey to Creating Your First Website Begins Here!</h4>
+                <p>Let's mark this as an important milestone: the creation of your first website! And what's a better
+                    way to start than with the traditional "Hello, World!"?</p>
+                <br><br>
+                <h4>Why "Hello, World!"?</h4>
+                <p>In the programming world, "Hello, World!" is more than just a phrase. It's a tradition, an emotion, a
+                    simple program that teaches you the syntax and gets you started. And guess what? HTML is no
+                    different!
+
+                    Our first website will display the text 'Hello World'</p>
+                <br><br>
+                <h4>Let's Get Started: Setting Up Your VS Code</h4>
+                <p>If you haven't already set up your environment, let's begin by opening</p>
+                <img src="Image/1.png" alt="img" id="image-id"><br><br>
+                <br><br>
+                <h4>Creating a New File</h4>
+                <p>Click on "Open Folder" and open a folder somewhere on your computer. I am opening a folder named
+                    html-tutorial</p>
+                <p>Once VS Code is open, you'll want to create a new file:</p>
+                <li id="li-title"><span>1]Click on the "New File" icon in VS Code.</span></li>
+                <li id="li-title"><span>2]Type the filename as "index.html" and hit Enter.</span></li>
+                <div class="video-container">
+                    <video controls autoplay muted>
+                        <source src="Image/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <br><br>
+                <h4>Pasting the Code</h4>
+                <p>Now that your file is ready, copy the following code and paste it into your "index.html" file.</p>
+                <img src="Image/4.png" alt="img" id="image-id"><br><br>
+                <h4>Going Live using the "live server" extension</h4>
+                <p>To see your webpage in action, locate the "Go Live" icon at the bottom-right corner of your VS Code
+                    window and click it. If you don't see this icon, you probably haven't installed the Live Server
+                    extension, which we discussed in a previous tutorial.</p>
+                <img src="Image/5.png" alt="img" id="image-id"><br><br>
+                <h4>Your First Website is Live!</h4>
+                <p>Congratulations! If you've followed along, you should now see your very first website displaying the
+                    classic "Hello, World!" message.</p>
+                <img src="Image/6.png" alt="img" id="image-id"><br><br>
+                <h4>Live Preview Extension</h4>
+                <p>Another useful extension for working with HTML in VS Code is 'HTML Preview.' To install it, simply
+                    click on the extensions icon in VS Code and type 'HTML Preview' in the search bar. Install it!
+                </p>
+                <img src="Image/7.png" alt="img" id="image-id"><br><br>
+                <p>Now, you will see a button within VS Code. Clicking on this button will allow you to preview your
+                    HTML right within the editor.</p>
+                <img src="Image/8.png" alt="img" id="image-id"><br><br>
+                <p>Once you click the button, you'll see a live preview of your HTML directly within VS Code.</p>
+                <img src="Image/8.png" alt="img" id="image-id"><br><br>
+
+                <p>You don't even need a browser to render plain HTML. This live preview feature in VS Code is perfect
+                    for this HTML tutorial, allowing you to build and preview your entire HTML website without ever
+                    leaving the editor.</p>
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic5" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>HTML Page Structure</h2>
+                <p>An HTML document is structured using a set of nested tags. Each tag is enclosed within <…> angle
+                        brackets and acts as a container for content or other HTML tags. Let's take a look at a basic
+                        HTML document structure:</p>
+                <img src="Image/10.png" alt="img" id="image-id"><br><br><br>
+                <div class="video-container">
+                    <p>This is how the title appears on an HTML page:</p>
+                    <video controls autoplay muted>
+                        <source src="Image/title.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <br><br>
+
+                <p>A typical HTML page looks like this:</p>
+                <img src="Image/11.png" alt="img" id="image-id">
+                <p>Almost every website uses this structure. The main content goes inside the body tag. No worries if
+                    this looks complicated; let's break it down!</p>
+                <b>
+                    <p>Note: These are the essential elements for a basic HTML document:
+                        &lt;!DOCTYPE html&gt;, &lt;html&gt;, &lt;head&gt;, &lt;title&gt;,
+                        &lt;/head&gt;, &lt;body&gt;, &lt;/body&gt;, &lt;/html&gt;
+                    </p>
+                </b>
+                <br><br>
+                <h4>DOCTYPE Declaration</h4>
+                <img src="Image/12.png" alt="img" id="image-id">
+                <br>
+                <p>The &lt;!DOCTYPE html&gt; declaration informs the web browser about the HTML version being used. The
+                    latest version is HTML5. But if this changes in the future (maybe 10 years down the line), the
+                    doctype declaration will be helpful!</p>
+                <br><br>
+                <h4>HTML Root Element</h4>
+                <b>&lt;html&gt;</b>
+                <br>
+                <p>The &lt;html&gt; tag is the root element that encapsulates all the content on the page.</p>
+                <b>&lt;/html&gt;</b>
+                <p>The &lt;/html&gt; tag marks the end of the &lt;html&gt; section.</p>
+                <br><br>
+                <h4>Head Section</h4>
+                <b>&lt;head&gt;</b>
+                <p>The &lt;head&gt; tag contains metadata and links to external resources like CSS and JavaScript files.
+                </p>
+                <b>&lt;/head&gt;</b>
+                <p>The <b>&lt;/head&gt;</b> tag marks the end of the &lt;head&gt; section.</p>
+                <br><br>
+                <h4>Title Tag</h4>
+                <b>&lt;title&gt;</b><span>Document</span> <b>&lt;/title&gt;</b>
+                <p>The &lt;title&gt; tag sets the title of the web page, which is displayed in the browser's title bar
+                    or tab.
+                </p>
+                <br><br>
+                <h4>Body Tag</h4>
+                <b>&lt;body&gt;</b>
+                <p>The &lt;body&gt; tag contains the visible content of the web page. This is where text, images, and
+                    other elements go.</p>
+                <br>
+                <b>&lt;/body&gt;</b>
+                <p>The &lt;body&gt; tag marks the end of the visible content of the web page.<br>Every HTML page should
+                    include at least these essential elements to define the basic layout. In upcoming tutorials, we'll
+                    dive deeper into the fascinating world of HTML. </p>
+                <br><br>
+                <h4>Summary</h4>
+                <li id="li-title"><span>The &lt;!DOCTYPE html&gt; tag specifies that the document is an HTML5
+                        document.</span></li>
+                <li id="li-title"><span>The &lt;html lang="en"&gt; tag defines the document to be in English.</span>
+                </li>
+                <li id="li-title"><span>The &lt;head&gt; section contains metadata and the title of the webpage, which
+                        appears in the browser's title bar.</span></li>
+                <li id="li-title"><span>The &lt;body&gt; section contains the content that will be displayed on the
+                        webpage.</span></li>
+                <li id="li-title"><span>The h1 and p are two types of tags. We will learn about more tags in the later
+                        section</span></li>
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic6" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>HTML Tags</h2>
+                <div class="container-tags">
+
+                    <h4>1. Document Structure Tags</h4>
+                    <p>The following tags define the structure of an HTML document:</p>
+                    <ul>
+                        <li><b>&lt;!DOCTYPE html&gt;</b>: Declares the document type and version of HTML.</li>
+                        <li><b>&lt;html lang="en"&gt;</b>: The root element of the document. The <code>lang</code>
+                            attribute specifies the language.</li>
+                        <li><b>&lt;head&gt;</b>: Contains meta-information about the document.</li>
+                        <li><b>&lt;body&gt;</b>: Contains the content that is displayed on the webpage.</li>
+                    </ul><br><br>
+
+                    <h4>2. Metadata Tags</h4>
+                    <p>Metadata tags provide information about the document. Common tags include:</p>
+                    <ul>
+                        <li><b>&lt;meta charset="UTF-8"&gt;</b>: Defines the character encoding for the document.</li>
+                        <li><b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b>: Ensures
+                            responsive design on mobile devices.</li>
+                        <li><b>&lt;title&gt;Document Title&lt;/title&gt;</b>: Sets the title of the document, displayed
+                            in the browser’s title bar.</li>
+                    </ul>
+                    <br><br>
+                    <h4>3. Text Formatting Tags</h4>
+                    <p>These tags are used to format text:</p>
+                    <ul>
+                        <li><b>&lt;b&gt;</b>: Makes the text bold. Example: <code>&lt;b&gt;Bold Text&lt;/b&gt;</code>
+                        </li>
+                        <li><b>&lt;i&gt;</b>: Italicizes the text. Example: <code>&lt;i&gt;Italic Text&lt;/i&gt;</code>
+                        </li>
+                        <li><b>&lt;strong&gt;</b>: Indicates strong importance (also bold by default). Example:
+                            <code>&lt;strong&gt;Strong Text&lt;/strong&gt;</code>
+                        </li>
+                        <li><b>&lt;em&gt;</b>: Indicates emphasized text (also italicized by default). Example:
+                            <code>&lt;em&gt;Emphasized Text&lt;/em&gt;</code>
+                        </li>
+                    </ul>
+                    <br><br>
+                    <h4>4. List Tags</h4>
+                    <p>Lists are created using:</p>
+                    <ul>
+                        <li><b>&lt;ul&gt;</b>: Defines an unordered (bulleted) list.</li>
+                        <li><b>&lt;ol&gt;</b>: Defines an ordered (numbered) list.</li>
+                        <li><b>&lt;li&gt;</b>: Defines a list item within <b>&lt;ul&gt;</b> or <b>&lt;ol&gt;</b>.</li>
+                    </ul>
+                    <p>Example of an unordered list:</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <br><br>
+                    <h4>5. Hyperlink and Media Tags</h4>
+                    <p>Tags for linking and media include:</p>
+                    <ul>
+                        <li><b>&lt;a href="URL"&gt;</b>: Defines a hyperlink. Example:
+                            <code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code>
+                        </li>
+                        <li><b>&lt;img src="path/to/image.jpg" alt="Description"&gt;</b>: Embeds an image. Example:
+                            <code>&lt;img src="image.jpg" alt="Description"&gt;</code>
+                        </li>
+                        <li><b>&lt;video controls&gt;</b>: Embeds a video with playback controls. Example:
+                            <code>&lt;video controls&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;</code>
+                        </li>
+                    </ul>
+                    <br><br>
+                    <h4>6. Form Tags</h4>
+                    <p>Forms are created using:</p>
+                    <ul>
+                        <li><b>&lt;form&gt;</b>: Defines the form.</li>
+                        <li><b>&lt;input&gt;</b>: Defines an input field. Example:
+                            <code>&lt;input type="text" name="name"&gt;</code>
+                        </li>
+                        <li><b>&lt;button&gt;</b>: Defines a clickable button. Example:
+                            <code>&lt;button&gt;Click Me&lt;/button&gt;</code>
+                        </li>
+                    </ul>
+                    <br><br>
+                    <h4>7. Table Tags</h4>
+                    <p>Tables are defined using:</p>
+                    <ul>
+                        <li><b>&lt;table&gt;</b>: Defines a table.</li>
+                        <li><b>&lt;tr&gt;</b>: Defines a table row.</li>
+                        <li><b>&lt;td&gt;</b>: Defines a table data cell.</li>
+                        <li><b>&lt;th&gt;</b>: Defines a table header cell.</li>
+                    </ul>
+                    <p>Example of a table:</p>
+                    <table border="1">
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <h4>8. Semantic Tags</h4>
+                    <p>Semantic tags describe the meaning of their content:</p>
+                    <ul>
+                        <li><b>&lt;header&gt;</b>: Defines a header for a document or section.</li>
+                        <li><b>&lt;footer&gt;</b>: Defines a footer for a document or section.</li>
+                        <li><b>&lt;article&gt;</b>: Defines an article.</li>
+                        <li><b>&lt;section&gt;</b>: Defines a section in a document.</li>
+                    </ul>
+                    <br><br>
+                    <h4>9. Paired and Unpaired HTML Tags</h4>
+                    <p>HTML tags can be paired or unpaired:</p>
+                    <ul>
+                        <li><b>Paired Tags</b>: Have an opening and a closing tag, e.g., <b>&lt;p&gt;&lt;/p&gt;</b>.
+                        </li>
+                        <li><b>Unpaired Tags</b>: Do not have a closing tag, e.g., <b>&lt;br&gt;</b> (line break) and
+                            <b>&lt;img&gt;</b> (image).
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic7" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>HTML Element</h2>
+                <h4>Beginners often get confused between HTML elements, nested elements, and tags. Let's clarify the
+                    difference by understanding each one step-by-step.</h4>
+                <br><br>
+                <h3>What is an HTML Element?</h3>
+                <p>An HTML element is a complete set that consists of a start tag (or opening tag), content, and an end
+                    tag (or closing tag).</p>
+                <p><b>HTML Element = Start Tag + Content + End Tag</b></p>
+                <p>For example:</p>
+                <pre><code>&lt;h1&gt;This is our first heading&lt;/h1&gt;</code></pre>
+                <p>In this example, <code>&lt;h1&gt;</code> is the start tag, "This is our first heading" is the
+                    content, and <code>&lt;/h1&gt;</code> is the end tag. Together, they form an HTML element.</p>
+                <br><br>
+                <h3>What is a Nested HTML Element?</h3>
+                <p>A nested HTML element is an HTML structure where one element is placed inside another element.</p>
+                <p>The enclosing element is often referred to as the "parent," while the enclosed element is called the
+                    "child."</p>
+                <p><b>Nested HTML Element = One HTML Element Inside Another HTML Element</b></p>
+                <p>For example:</p>
+                <pre><code>&lt;h1&gt;&lt;b&gt;This is our first heading&lt;/b&gt;&lt;/h1&gt;</code></pre>
+                <p>In this example, the <code>&lt;b&gt;</code> element (child) is nested inside the
+                    <code>&lt;h1&gt;</code> element (parent).
+                </p>
+                <br><br>
+                <h3>What is an Empty HTML Element?</h3>
+                <p>An empty HTML element is one that does not have a closing tag or content. These elements are also
+                    known as "void elements" or "self-closing elements."</p>
+                <p><b>Empty HTML Element = Tags with No Content</b></p>
+                <p>For example:</p>
+                <pre><code>&lt;br /&gt;</code></pre>
+                <p>This is a break tag, which has no content and no closing tag. It's used to insert a line break within
+                    text or other inline elements. The <code>&lt;hr /&gt;</code> tag, used for horizontal rules, is
+                    another example of an empty or void element.</p>
+                <br><br>
+                <h3>HTML Tags vs. Elements</h3>
+                <p><b>HTML Tags</b></p>
+                <p>HTML tags are the markers that define the start and end of an element. They are wrapped in angle
+                    brackets, like <br><code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code>.</p>
+                <br><br>
+                <p><b>HTML Elements</b></p>
+                <p>An HTML element includes an opening tag, content, and a closing tag, forming a complete set. For
+                    example, <br><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>.</p>
+                <br><br>
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>Tags set boundaries; elements include tags plus content.</li>
+                    <li>Tags come in pairs (most of the time), whereas elements may include nested elements.</li>
+                    <li>Self-closing or void elements like <code>&lt;br /&gt;</code> are still considered elements, even
+                        though they don't have a closing tag or content.</li>
+                    <li>Elements can be "parent" or "child" when nested, but tags cannot.</li>
+                </ul>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic8" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h2>Understanding HTML Attributes</h2>
+                <p>HTML attributes are used to define the characteristics of an HTML element. They are placed within the
+                    element's opening tag and consist of two parts: the name and the value.</p>
+                <br><br>
+                <h4>Attribute Structure</h4>
+                <p><b>Name:</b> Specifies the property for that element.</p>
+                <p><b>Value:</b> Sets the value of that property for the element.</p>
+                <br><br>
+                <h4>Types of HTML Attributes</h4>
+                <h3>1. Core Attributes</h3>
+                <p>Core attributes are basic attributes that can be applied to most HTML elements. Examples include
+                    <code>id</code>, <code>class</code>, and <code>style</code>.
+                </p>
+                <br>
+                <h3>2. Internationalization Attributes</h3>
+                <p>These attributes help adapt the document to different languages and regions. Examples include
+                    <code>lang</code> and <code>dir</code>.
+                </p>
+                <br>
+                <h3>3. Generic Attributes</h3>
+                <p>These attributes provide additional information about the element but don't necessarily affect its
+                    appearance or behavior. Examples include <code>data-*</code> attributes for storing custom data
+                    private to the page or application.</p>
+                <br><br>
+                <h4>Core Attributes</h4>
+                <h5>1. ID Attribute</h5>
+                <p>The ID attribute is used to assign a unique identifier to an HTML element. Each element with an ID
+                    has its own unique identity, similar to how each individual has a unique identity. Multiple elements
+                    cannot have the same ID.</p>
+                <pre><code>&lt;p id="html"&gt;This is an HTML tutorial&lt;/p&gt;
+&lt;p id="python"&gt;This is a Python tutorial&lt;/p&gt;</code></pre>
+                <p>In this example, the ID attribute helps to distinguish between two paragraphs by having different
+                    values: "html" and "python".</p>
+                <br><br>
+                <h5>2. Class Attribute</h5>
+                <p>The class attribute is used to associate an HTML element with a particular class, typically for
+                    styling or JavaScript manipulation. Unlike the ID attribute, the class attribute is not unique, and
+                    multiple elements can share the same class.</p>
+                <br><br>
+                <h5>3. Title Attribute</h5>
+                <p>The title attribute provides additional information about an element and is often displayed as a
+                    tooltip when the mouse hovers over it.</p>
+                <pre><code>&lt;h4 title="hello, motto"&gt;Title attribute&lt;/h4&gt;</code></pre>
+                <b>Example:-</b>
+                <div class="video-container">
+                    <video controls autoplay muted>
+                        <source src="Image/video4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <br><br>
+                <h5>4. Style Attribute</h5>
+                <p>The style attribute allows for inline styling of HTML elements. It is used in conjunction with CSS
+                    properties to directly style individual elements within the HTML code.</p>
+
+                <br><br>
+                <h4>Case Sensitivity</h4>
+                <p>The HTML standard is flexible about the case of attribute names, allowing them to be written in
+                    either uppercase or lowercase, such as "title" or "TITLE." However, for best practices and
+                    compatibility with stricter document types like XHTML, the W3C recommends using lowercase
+                    attributes.</p>
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic9" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>HTML Comments</h2>
+                <p>Comments in HTML are like little notes you leave in your code for yourself or other people. These
+                    notes help make the code easier to understand but don't show up on the actual website. The web
+                    browser just skips over them!</p>
+                <br><br>
+                <h4>Key Points About HTML Comments</h4>
+                <ul>
+                    <li>Comments are ignored by web browsers.</li>
+                    <li>They aid in code readability and documentation.</li>
+                    <li>HTML comments are denoted by <code>&lt;!-- content --&gt;</code>.</li>
+                    <li>The shortcut key for commenting out code is <b>Ctrl + /</b>.</li>
+                    <li>HTML supports both single-line and multi-line comments.</li>
+                </ul>
+                <br><br>
+                <h4>Types of Comments in HTML</h4>
+
+                <b>Single-line Comments</b>
+                <p>Single-line comments are contained within one line. They are useful for short annotations.</p>
+                <pre><code>&lt;!-- This is a single-line comment --&gt;</code></pre>
+                <p>As you can see in the example above, the text inside the comment is not rendered by the browser.</p>
+                <div class="video-container">
+                    <video controls autoplay muted>
+                        <source src="Image/video5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <br><br>
+                <b>Multi-line Comments</b>
+                <p>Multi-line comments span across multiple lines, making them ideal for detailed explanations or
+                    temporarily disabling blocks of code.</p>
+                <pre>
+                <code>
+                &lt;!-- 
+                    This is a multi-line comment.
+                    It spans multiple lines.
+                --&gt;</code></pre>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic10" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <h2>HTML IDs & Classes</h2>
+                <p>HTML offers multiple ways to select and style elements. Two of the most commonly used selectors are
+                    IDs and Classes. This blog explores what they are, how to use them, and their differences.</p>
+                    <br><br>
+                <h4>What is an ID?</h4>
+                <p>An ID is an attribute, a unique identifier assigned to only one HTML element within a page. It is
+                    often used for unique styling and JavaScript manipulations.</p>
+                <div id="myUniqueID">This is a div with an ID.</div>
+                <br><br>
+                <h4>What are Classes?</h4>
+                <p>The class attribute lets you give the same name to multiple HTML elements. That way, you can easily
+                    change their look or behavior all at once. Classes are not unique and can be assigned to multiple
+                    elements. They are generally used for applying the same styles or behaviors to a group of elements.
+                </p>
+                <div class="myClass">This is a div with a class.</div>
+                <p class="myClass">This is a paragraph with the same class.</p>
+                <br><br>
+                <h4>The Style Tag</h4>
+                <p>The <code>style</code> tag in HTML is used to include embedded CSS (Cascading Style Sheets) within an
+                    HTML document. It is commonly placed within the <code>&lt;head&gt;</code> section of the HTML file,
+                    although it can technically be used in the <code>&lt;body&gt;</code> as well. The style tag allows
+                    you to define the look and feel of various HTML elements on the page, including their colors, sizes,
+                    margins, and other visual styles.</p>
+
+                <p>Here's a simple example:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    /* CSS rules go here */
+    p {
+      color: blue;
+      font-size: 18px;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;This is a blue paragraph.&lt;/p&gt;
+  &lt;p class="highlight"&gt;This paragraph has a yellow background.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>In this example, we have targeted the second paragraph by its class name in CSS. The
+                    <code>style</code> tag is used to add CSS right into HTML. We will learn about CSS and selectors
+                    later in the CSS tutorial.</p>
+                    <br><br>
+                <h4>Using IDs and Classes in CSS</h4>
+                <p>In CSS, elements with IDs are selected using a hash (#) symbol before the ID, and elements with
+                    classes are selected using a dot (.) before the class name.</p>
+
+                <pre><code>/* CSS for ID */
+#myUniqueID {
+  background-color: yellow;
+}
+
+/* CSS for Class */
+.myClass {
+  font-size: 18px;
+}</code></pre>
+
+                <h4>Differences Between IDs and Classes</h4>
+                <ul>
+                    <li><strong>Uniqueness:</strong> IDs are unique, and classes can be reused.</li>
+                    <li><strong>JavaScript:</strong> IDs are often used for JavaScript operations.</li>
+                    <li><strong>Styling:</strong> Both can be used for styling, but IDs have higher specificity.</li>
+                </ul>
+                <br><br>
+                <h4>Conclusion</h4>
+                <p>Understanding the difference between IDs and Classes is crucial for effective web development. While
+                    IDs are for unique elements, classes are for grouping elements.</p>
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script src="html.js"></script>
+</body>
+
+</html>
