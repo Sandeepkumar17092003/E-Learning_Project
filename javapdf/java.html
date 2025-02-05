@@ -1,0 +1,2756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="../Javascriptpdf/JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="../phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="../cpdf/c.html">C</a></li>
+                                <li><a class="dropdown-item " href="../htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="../cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="../reactpdf/react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+
+
+
+    <div class="containerjs">
+        <!-- Sidebar -->
+        <div class="sidebarjs">
+            <ul id="topicListjs">
+                <li data-topic="topic1"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to Java</li>
+                <li data-topic="topic2"><i class="fas fa-book read-icon"></i>&nbsp;Data Types, Variables, and Operators
+                </li>
+                <li data-topic="topic3"><i class="fas fa-book read-icon"></i>&nbsp;Control Structures</li>
+                <li data-topic="topic4"><i class="fas fa-book read-icon"></i>&nbsp;Arrays and Strings</li>
+                <li data-topic="topic5"><i class="fas fa-book read-icon"></i>&nbsp;Object-Oriented Programming (OOP)
+                </li>
+                <li data-topic="topic6"><i class="fas fa-book read-icon"></i>&nbsp;Exception Handling</li>
+                <li data-topic="topic7"><i class="fas fa-book read-icon"></i>&nbsp;Java Input/Output (I/O)</li>
+                <li data-topic="topic8"><i class="fas fa-book read-icon"></i>&nbsp;Collections Framework</li>
+                <li data-topic="topic9"><i class="fas fa-book read-icon"></i>&nbsp;Multithreading</li>
+                <li data-topic="topic10"><i class="fas fa-book read-icon"></i>&nbsp;Java GUI Programming</li>
+
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="contentjs">
+            <div id="topic1" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <div id="20">
+                    <h2>Introduction to Java</h2>
+                    <h4>History and Features of Java</h4>
+                    <p>Java was developed by Sun Microsystems in the mid-1990s and later acquired by Oracle Corporation.
+                        It was designed to have the "write once, run anywhere" capability, which means compiled Java
+                        code can run on all platforms that support Java without the need for recompilation.</p>
+                    <p>Some of the key features of Java include:</p>
+                    <ul>
+                        <li>Platform Independence</li>
+                        <li>Object-Oriented</li>
+                        <li>Robust and Secure</li>
+                        <li>Multi-threaded</li>
+                        <li>High Performance</li>
+                        <li>Distributed Computing</li>
+                    </ul>
+                </div>
+                <br><br>
+                <div id="30">
+                    <h4>Java Development Kit (JDK), Java Runtime Environment (JRE), and Integrated Development
+                        Environment (IDE)</h4>
+                    <p>To develop and run Java programs, you need to understand three essential components:</p>
+                    <h5>Java Development Kit (JDK)</h5>
+                    <p>The JDK is a software development kit used to develop Java applications. It includes the Java
+                        Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar),
+                        a documentation generator (Javadoc), and other tools needed for Java development.</p>
+
+                    <h5>Java Runtime Environment (JRE)</h5>
+                    <p>The JRE provides libraries, Java Virtual Machine (JVM), and other components to run applications
+                        written in Java. It is the runtime portion of Java software, which is all you need to run it in
+                        your web browser.</p>
+
+                    <h5>Integrated Development Environment (IDE)</h5>
+                    <p>An IDE is a software application that provides comprehensive facilities to programmers for
+                        software development. Some popular Java IDEs include:</p>
+                    <ul>
+                        <li>Eclipse</li>
+                        <li>IntelliJ IDEA</li>
+                        <li>NetBeans</li>
+                    </ul>
+                </div>
+                <br><br>
+                <div id="40">
+                    <h4>Writing, Compiling, and Running a Java Program</h4>
+                    <p>Writing a Java program involves creating a source code file with a <code>.java</code> extension.
+                        This file is then compiled into bytecode using the Java compiler, and the bytecode is executed
+                        by the Java Virtual Machine (JVM).</p>
+
+                    <div class="highlight">
+                        <p>Example of writing, compiling, and running a Java program:</p>
+                        <pre>
+            public class HelloWorld {
+                public static void main(String[] args) {
+                    System.out.println("Hello, World!");
+                }
+            }</pre>
+                        <p>To compile: <code>javac HelloWorld.java</code></p>
+                        <p>To run: <code>java HelloWorld</code></p>
+                    </div>
+                </div>
+                <br><br>
+                <div id="50">
+                    <h4>Basic Structure of a Java Program</h4>
+                    <p>A typical Java program consists of the following components:</p>
+                    <ul>
+                        <li><strong>Package Declaration</strong>: Specifies the package to which the class belongs.</li>
+                        <li><strong>Import Statements</strong>: Used to import other Java classes or entire packages.
+                        </li>
+                        <li><strong>Class Declaration</strong>: The main building block of any Java program.</li>
+                        <li><strong>Main Method</strong>: The entry point of the Java program.</li>
+                    </ul>
+
+                    <div class="highlight">
+                        <p>Basic structure of a Java program:</p>
+                        <pre>
+            package com.example;
+            
+            import java.util.Scanner;
+            
+            public class Example {
+                public static void main(String[] args) {
+                    System.out.println("Hello, Java!");
+                }
+            }</pre>
+                    </div>
+                </div>
+                <br><br>
+                <div id="60">
+                    <h4>Java Virtual Machine (JVM) and its Architecture</h4>
+                    <p>The JVM is the engine that drives the Java code. It converts bytecode into machine code and makes
+                        Java programs independent of the underlying operating system.</p>
+                    <p>The architecture of the JVM includes:</p>
+                    <ul>
+                        <li><strong>Class Loader</strong>: Loads the class files.</li>
+                        <li><strong>Memory Area</strong>: Allocates memory for classes, objects, and methods.</li>
+                        <li><strong>Execution Engine</strong>: Executes the bytecode.</li>
+                        <li><strong>Java Native Interface (JNI)</strong>: Provides an interface to interact with native
+                            applications.</li>
+                    </ul>
+                </div>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic2" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Data Types, Variables, and Operators</h2>
+                <section id="10">
+                    <h4>Primitive Data Types</h4>
+                    <p>Primitive data types are the most basic data types in Java. They are predefined by the Java
+                        language and named by a reserved keyword. They are not objects and hold their values directly.
+                        Here are the commonly used primitive data types:</p>
+                    <ul>
+                        <li><strong><code>int</code></strong> - Used to store integer values (e.g.,
+                            <code>int number = 10;</code>).
+                        </li>
+                        <li><strong><code>float</code></strong> - Used to store floating-point numbers (e.g.,
+                            <code>float price = 99.99f;</code>).
+                        </li>
+                        <li><strong><code>char</code></strong> - Used to store single characters (e.g.,
+                            <code>char grade = 'A';</code>).
+                        </li>
+                        <li><strong><code>boolean</code></strong> - Used to store true or false values (e.g.,
+                            <code>boolean isJavaFun = true;</code>).
+                        </li>
+                    </ul>
+                    <pre><code>
+        int number = 10;
+        float price = 99.99f;
+        char grade = 'A';
+        boolean isJavaFun = true;</code></pre>
+                </section>
+                <br><br>
+                <section id="20">
+                    <h4>Non-Primitive Data Types</h4>
+                    <p>Non-primitive data types are more complex data types. They are created using classes and can be
+                        used to store collections of data. Here are some common non-primitive data types:</p>
+                    <ul>
+                        <li><strong><code>String</code></strong> - Used to store a sequence of characters (e.g.,
+                            <code>String greeting = "Hello, World!";</code>).
+                        </li>
+                        <li><strong><code>Array</code></strong> - Used to store multiple values of the same type (e.g.,
+                            <code>int[] numbers = {1, 2, 3, 4, 5};</code>).
+                        </li>
+                    </ul>
+                    <pre><code>String greeting = "Hello, World!";
+        int[] numbers = {1, 2, 3, 4, 5};</code></pre>
+                </section>
+                <br><br>
+                <section id="30">
+                    <h4>Variables and Constants</h4>
+                    <p>In Java, variables and constants are used to store data that can be used and manipulated in the
+                        program. Here’s a brief overview:</p>
+                    <ul>
+                        <li><strong>Variables:</strong> Can be changed during the execution of a program. Example:</li>
+                        <pre><code>int age = 25;
+        age = 26; // Variable can be changed</code></pre>
+                        <li><strong>Constants:</strong> Values that cannot be changed once they are assigned. Example:
+                        </li>
+                        <pre><code>final int MAX_SCORE = 100;
+        MAX_SCORE = 110; // This will cause a compile-time error</code></pre>
+                    </ul>
+                </section>
+                <br><br>
+                <section id="40">
+                    <h4>Type Casting and Type Promotion</h4>
+                    <p>Type casting is the process of converting one data type into another. Type promotion refers to
+                        the automatic conversion of a smaller data type into a larger data type during arithmetic
+                        operations. Examples:</p>
+                    <ul>
+                        <li><strong>Type Casting:</strong></li>
+                        <pre><code>double pi = 3.14;
+        int intPi = (int) pi; // Casting double to int</code></pre>
+                        <li><strong>Type Promotion:</strong></li>
+                        <pre><code>int a = 10;
+        double result = a / 4; // int is promoted to double</code></pre>
+                    </ul>
+                </section>
+                <br><br>
+                <section id="50">
+                    <h4>Operators in Java</h4>
+                    <p>Operators in Java are special symbols that perform operations on variables and values. Here are
+                        some types of operators:</p>
+                    <ul>
+                        <li><strong>Arithmetic Operators:</strong> Used to perform basic arithmetic operations.</li>
+                        <pre><code>
+        int sum = 5 + 3;      // Addition
+        int difference = 5 - 3; // Subtraction
+        int product = 5 * 3;    // Multiplication
+        int quotient = 5 / 3;   // Division
+        int remainder = 5 % 3;  // Modulus</code></pre>
+                        <li><strong>Relational Operators:</strong> Used to compare two values.</li>
+                        <pre><code>
+        boolean isEqual = (5 == 3);       // false
+        boolean isNotEqual = (5 != 3);   // true
+        boolean isGreater = (5 > 3);     // true
+        boolean isLess = (5 < 3);        // false
+        boolean isGreaterOrEqual = (5 >= 5); // true
+        boolean isLessOrEqual = (5 <= 3);    // false</code></pre>
+                        <li><strong>Logical Operators:</strong> Used to perform logical operations.</li>
+                        <pre><code>
+        boolean result = (5 > 3) && (3 < 4); // true
+        boolean resultOr = (5 > 3) || (3 > 4);   // true
+        boolean resultNot = !(5 > 3);  // false</code></pre>
+                        <li><strong>Bitwise Operators:</strong> Operate on the binary representations of integers.</li>
+                        <pre><code>
+        int bitwiseAnd = 5 & 3; // 1 (binary 0101 & 0011 = 0001)
+        int bitwiseOr = 5 | 3;  // 7 (binary 0101 | 0011 = 0111)
+        int bitwiseXor = 5 ^ 3; // 6 (binary 0101 ^ 0011 = 0110)
+        int bitwiseComplement = ~5; // -6 (binary 0101 becomes 1010)
+        int leftShift = 5 << 1;  // 10 (binary 0101 << 1 = 1010)
+        int rightShift = 5 >> 1; // 2 (binary 0101 >> 1 = 0010)
+        int unsignedRightShift = 5 >>> 1; // 2 (binary 0101 >>> 1 = 0010)</code></pre>
+                        <li><strong>Assignment Operators:</strong> Used to assign values to variables.</li>
+                        <pre><code>
+        int x = 10;      // Simple assignment
+        x += 5;           // Equivalent to x = x + 5; (x is now 15)
+        x -= 3;           // Equivalent to x = x - 3; (x is now 12)
+        x *= 2;           // Equivalent to x = x * 2; (x is now 24)
+        x /= 4;           // Equivalent to x = x / 4; (x is now 6)
+        x %= 4;           // Equivalent to x = x % 4; (x is now 2)</code></pre>
+                        <li><strong>Unary Operators:</strong> Operate on a single operand to produce a new value.</li>
+                        <pre><code>
+        int a = 10;
+        int b = +a;  // Unary plus, result is 10
+        int c = -a;  // Unary minus, result is -10
+        boolean d = true;
+        boolean e = !d; // Logical negation, result is false
+        int f = ++a; // Pre-increment, result is 11
+        int g = a++; // Post-increment, result is 11 but a is now 12</code></pre>
+                    </ul>
+                </section>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic3" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+                <section id="10">
+                    <h2>Control Structures</h2>
+                    <p>Control structures in Java are used to determine the flow of execution of the program. They are
+                        used to perform different actions based on certain conditions. The main types of control
+                        structures in Java include decision-making statements, looping statements, and control flow
+                        statements.</p>
+                </section>
+                <br><br>
+                <section id="20">
+                    <h4>Decision Making Statements</h4>
+                    <p>Decision-making statements allow the program to make decisions based on conditions. Java provides
+                        several decision-making statements:</p>
+                    <ul>
+                        <li><strong><code>if</code></strong> - Executes a block of code if the condition is true.</li>
+                        <li><strong><code>else if</code></strong> - Executes a block of code if the previous conditions
+                            are false and this condition is true.</li>
+                        <li><strong><code>else</code></strong> - Executes a block of code if none of the previous
+                            conditions are true.</li>
+                        <li><strong><code>switch</code></strong> - Allows the execution of code blocks based on the
+                            value of a variable.</li>
+                    </ul>
+                    <pre><code>// Example of if-else
+            int number = 10;
+            if (number > 0) {
+                System.out.println("Positive number");
+            } else if (number < 0) {
+                System.out.println("Negative number");
+            } else {
+                System.out.println("Zero");
+            }
+            
+            // Example of switch
+            int day = 3;
+            switch (day) {
+                case 1:
+                    System.out.println("Monday");
+                    break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                case 3:
+                    System.out.println("Wednesday");
+                    break;
+                default:
+                    System.out.println("Other day");
+                    break;
+            }</code></pre>
+                </section>
+                <br><br>
+                <section id="30">
+                    <h4>Looping Statements</h4>
+                    <p>Looping statements are used to execute a block of code multiple times. Java provides several
+                        looping statements:</p>
+                    <ul>
+                        <li><strong><code>for</code></strong> - Executes a block of code a specific number of times.
+                        </li>
+                        <li><strong><code>while</code></strong> - Executes a block of code while a condition is true.
+                        </li>
+                        <li><strong><code>do-while</code></strong> - Executes a block of code at least once and then
+                            continues to execute while a condition is true.</li>
+                    </ul>
+                    <pre><code>// Example of for loop
+            for (int i = 0; i < 5; i++) {
+                System.out.println(i);
+            }
+            
+            // Example of while loop
+            int i = 0;
+            while (i < 5) {
+                System.out.println(i);
+                i++;
+            }
+            
+            // Example of do-while loop
+            int j = 0;
+            do {
+                System.out.println(j);
+                j++;
+            } while (j < 5);</code></pre>
+                </section>
+                <br><br>
+                <section id="40">
+                    <h4>Break, Continue, and Return Statements</h4>
+                    <p>These control flow statements are used to alter the flow of execution within loops or methods:
+                    </p>
+                    <ul>
+                        <li><strong><code>break</code></strong> - Exits from the loop or switch statement.</li>
+                        <li><strong><code>continue</code></strong> - Skips the current iteration of the loop and
+                            proceeds to the next iteration.</li>
+                        <li><strong><code>return</code></strong> - Exits from the current method and optionally returns
+                            a value.</li>
+                    </ul>
+                    <pre><code>// Example of break
+            for (int i = 0; i < 10; i++) {
+                if (i == 5) {
+                    break;
+                }
+                System.out.println(i);
+            }
+            
+            // Example of continue
+            for (int i = 0; i < 10; i++) {
+                if (i % 2 == 0) {
+                    continue;
+                }
+                System.out.println(i);
+            }
+            
+            // Example of return
+            public int add(int a, int b) {
+                return a + b;
+            }</code></pre>
+                </section>
+                <br><br>
+                <section id="50">
+                    <h4>Nested Loops and Conditional Statements</h4>
+                    <p>Nested loops and conditional statements are used to handle more complex scenarios where loops or
+                        conditionals are placed inside each other:</p>
+                    <ul>
+                        <li><strong>Nested Loops:</strong> A loop inside another loop.</li>
+                        <li><strong>Nested Conditionals:</strong> An if statement inside another if statement.</li>
+                    </ul>
+                    <pre><code>// Example of nested loops
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    System.out.println("i: " + i + ", j: " + j);
+                }
+            }
+            
+            // Example of nested conditionals
+            int number = 10;
+            if (number > 0) {
+                if (number % 2 == 0) {
+                    System.out.println("Positive even number");
+                } else {
+                    System.out.println("Positive odd number");
+                }
+            }</code></pre>
+                </section>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic4" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <section id="10">
+                    <h2>Arrays and Strings in Java</h2>
+                </section>
+
+                <section id="20">
+                    <h4>One-Dimensional Arrays</h4>
+                    <p>A one-dimensional array in Java is a collection of elements of the same type stored in a
+                        contiguous memory location. Each element can be accessed using an index.</p>
+                    <p><strong>Syntax:</strong></p>
+                    <pre><code>type[] arrayName = new type[size];</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>// Declaration and Initialization
+            int[] numbers = new int[5]; // Creates an array of 5 integers
+            
+            // Assigning values
+            numbers[0] = 10;
+            numbers[1] = 20;
+            numbers[2] = 30;
+            numbers[3] = 40;
+            numbers[4] = 50;
+            
+            // Accessing values
+            System.out.println(numbers[0]); // Output: 10
+            </code></pre>
+                    <p>You can also initialize the array at the time of declaration:</p>
+                    <pre><code>int[] numbers = {10, 20, 30, 40, 50};</code></pre>
+                </section>
+                <br><br>
+                <section id="30">
+                    <h4>Multi-Dimensional Arrays</h4>
+                    <p>Multi-dimensional arrays are arrays of arrays. The most commonly used multi-dimensional array is
+                        the two-dimensional array.</p>
+                    <p><strong>Syntax:</strong></p>
+                    <pre><code>type[][] arrayName = new type[rows][columns];</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>// Declaration and Initialization
+            int[][] matrix = new int[3][3]; // 3x3 matrix
+            
+            // Assigning values
+            matrix[0][0] = 1;
+            matrix[0][1] = 2;
+            matrix[0][2] = 3;
+            matrix[1][0] = 4;
+            matrix[1][1] = 5;
+            matrix[1][2] = 6;
+            matrix[2][0] = 7;
+            matrix[2][1] = 8;
+            matrix[2][2] = 9;
+            
+            // Accessing values
+            System.out.println(matrix[0][0]); // Output: 1
+            </code></pre>
+                    <p>You can also initialize the array at the time of declaration:</p>
+                    <pre><code>int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };</code></pre>
+                </section>
+                <br><br>
+                <section id="40">
+                    <h4>String Handling in Java</h4>
+                    <p>Strings in Java are objects of the <code>String</code> class, and they are immutable. Once a
+                        <code>String</code> object is created, its content cannot be changed.
+                    </p>
+                    <p><strong>Creating Strings:</strong></p>
+                    <pre><code>String str1 = "Hello";
+            String str2 = new String("World");</code></pre>
+                    <p><strong>Concatenation:</strong></p>
+                    <pre><code>String result = str1 + " " + str2; // "Hello World"</code></pre>
+                    <p><strong>Length:</strong></p>
+                    <pre><code>int length = str1.length(); // 5</code></pre>
+                    <p><strong>Accessing Characters:</strong></p>
+                    <pre><code>char ch = str1.charAt(0); // 'H'</code></pre>
+                </section>
+                <br><br>
+                <section id="50">
+                    <h4>String Class Methods</h4>
+                    <p>The <code>String</code> class provides a variety of methods for manipulating strings. Some of the
+                        commonly used methods include:</p>
+                    <ul>
+                        <li><strong><code>charAt(int index)</code></strong>: Returns the character at the specified
+                            index.</li>
+                        <pre><code>String str = "Hello";
+            char ch = str.charAt(1); // 'e'</code></pre>
+                        <li><strong><code>substring(int beginIndex, int endIndex)</code></strong>: Returns a substring
+                            from <code>beginIndex</code> to <code>endIndex</code>.</li>
+                        <pre><code>String str = "Hello World";
+            String substr = str.substring(6, 11); // "World"</code></pre>
+                        <li><strong><code>toLowerCase()</code></strong> and <strong><code>toUpperCase()</code></strong>:
+                            Converts all characters to lower or upper case.</li>
+                        <pre><code>String str = "Hello World";
+            String lower = str.toLowerCase(); // "hello world"
+            String upper = str.toUpperCase(); // "HELLO WORLD"</code></pre>
+                        <li><strong><code>replace(CharSequence target, CharSequence replacement)</code></strong>:
+                            Replaces occurrences of a specified substring with another.</li>
+                        <pre><code>String str = "Hello World";
+            String replaced = str.replace("World", "Java"); // "Hello Java"</code></pre>
+                        <li><strong><code>trim()</code></strong>: Removes leading and trailing whitespace.</li>
+                        <pre><code>String str = "   Hello World   ";
+            String trimmed = str.trim(); // "Hello World"</code></pre>
+                    </ul>
+                </section>
+                <br><br>
+                <section id="60">
+                    <h4>StringBuffer and StringBuilder Classes</h4>
+                    <p>Both <code>StringBuffer</code> and <code>StringBuilder</code> are mutable classes that allow
+                        modifications to their content. They are useful when you need to manipulate strings frequently.
+                    </p>
+                    <p><strong>StringBuffer:</strong> Thread-Safe: <code>StringBuffer</code> is synchronized, making it
+                        thread-safe but slower than <code>StringBuilder</code>.</p>
+                    <pre><code>StringBuffer sb = new StringBuffer("Hello");
+            sb.append(" World"); // Appends " World"
+            System.out.println(sb.toString()); // Output: "Hello World"</code></pre>
+                    <p><strong>StringBuilder:</strong> Not Thread-Safe: <code>StringBuilder</code> is not synchronized,
+                        making it faster than <code>StringBuffer</code> for single-threaded scenarios.</p>
+                    <pre><code>StringBuilder sb = new StringBuilder("Hello");
+            sb.append(" World"); // Appends " World"
+            System.out.println(sb.toString()); // Output: "Hello World"</code></pre>
+                    <p>Both classes provide methods like <code>append()</code>, <code>insert()</code>,
+                        <code>delete()</code>, and <code>reverse()</code> for string manipulation.
+                    </p>
+                </section>
+                <br><br>
+                <section id="70">
+                    <h2>Summary</h2>
+                    <ul>
+                        <li><strong>One-Dimensional Arrays:</strong> Single row of elements.</li>
+                        <li><strong>Multi-Dimensional Arrays:</strong> Arrays of arrays (e.g., matrices).</li>
+                        <li><strong>String Handling:</strong> Immutable strings with various manipulation methods.</li>
+                        <li><strong>StringBuffer and StringBuilder:</strong> Mutable strings, with
+                            <code>StringBuffer</code> being thread-safe and <code>StringBuilder</code> being faster.
+                        </li>
+                    </ul>
+                </section>
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic5" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+                <section id="10">
+                    <h2>Introduction to OOP Concepts</h2>
+                    <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects,"
+                        which can contain data and methods. Java is an object-oriented language that uses OOP principles
+                        to design and implement applications.</p>
+                    <h4>Classes, Objects, Methods</h4>
+                    <p><strong>Class:</strong> A blueprint for creating objects. It defines a datatype by bundling data
+                        and methods that operate on the data.</p>
+                    <pre><code>class ClassName {
+                // Data members (fields)
+                type fieldName;
+            
+                // Methods
+                returnType methodName(parameters) {
+                    // Method body
+                }
+            }</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class Car {
+                // Data members
+                String color;
+                String model;
+            
+                // Method
+                void displayInfo() {
+                    System.out.println("Color: " + color);
+                    System.out.println("Model: " + model);
+                }
+            }
+            
+            // Creating an object
+            public class Main {
+                public static void main(String[] args) {
+                    Car myCar = new Car();
+                    myCar.color = "Red";
+                    myCar.model = "Toyota";
+                    myCar.displayInfo();
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="20">
+                    <h2>Constructors and Overloading Constructors</h2>
+                    <p><strong>Constructor:</strong> A special method used to initialize objects. It has the same name
+                        as the class and no return type.</p>
+                    <pre><code>ClassName() {
+                // Initialization code
+            }
+            </code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class Car {
+                String color;
+                String model;
+            
+                // Default Constructor
+                Car() {
+                    color = "Unknown";
+                    model = "Unknown";
+                }
+            
+                // Parameterized Constructor
+                Car(String color, String model) {
+                    this.color = color;
+                    this.model = model;
+                }
+            }
+            
+            // Creating objects
+            public class Main {
+                public static void main(String[] args) {
+                    Car car1 = new Car(); // Calls default constructor
+                    Car car2 = new Car("Blue", "Honda"); // Calls parameterized constructor
+                }
+            }
+            </code></pre>
+                    <p><strong>Constructor Overloading:</strong> Defining multiple constructors with different parameter
+                        lists within the same class.</p>
+                </section>
+                <br><br>
+                <section id="30">
+                    <h4>this Keyword</h4>
+                    <p>The <code>this</code> keyword refers to the current object instance. It is used to distinguish
+                        between instance variables and parameters with the same name.</p>
+                    <pre><code>public class Car {
+                String color;
+                String model;
+            
+                // Constructor
+                Car(String color, String model) {
+                    this.color = color; // Refers to instance variable
+                    this.model = model;
+                }
+            
+                // Method
+                void displayInfo() {
+                    System.out.println("Color: " + this.color);
+                    System.out.println("Model: " + this.model);
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="40">
+                    <h2>Inheritance</h2>
+                    <p>Inheritance allows a new class to inherit properties and methods from an existing class.</p>
+                    <h4>Single Inheritance</h4>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class Vehicle {
+                void start() {
+                    System.out.println("Vehicle started");
+                }
+            }
+            
+            public class Car extends Vehicle {
+                void drive() {
+                    System.out.println("Car is driving");
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Car myCar = new Car();
+                    myCar.start(); // Inherited method
+                    myCar.drive(); // Subclass method
+                }
+            }
+            </code></pre>
+                    <h4>Multilevel Inheritance</h4>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class Animal {
+                void eat() {
+                    System.out.println("Animal eats");
+                }
+            }
+            
+            public class Mammal extends Animal {
+                void sleep() {
+                    System.out.println("Mammal sleeps");
+                }
+            }
+            
+            public class Dog extends Mammal {
+                void bark() {
+                    System.out.println("Dog barks");
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Dog myDog = new Dog();
+                    myDog.eat();   // Inherited from Animal
+                    myDog.sleep(); // Inherited from Mammal
+                    myDog.bark();  // Dog's own method
+                }
+            }
+            </code></pre>
+                    <h4>Hierarchical Inheritance</h4>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class Animal {
+                void eat() {
+                    System.out.println("Animal eats");
+                }
+            }
+            
+            public class Cat extends Animal {
+                void meow() {
+                    System.out.println("Cat meows");
+                }
+            }
+            
+            public class Dog extends Animal {
+                void bark() {
+                    System.out.println("Dog barks");
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Cat myCat = new Cat();
+                    myCat.eat(); // Inherited method
+                    myCat.meow(); // Cat's own method
+                    
+                    Dog myDog = new Dog();
+                    myDog.eat(); // Inherited method
+                    myDog.bark(); // Dog's own method
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="50">
+                    <h2>Polymorphism</h2>
+                    <p>Polymorphism allows objects to be treated as instances of their parent class rather than their
+                        actual class.</p>
+                    <h4>Method Overloading</h4>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class MathOperations {
+                int add(int a, int b) {
+                    return a + b;
+                }
+            
+                double add(double a, double b) {
+                    return a + b;
+                }
+            }
+            </code></pre>
+                    <h4>Method Overriding</h4>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class Animal {
+                void sound() {
+                    System.out.println("Animal makes a sound");
+                }
+            }
+            
+            public class Dog extends Animal {
+                @Override
+                void sound() {
+                    System.out.println("Dog barks");
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Animal myDog = new Dog();
+                    myDog.sound(); // Output: Dog barks
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="60">
+                    <h2>Encapsulation and Abstraction</h2>
+                    <h4>Encapsulation</h4>
+                    <p>Encapsulation is the practice of wrapping the data (variables) and the code (methods) together as
+                        a single unit. It involves restricting access to certain details and only exposing necessary
+                        parts.</p>
+                    <pre><code>public class Person {
+                private String name; // Private field
+            
+                // Getter method
+                public String getName() {
+                    return name;
+                }
+            
+                // Setter method
+                public void setName(String name) {
+                    this.name = name;
+                }
+            }
+            </code></pre>
+                    <h4>Abstraction</h4>
+                    <p>Abstraction is the concept of hiding the complex implementation details and showing only the
+                        essential features of an object.</p>
+                    <pre><code>abstract class Shape {
+                abstract void draw(); // Abstract method
+            }
+            
+            class Circle extends Shape {
+                @Override
+                void draw() {
+                    System.out.println("Drawing Circle");
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="70">
+                    <h2>Interfaces and Abstract Classes</h2>
+                    <h4>Interface</h4>
+                    <p>An interface is a reference type in Java that can contain only constants, method signatures,
+                        default methods, static methods, and nested types. Interfaces cannot contain instance fields.
+                    </p>
+                    <pre><code>interface Drawable {
+                void draw(); // Abstract method
+            }
+            
+            class Circle implements Drawable {
+                @Override
+                public void draw() {
+                    System.out.println("Drawing Circle");
+                }
+            }
+            </code></pre>
+                    <h4>Abstract Class</h4>
+                    <p>An abstract class is a class that cannot be instantiated and may contain abstract methods
+                        (methods without a body) and concrete methods (methods with a body).</p>
+                    <pre><code>abstract class Animal {
+                abstract void makeSound(); // Abstract method
+            
+                void eat() {
+                    System.out.println("Animal eats");
+                }
+            }
+            
+            class Dog extends Animal {
+                @Override
+                void makeSound() {
+                    System.out.println("Dog barks");
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="80">
+                    <h2>Static Members and Static Methods</h2>
+                    <p>Static members belong to the class rather than instances of the class. They can be accessed
+                        without creating an object of the class.</p>
+                    <pre><code>public class Counter {
+                static int count = 0; // Static variable
+            
+                static void increment() { // Static method
+                    count++;
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Counter.increment();
+                    System.out.println(Counter.count); // Output: 1
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="90">
+                    <h2>Final Keyword</h2>
+                    <p>The <code>final</code> keyword can be applied to classes, methods, and variables.</p>
+                    <h4>final Class</h4>
+                    <p>A class that cannot be extended.</p>
+                    <pre><code>final class Constants {
+                // Class definition
+            }
+            </code></pre>
+                    <h4>final Method</h4>
+                    <p>A method that cannot be overridden by subclasses.</p>
+                    <pre><code>class Base {
+                final void display() {
+                    System.out.println("Display method");
+                }
+            }
+            </code></pre>
+                    <h4>final Variable</h4>
+                    <p>A variable that cannot be modified once initialized.</p>
+                    <pre><code>class Example {
+                final int MAX_VALUE = 100;
+            
+                void display() {
+                    System.out.println(MAX_VALUE);
+                }
+            }
+            </code></pre>
+                </section>
+                <br><br>
+                <section id="100">
+                    <h2>Nested and Inner Classes</h2>
+                    <p>Nested classes are classes defined within another class. They can be static or non-static.</p>
+                    <h4>Static Nested Class</h4>
+                    <p>A static class inside another class, which can access the outer class's static members.</p>
+                    <pre><code>class Outer {
+                static int data = 30;
+            
+                static class Inner {
+                    void display() {
+                        System.out.println("Data: " + data);
+                    }
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Outer.Inner obj = new Outer.Inner();
+                    obj.display(); // Output: Data: 30
+                }
+            }
+            </code></pre>
+                    <h4>Non-static Inner Class</h4>
+                    <p>A class inside another class that can access both static and non-static members of the outer
+                        class.</p>
+                    <pre><code>class Outer {
+                private String outerField = "Outer";
+            
+                class Inner {
+                    void display() {
+                        System.out.println("Outer field: " + outerField);
+                    }
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Outer outer = new Outer();
+                    Outer.Inner inner = outer.new Inner();
+                    inner.display(); // Output: Outer field: Outer
+                }
+            }
+            </code></pre>
+                </section>
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="topic6" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <section id="10">
+                    <h2>Introduction to Exception Handling</h2>
+                    <p>An <strong>exception</strong> is an event that disrupts the normal flow of the program. Java
+                        provides a framework for handling exceptions to prevent the program from crashing unexpectedly.
+                    </p>
+                    <p><strong>Common Exception Types:</strong></p>
+                    <ul>
+                        <li><strong>Checked Exceptions:</strong> Exceptions checked at compile-time (e.g.,
+                            <code>IOException</code>, <code>SQLException</code>).
+                        </li>
+                        <li><strong>Unchecked Exceptions:</strong> Exceptions not checked at compile-time (e.g.,
+                            <code>ArithmeticException</code>, <code>NullPointerException</code>).
+                        </li>
+                    </ul>
+                    <p><strong>Hierarchy:</strong></p>
+                    <pre><code>Throwable
+              └── Exception
+                  ├── IOException
+                  ├── SQLException
+                  └── RuntimeException
+                      ├── ArithmeticException
+                      └── NullPointerException</code></pre>
+                </section>
+                <br><br>
+                <section id="20">
+                    <h2>Try, Catch, Finally Blocks</h2>
+                    <p><strong>Try Block:</strong> Contains code that might throw an exception. It is followed by one or
+                        more <code>catch</code> blocks.</p>
+                    <pre><code>try {
+                // Code that might throw an exception
+            } catch (ExceptionType e) {
+                // Code to handle the exception
+            } finally {
+                // Code that will always execute (optional)
+            }</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class ExceptionExample {
+                public static void main(String[] args) {
+                    try {
+                        int result = 10 / 0; // This will throw ArithmeticException
+                    } catch (ArithmeticException e) {
+                        System.out.println("Error: Division by zero is not allowed.");
+                    } finally {
+                        System.out.println("This block always executes.");
+                    }
+                }
+            }</code></pre>
+                    <p><strong>Catch Block:</strong> Catches exceptions thrown by the <code>try</code> block. You can
+                        have multiple <code>catch</code> blocks to handle different types of exceptions.</p>
+                    <pre><code>public class MultipleCatchExample {
+                public static void main(String[] args) {
+                    try {
+                        int[] numbers = new int[5];
+                        numbers[10] = 1; // This will throw ArrayIndexOutOfBoundsException
+                    } catch (ArithmeticException e) {
+                        System.out.println("Arithmetic error: " + e.getMessage());
+                    } catch (ArrayIndexOutOfBoundsException e) {
+                        System.out.println("Array index out of bounds: " + e.getMessage());
+                    } finally {
+                        System.out.println("This block always executes.");
+                    }
+                }
+            }</code></pre>
+                    <p><strong>Finally Block:</strong> Executes after the <code>try</code> and <code>catch</code>
+                        blocks, regardless of whether an exception was thrown or not. It is typically used for resource
+                        cleanup (e.g., closing file streams).</p>
+                    <br><br>
+                    <h4>2. Nested Try-Catch with Multiple Catch Blocks</h4>
+                    <p>You can also nest <code>catch</code> blocks within each other to handle different exceptions
+                        separately.</p>
+
+                    <h5>Example:</h5>
+
+                    <pre><code>
+                    public class NestedCatchExample {<br>
+                    &nbsp;&nbsp;public static void main(String[] args) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;try {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Outer try block started.");<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String str = null;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(str.length()); // This will throw NullPointerException<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;} catch (NullPointerException e) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Inner catch block: NullPointerException occurred.");<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;int[] numbers = new int[5];<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;numbers[10] = 1; // This will throw ArrayIndexOutOfBoundsException<br>
+                    &nbsp;&nbsp;} catch (ArrayIndexOutOfBoundsException e) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Outer catch block: ArrayIndexOutOfBoundsException occurred.");<br>
+                    &nbsp;&nbsp;} catch (Exception e) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Outer catch block: General exception occurred.");<br>
+                    &nbsp;&nbsp;} finally {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Outer finally block executed.");<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    }
+                </code></pre>
+
+                    <div class="output">
+                        <strong>Output:</strong><br>
+                        Outer try block started.<br>
+                        Inner catch block: NullPointerException occurred.<br>
+                        Outer catch block: ArrayIndexOutOfBoundsException occurred.<br>
+                        Outer finally block executed.
+                    </div>
+
+                    <p>In this example:</p>
+                    <ul>
+                        <li>The inner <code>try</code> block handles <code>NullPointerException</code>.</li>
+                        <li>The outer <code>try</code> block handles <code>ArrayIndexOutOfBoundsException</code>.</li>
+                        <li>A more general <code>catch</code> block handles any other exceptions not caught by the
+                            previous
+                            <code>catch</code> blocks.
+                        </li>
+                        <li>The <code>finally</code> block of the outer <code>try</code> block executes regardless of
+                            whether an exception is thrown.</li>
+                    </ul>
+                </section>
+                <br><br>
+                <section id="30">
+                    <h2>Throw and Throws Keywords</h2>
+                    <p><strong>Throw Keyword:</strong> Used to explicitly throw an exception.</p>
+                    <pre><code>throw new ExceptionType("Error message");</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>public class ThrowExample {
+                    static void validate(int age) {
+                        if (age < 18) {
+                            throw new ArithmeticException("Age must be 18 or older.");
+                        } else {
+                            System.out.println("Age is valid.");
+                        }
+                    }
+                
+                    public static void main(String[] args) {
+                        validate(15); // This will throw an exception
+                    }
+                }</code></pre>
+                    <p><strong>Throws Keyword:</strong> Used in a method signature to declare that a method might throw
+                        one or more exceptions. It indicates to the caller that they need to handle or propagate the
+                        exception.</p>
+                    <pre><code>void methodName() throws ExceptionType {
+                    // Code that might throw an exception
+                }</code></pre>
+                    <p><strong>Example:</strong></p>
+                    <pre><code>import java.io.IOException;
+                
+                public class ThrowsExample {
+                    static void readFile() throws IOException {
+                        throw new IOException("File not found.");
+                    }
+                
+                    public static void main(String[] args) {
+                        try {
+                            readFile();
+                        } catch (IOException e) {
+                            System.out.println("Caught IOException: " + e.getMessage());
+                        }
+                    }
+                }</code></pre>
+                </section>
+                <br><br>
+                <section id="40">
+                    <h2>Custom Exceptions</h2>
+                    <p>Custom exceptions are user-defined exceptions that extend the <code>Exception</code> class. They
+                        are used to handle specific application errors.</p>
+                    <p><strong>Creating a Custom Exception:</strong></p>
+                    <pre><code>public class CustomException extends Exception {
+                    public CustomException(String message) {
+                        super(message); // Pass the error message to the Exception class
+                    }
+                }</code></pre>
+                    <p><strong>Using a Custom Exception:</strong></p>
+                    <pre><code>public class CustomExceptionExample {
+                    static void validateAge(int age) throws CustomException {
+                        if (age < 18) {
+                            throw new CustomException("Age must be 18 or older.");
+                        } else {
+                            System.out.println("Age is valid.");
+                        }
+                    }
+                
+                    public static void main(String[] args) {
+                        try {
+                            validateAge(15); // This will throw CustomException
+                        } catch (CustomException e) {
+                            System.out.println("Caught CustomException: " + e.getMessage());
+                        }
+                    }
+                }</code></pre>
+                </section>
+                <br><br>
+                <section id="50">
+                    <h2>Summary</h2>
+                    <p><strong>Exception Handling:</strong> Mechanism to handle runtime errors and maintain application
+                        flow.</p>
+                    <p><strong>Try, Catch, Finally:</strong> Blocks used to handle exceptions and execute code that
+                        should always run.</p>
+                    <p><strong>Throw and Throws:</strong> Keywords used to throw and declare exceptions, respectively.
+                    </p>
+                    <p><strong>Custom Exceptions:</strong> User-defined exceptions for handling specific errors.</p>
+                </section>
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic7" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+
+
+                <div id="all-content-here" class="section">
+                    <h2>Java Input/Output (I/O)</h2>
+                    <p>Java I/O is used for handling input and output operations, primarily using streams. Streams can
+                        be used to read from and write to files, handle byte data, and manage character data.</p>
+
+                    <div id="01" class="section">
+                        <h4>1. Basics of Input and Output Streams</h4>
+                        <p>In Java, I/O operations are managed using streams. There are two main types of streams:</p>
+                        <ul>
+                            <li><strong>InputStream</strong>: For reading byte data.</li>
+                            <li><strong>OutputStream</strong>: For writing byte data.</li>
+                            <li><strong>Reader</strong>: For reading character data.</li>
+                            <li><strong>Writer</strong>: For writing character data.</li>
+                        </ul>
+                        <pre><code>
+                import java.io.InputStream;
+                import java.io.OutputStream;
+                import java.io.FileInputStream;
+                import java.io.FileOutputStream;
+                import java.io.IOException;
+                
+                public class IOStreamsExample {
+                    public static void main(String[] args) {
+                        try (InputStream in = new FileInputStream("input.txt");
+                             OutputStream out = new FileOutputStream("output.txt")) {
+                            
+                            int byteRead;
+                            while ((byteRead = in.read()) != -1) {
+                                out.write(byteRead);
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                    </div>
+
+                    <div id="02" class="section">
+                        <h4>2. Reading and Writing Files</h4>
+                        <p>Java provides classes to read from and write to files. For byte data, use
+                            <code>FileInputStream</code> and <code>FileOutputStream</code>. For character data, use
+                            <code>FileReader</code> and <code>FileWriter</code>.</p>
+                        <pre><code>
+                import java.io.FileReader;
+                import java.io.IOException;
+                
+                public class FileReadingExample {
+                    public static void main(String[] args) {
+                        try (FileReader fr = new FileReader("input.txt")) {
+                            int character;
+                            while ((character = fr.read()) != -1) {
+                                System.out.print((char) character);
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                        <pre><code>
+                import java.io.FileWriter;
+                import java.io.IOException;
+                
+                public class FileWritingExample {
+                    public static void main(String[] args) {
+                        try (FileWriter fw = new FileWriter("output.txt")) {
+                            fw.write("Hello, World!");
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                    </div>
+
+                    <div id="03" class="section">
+                        <h4>3. Byte Streams and Character Streams</h4>
+                        <p>Byte streams handle I/O of 8-bit bytes and are used for binary data. Character streams handle
+                            I/O of 16-bit Unicode characters and are used for text data.</p>
+                        <pre><code>
+                import java.io.FileInputStream;
+                import java.io.FileOutputStream;
+                import java.io.IOException;
+                
+                public class ByteStreamExample {
+                    public static void main(String[] args) {
+                        try (FileInputStream fis = new FileInputStream("input.jpg");
+                             FileOutputStream fos = new FileOutputStream("output.jpg")) {
+                            
+                            int byteRead;
+                            while ((byteRead = fis.read()) != -1) {
+                                fos.write(byteRead);
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                        <pre><code>
+                import java.io.FileReader;
+                import java.io.FileWriter;
+                import java.io.IOException;
+                
+                public class CharacterStreamExample {
+                    public static void main(String[] args) {
+                        try (FileReader fr = new FileReader("input.txt");
+                             FileWriter fw = new FileWriter("output.txt")) {
+                            
+                            int character;
+                            while ((character = fr.read()) != -1) {
+                                fw.write(character);
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                    </div>
+
+                    <div id="04" class="section">
+                        <h4>4. BufferedReader and BufferedWriter</h4>
+                        <p><code>BufferedReader</code> and <code>BufferedWriter</code> are used to read and write text
+                            efficiently by buffering characters.</p>
+                        <pre><code>
+                import java.io.BufferedReader;
+                import java.io.FileReader;
+                import java.io.IOException;
+                
+                public class BufferedReaderExample {
+                    public static void main(String[] args) {
+                        try (BufferedReader br = new BufferedReader(new FileReader("input.txt"))) {
+                            String line;
+                            while ((line = br.readLine()) != null) {
+                                System.out.println(line);
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                        <pre><code>
+                import java.io.BufferedWriter;
+                import java.io.FileWriter;
+                import java.io.IOException;
+                
+                public class BufferedWriterExample {
+                    public static void main(String[] args) {
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"))) {
+                            bw.write("Hello, World!");
+                            bw.newLine();
+                            bw.write("BufferedWriter is efficient.");
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                    </div>
+
+                    <div id="05" class="section">
+                        <h4>5. Serialization and Deserialization</h4>
+                        <p>Serialization is converting an object into a byte stream, and deserialization is converting
+                            the byte stream back into an object.</p>
+                        <pre><code>
+                import java.io.FileOutputStream;
+                import java.io.IOException;
+                import java.io.ObjectOutputStream;
+                import java.io.Serializable;
+                
+                class Person implements Serializable {
+                    private static final long serialVersionUID = 1L;
+                    private String name;
+                    private int age;
+                
+                    public Person(String name, int age) {
+                        this.name = name;
+                        this.age = age;
+                    }
+                
+                    @Override
+                    public String toString() {
+                        return "Person{name='" + name + "', age=" + age + "}";
+                    }
+                }
+                
+                public class SerializationExample {
+                    public static void main(String[] args) {
+                        Person person = new Person("Alice", 30);
+                        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person.ser"))) {
+                            oos.writeObject(person);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                        <pre><code>
+                import java.io.FileInputStream;
+                import java.io.IOException;
+                import java.io.ObjectInputStream;
+                import java.io.Serializable;
+                
+                class Person implements Serializable {
+                    private static final long serialVersionUID = 1L;
+                    private String name;
+                    private int age;
+                
+                    public Person(String name, int age) {
+                        this.name = name;
+                        this.age = age;
+                    }
+                
+                    @Override
+                    public String toString() {
+                        return "Person{name='" + name + "', age=" + age + "}";
+                    }
+                }
+                
+                public class DeserializationExample {
+                    public static void main(String[] args) {
+                        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("person.ser"))) {
+                            Person person = (Person) ois.readObject();
+                            System.out.println(person);
+                        } catch (IOException | ClassNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                        </code></pre>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic8" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+                <div id="1234567" class="container">
+                    <h1>Java Collections Framework</h1>
+
+                    <h2>1. Introduction to Collections Framework</h2>
+                    <p>The Java Collections Framework (JCF) provides a standardized architecture for managing groups of
+                        objects. It includes interfaces for various data structures and classes that implement these
+                        interfaces. The core interfaces are Collection, List, Set, Map, and Queue.</p>
+
+                    <h3>Key Interfaces:</h3>
+                    <ul>
+                        <li><strong>Collection</strong> (root interface)</li>
+                        <li><strong>List</strong> (extends Collection)</li>
+                        <li><strong>Set</strong> (extends Collection)</li>
+                        <li><strong>Map</strong> (maps keys to values)</li>
+                        <li><strong>Queue</strong> (for handling data in a FIFO manner)</li>
+                    </ul>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.ArrayList;
+            import java.util.HashSet;
+            import java.util.HashMap;
+            
+            public class CollectionsOverview {
+                public static void main(String[] args) {
+                    // List example
+                    ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
+                    list.add("Apple");
+                    list.add("Banana");
+                    list.add("Cherry");
+            
+                    // Set example
+                    HashSet&lt;String&gt; set = new HashSet&lt;&gt;();
+                    set.add("Apple");
+                    set.add("Banana");
+                    set.add("Cherry");
+            
+                    // Map example
+                    HashMap&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
+                    map.put("Apple", 1);
+                    map.put("Banana", 2);
+                    map.put("Cherry", 3);
+            
+                    System.out.println("List: " + list);
+                    System.out.println("Set: " + set);
+                    System.out.println("Map: " + map);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>List: [Apple, Banana, Cherry]
+            Set: [Apple, Banana, Cherry]
+            Map: {Apple=1, Banana=2, Cherry=3}</code></pre>
+                    </div>
+
+                    <h2>2. List Interface</h2>
+                    <p>The List interface represents an ordered collection (also known as a sequence). It allows
+                        duplicate elements and provides positional access.</p>
+
+                    <h3>Key Implementations:</h3>
+                    <ul>
+                        <li><strong>ArrayList</strong></li>
+                        <li><strong>LinkedList</strong></li>
+                    </ul>
+
+                    <h3>ArrayList:</h3>
+                    <p><strong>Characteristics:</strong> Dynamic array, fast random access, slower insertion and removal
+                        compared to LinkedList.</p>
+                    <p><strong>Common Methods:</strong> <code>add(E e)</code>, <code>get(int index)</code>,
+                        <code>remove(int index)</code>, <code>size()</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.ArrayList;
+            
+            public class ArrayListExample {
+                public static void main(String[] args) {
+                    ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
+                    list.add("Apple");
+                    list.add("Banana");
+                    list.add("Cherry");
+                    
+                    System.out.println("ArrayList: " + list);
+                    System.out.println("Element at index 1: " + list.get(1));
+                    
+                    list.remove(1); // Removes "Banana"
+                    System.out.println("Updated ArrayList: " + list);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>ArrayList: [Apple, Banana, Cherry]
+            Element at index 1: Banana
+            Updated ArrayList: [Apple, Cherry]</code></pre>
+                    </div>
+
+                    <h3>LinkedList:</h3>
+                    <p><strong>Characteristics:</strong> Doubly linked list, slower random access but faster insertion
+                        and removal.</p>
+                    <p><strong>Common Methods:</strong> <code>add(E e)</code>, <code>get(int index)</code>,
+                        <code>remove(int index)</code>, <code>addFirst(E e)</code>, <code>addLast(E e)</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.LinkedList;
+            
+            public class LinkedListExample {
+                public static void main(String[] args) {
+                    LinkedList&lt;String&gt; list = new LinkedList&lt;&gt;();
+                    list.add("Apple");
+                    list.add("Banana");
+                    list.add("Cherry");
+                    
+                    list.addFirst("Orange");
+                    list.addLast("Mango");
+                    
+                    System.out.println("LinkedList: " + list);
+                    System.out.println("Element at index 2: " + list.get(2));
+                    
+                    list.remove(2); // Removes "Cherry"
+                    System.out.println("Updated LinkedList: " + list);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>LinkedList: [Orange, Apple, Banana, Cherry, Mango]
+            Element at index 2: Banana
+            Updated LinkedList: [Orange, Apple, Banana, Mango]</code></pre>
+                    </div>
+
+                    <h2>3. Set Interface</h2>
+                    <p>The Set interface represents a collection that does not allow duplicate elements.</p>
+
+                    <h3>Key Implementations:</h3>
+                    <ul>
+                        <li><strong>HashSet</strong></li>
+                        <li><strong>LinkedHashSet</strong></li>
+                        <li><strong>TreeSet</strong></li>
+                    </ul>
+
+                    <h3>HashSet:</h3>
+                    <p><strong>Characteristics:</strong> Does not maintain any order. Fast operations.</p>
+                    <p><strong>Common Methods:</strong> <code>add(E e)</code>, <code>remove(Object o)</code>,
+                        <code>size()</code>, <code>contains(Object o)</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.HashSet;
+            
+            public class HashSetExample {
+                public static void main(String[] args) {
+                    HashSet&lt;String&gt; set = new HashSet&lt;&gt;();
+                    set.add("Apple");
+                    set.add("Banana");
+                    set.add("Cherry");
+                    
+                    System.out.println("HashSet: " + set);
+                    System.out.println("Contains 'Banana': " + set.contains("Banana"));
+                    
+                    set.remove("Banana");
+                    System.out.println("Updated HashSet: " + set);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>HashSet: [Apple, Banana, Cherry]
+            Contains 'Banana': true
+            Updated HashSet: [Apple, Cherry]</code></pre>
+                    </div>
+
+                    <h3>LinkedHashSet:</h3>
+                    <p><strong>Characteristics:</strong> Maintains insertion order.</p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.LinkedHashSet;
+            
+            public class LinkedHashSetExample {
+                public static void main(String[] args) {
+                    LinkedHashSet&lt;String&gt; set = new LinkedHashSet&lt;&gt;();
+                    set.add("Apple");
+                    set.add("Banana");
+                    set.add("Cherry");
+                    
+                    System.out.println("LinkedHashSet: " + set);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>LinkedHashSet: [Apple, Banana, Cherry]</code></pre>
+                    </div>
+
+                    <h3>TreeSet:</h3>
+                    <p><strong>Characteristics:</strong> Maintains elements in a sorted order.</p>
+                    <p><strong>Common Methods:</strong> <code>add(E e)</code>, <code>remove(Object o)</code>,
+                        <code>first()</code>, <code>last()</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.TreeSet;
+            
+            public class TreeSetExample {
+                public static void main(String[] args) {
+                    TreeSet&lt;String&gt; set = new TreeSet&lt;&gt;();
+                    set.add("Apple");
+                    set.add("Banana");
+                    set.add("Cherry");
+                    
+                    System.out.println("TreeSet: " + set);
+                    System.out.println("First element: " + set.first());
+                    System.out.println("Last element: " + set.last());
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>TreeSet: [Apple, Banana, Cherry]
+            First element: Apple
+            Last element: Cherry</code></pre>
+                    </div>
+
+                    <h2>4. Map Interface</h2>
+                    <p>The Map interface represents a collection of key-value pairs. Each key is unique and maps to
+                        exactly one value.</p>
+
+                    <h3>Key Implementations:</h3>
+                    <ul>
+                        <li><strong>HashMap</strong></li>
+                        <li><strong>LinkedHashMap</strong></li>
+                        <li><strong>TreeMap</strong></li>
+                    </ul>
+
+                    <h3>HashMap:</h3>
+                    <p><strong>Characteristics:</strong> Does not maintain any order of keys. Fast operations.</p>
+                    <p><strong>Common Methods:</strong> <code>put(K key, V value)</code>, <code>get(Object key)</code>,
+                        <code>remove(Object key)</code>, <code>keySet()</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.HashMap;
+            
+            public class HashMapExample {
+                public static void main(String[] args) {
+                    HashMap&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
+                    map.put("Apple", 1);
+                    map.put("Banana", 2);
+                    map.put("Cherry", 3);
+                    
+                    System.out.println("HashMap: " + map);
+                    System.out.println("Value for 'Banana': " + map.get("Banana"));
+                    
+                    map.remove("Banana");
+                    System.out.println("Updated HashMap: " + map);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>HashMap: {Apple=1, Banana=2, Cherry=3}
+            Value for 'Banana': 2
+            Updated HashMap: {Apple=1, Cherry=3}</code></pre>
+                    </div>
+
+                    <h3>LinkedHashMap:</h3>
+                    <p><strong>Characteristics:</strong> Maintains insertion order.</p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.LinkedHashMap;
+            
+            public class LinkedHashMapExample {
+                public static void main(String[] args) {
+                    LinkedHashMap&lt;String, Integer&gt; map = new LinkedHashMap&lt;&gt;();
+                    map.put("Apple", 1);
+                    map.put("Banana", 2);
+                    map.put("Cherry", 3);
+                    
+                    System.out.println("LinkedHashMap: " + map);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>LinkedHashMap: {Apple=1, Banana=2, Cherry=3}</code></pre>
+                    </div>
+
+                    <h3>TreeMap:</h3>
+                    <p><strong>Characteristics:</strong> Maintains keys in sorted order.</p>
+                    <p><strong>Common Methods:</strong> Same as HashMap.</p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.TreeMap;
+            
+            public class TreeMapExample {
+                public static void main(String[] args) {
+                    TreeMap&lt;String, Integer&gt; map = new TreeMap&lt;&gt;();
+                    map.put("Apple", 1);
+                    map.put("Banana", 2);
+                    map.put("Cherry", 3);
+                    
+                    System.out.println("TreeMap: " + map);
+                    System.out.println("First key: " + map.firstKey());
+                    System.out.println("Last key: " + map.lastKey());
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>TreeMap: {Apple=1, Banana=2, Cherry=3}
+            First key: Apple
+            Last key: Cherry</code></pre>
+                    </div>
+
+                    <h2>5. Iterators and ListIterator</h2>
+                    <p>Iterators are used to traverse collections. ListIterator is a more advanced iterator that
+                        supports bidirectional traversal and element modification.</p>
+
+                    <h3>Iterator:</h3>
+                    <p><strong>Methods:</strong> <code>hasNext()</code>, <code>next()</code>, <code>remove()</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.ArrayList;
+            import java.util.Iterator;
+            
+            public class IteratorExample {
+                public static void main(String[] args) {
+                    ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
+                    list.add("Apple");
+                    list.add("Banana");
+                    list.add("Cherry");
+            
+                    Iterator&lt;String&gt; iterator = list.iterator();
+                    while (iterator.hasNext()) {
+                        System.out.println(iterator.next());
+                    }
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>Apple
+            Banana
+            Cherry</code></pre>
+                    </div>
+
+                    <h3>ListIterator:</h3>
+                    <p><strong>Methods:</strong> <code>hasNext()</code>, <code>next()</code>,
+                        <code>hasPrevious()</code>, <code>previous()</code>, <code>add(E e)</code>,
+                        <code>remove()</code>, <code>set(E e)</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.LinkedList;
+            import java.util.ListIterator;
+            
+            public class ListIteratorExample {
+                public static void main(String[] args) {
+                    LinkedList&lt;String&gt; list = new LinkedList&lt;&gt;();
+                    list.add("Apple");
+                    list.add("Banana");
+                    list.add("Cherry");
+            
+                    ListIterator&lt;String&gt; listIterator = list.listIterator();
+                    while (listIterator.hasNext()) {
+                        System.out.println(listIterator.next());
+                    }
+            
+                    while (listIterator.hasPrevious()) {
+                        System.out.println(listIterator.previous());
+                    }
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>Apple
+            Banana
+            Cherry
+            Cherry
+            Banana
+            Apple</code></pre>
+                    </div>
+
+                    <h2>6. Comparable and Comparator Interfaces</h2>
+                    <p><strong>Comparable:</strong> Allows objects to be compared to each other to establish natural
+                        ordering.</p>
+                    <p><strong>Method:</strong> <code>compareTo(T o)</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.ArrayList;
+            import java.util.Collections;
+            
+            class Person implements Comparable&lt;Person&gt; {
+                String name;
+                int age;
+            
+                Person(String name, int age) {
+                    this.name = name;
+                    this.age = age;
+                }
+            
+                @Override
+                public int compareTo(Person other) {
+                    return Integer.compare(this.age, other.age);
+                }
+            
+                @Override
+                public String toString() {
+                    return name + " (" + age + ")";
+                }
+            }
+            
+            public class ComparableExample {
+                public static void main(String[] args) {
+                    ArrayList&lt;Person&gt; list = new ArrayList&lt;&gt;();
+                    list.add(new Person("Alice", 30));
+                    list.add(new Person("Bob", 25));
+                    list.add(new Person("Charlie", 35));
+            
+                    Collections.sort(list);
+                    System.out.println("Sorted by age: " + list);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>Sorted by age: [Bob (25), Alice (30), Charlie (35)]</code></pre>
+                    </div>
+
+                    <p><strong>Comparator:</strong> Allows defining custom orderings.</p>
+                    <p><strong>Method:</strong> <code>compare(T o1, T o2)</code></p>
+
+                    <h3>Example:</h3>
+                    <pre><code>import java.util.ArrayList;
+            import java.util.Collections;
+            import java.util.Comparator;
+            
+            class Person {
+                String name;
+                int age;
+            
+                Person(String name, int age) {
+                    this.name = name;
+                    this.age = age;
+                }
+            
+                @Override
+                public String toString() {
+                    return name + " (" + age + ")";
+                }
+            }
+            
+            public class ComparatorExample {
+                public static void main(String[] args) {
+                    ArrayList&lt;Person&gt; list = new ArrayList&lt;&gt;();
+                    list.add(new Person("Alice", 30));
+                    list.add(new Person("Bob", 25));
+                    list.add(new Person("Charlie", 35));
+            
+                    Comparator&lt;Person&gt; byName = (p1, p2) -&gt; p1.name.compareTo(p2.name);
+                    Collections.sort(list, byName);
+                    System.out.println("Sorted by name: " + list);
+                }
+            }
+            </code></pre>
+                    <div class="output">
+                        <strong>Output:</strong>
+                        <pre><code>Sorted by name: [Alice (30), Bob (25), Charlie (35)]</code></pre>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic9" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+
+                <div id="20">
+                    <h2>Multithreading in Java</h2>
+                    <p><strong>Multithreading</strong> is a feature of Java that allows the concurrent execution of two
+                        or more parts of a program, known as threads. Each thread runs parallel to the others, allowing
+                        for efficient utilization of CPU resources.</p>
+                </div>
+
+                <div id="30">
+                    <h4>Key Concepts of Multithreading</h4>
+                    <ol>
+                        <li><strong>Thread</strong>: A thread is a lightweight process and the smallest unit of
+                            processing in Java. The main program itself is a thread called the "main thread."</li>
+                        <li><strong>Multithreading</strong>: It allows multiple threads to exist within a process, each
+                            performing its tasks simultaneously. It enables a program to perform several tasks at once,
+                            such as reading a file while performing calculations.</li>
+                        <li><strong>Concurrency</strong>: Concurrency is the ability of the system to perform multiple
+                            operations simultaneously. In Java, this is achieved through multithreading.</li>
+                    </ol>
+                </div>
+
+                <div id="40">
+                    <h4>Creating Threads in Java</h4>
+                    <p>In Java, there are two main ways to create a thread:</p>
+                    <ol>
+                        <li><strong>By Extending the `Thread` Class</strong></li>
+                        <li><strong>By Implementing the `Runnable` Interface</strong></li>
+                    </ol>
+                </div>
+
+                <div id="50">
+                    <h5>1. Extending the `Thread` Class</h5>
+                    <p>To create a thread by extending the `Thread` class, you can follow these steps:</p>
+                    <ul>
+                        <li><strong>Step 1</strong>: Create a class that extends the `Thread` class.</li>
+                        <li><strong>Step 2</strong>: Override the `run()` method in your class to define the code that
+                            should execute in the thread.</li>
+                        <li><strong>Step 3</strong>: Create an instance of your class and call the `start()` method to
+                            begin the thread's execution.</li>
+                    </ul>
+
+                    <p><strong>Example</strong>:</p>
+                    <pre><code>
+class MyThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i + " - " + Thread.currentThread().getName());
+            try {
+                Thread.sleep(500); // Sleep for 500 milliseconds
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class TestThread {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread(); // Creating thread t1
+        MyThread t2 = new MyThread(); // Creating thread t2
+        
+        t1.start(); // Start thread t1
+        t2.start(); // Start thread t2
+    }
+}
+        </code></pre>
+
+                    <p><strong>Output</strong>:</p>
+                    <pre><code>
+1 - Thread-0
+1 - Thread-1
+2 - Thread-0
+2 - Thread-1
+3 - Thread-0
+3 - Thread-1
+4 - Thread-0
+4 - Thread-1
+5 - Thread-0
+5 - Thread-1
+        </code></pre>
+
+                    <p>In this example, two threads (`t1` and `t2`) are created and started. They run concurrently,
+                        printing numbers from 1 to 5.</p>
+                </div>
+
+                <div id="60">
+                    <h5>2. Implementing the `Runnable` Interface</h5>
+                    <p>To create a thread by implementing the `Runnable` interface, you can follow these steps:</p>
+                    <ul>
+                        <li><strong>Step 1</strong>: Create a class that implements the `Runnable` interface.</li>
+                        <li><strong>Step 2</strong>: Implement the `run()` method to define the code that should execute
+                            in the thread.</li>
+                        <li><strong>Step 3</strong>: Create an instance of the `Thread` class, passing your `Runnable`
+                            object to the constructor.</li>
+                        <li><strong>Step 4</strong>: Call the `start()` method on the `Thread` object to begin
+                            execution.</li>
+                    </ul>
+
+                    <p><strong>Example</strong>:</p>
+                    <pre><code>
+class MyRunnable implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i + " - " + Thread.currentThread().getName());
+            try {
+                Thread.sleep(500); // Sleep for 500 milliseconds
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class TestRunnable {
+    public static void main(String[] args) {
+        MyRunnable myRunnable = new MyRunnable();
+        
+        Thread t1 = new Thread(myRunnable); // Creating thread t1
+        Thread t2 = new Thread(myRunnable); // Creating thread t2
+        
+        t1.start(); // Start thread t1
+        t2.start(); // Start thread t2
+    }
+}
+        </code></pre>
+
+                    <p><strong>Output</strong>:</p>
+                    <pre><code>
+1 - Thread-0
+1 - Thread-1
+2 - Thread-0
+2 - Thread-1
+3 - Thread-0
+3 - Thread-1
+4 - Thread-0
+4 - Thread-1
+5 - Thread-0
+5 - Thread-1
+        </code></pre>
+
+                    <p>This example is similar to the previous one, but here, the thread is created by implementing the
+                        `Runnable` interface.</p>
+                </div>
+
+                <div id="70">
+                    <h4>Thread Methods</h4>
+                    <p>Java provides several useful methods for managing threads:</p>
+                    <ul>
+                        <li><strong>`start()`</strong>: Starts the execution of the thread. The `JVM` calls the `run()`
+                            method of the thread.</li>
+                        <pre><code>thread.start();</code></pre>
+
+                        <li><strong>`run()`</strong>: Contains the code that defines the thread’s task. It is overridden
+                            when extending `Thread` or implementing `Runnable`.</li>
+                        <pre><code>public void run() {
+    // Code to be executed in the thread
+}</code></pre>
+
+                        <li><strong>`sleep(long millis)`</strong>: Causes the thread to pause execution for the
+                            specified time in milliseconds. It throws an `InterruptedException`.</li>
+                        <pre><code>try {
+    Thread.sleep(1000); // Sleep for 1 second
+} catch (InterruptedException e) {
+    e.printStackTrace();
+}</code></pre>
+
+                        <li><strong>`join()`</strong>: Waits for the thread to finish before continuing execution. This
+                            is useful when you want one thread to finish before starting another.</li>
+                        <pre><code>thread.join();</code></pre>
+
+                        <li><strong>`yield()`</strong>: Temporarily pauses the currently executing thread and allows
+                            other threads of equal priority to execute.</li>
+                        <pre><code>Thread.yield();</code></pre>
+
+                        <li><strong>`getName()`</strong>: Returns the name of the thread.</li>
+                        <pre><code>String threadName = thread.getName();</code></pre>
+
+                        <li><strong>`setName(String name)`</strong>: Sets the name of the thread.</li>
+                        <pre><code>thread.setName("MyThread");</code></pre>
+
+                        <li><strong>`getPriority()`</strong>: Returns the priority of the thread.</li>
+                        <pre><code>int priority = thread.getPriority();</code></pre>
+
+                        <li><strong>`setPriority(int priority)`</strong>: Sets the priority of the thread. Valid values
+                            range from `Thread.MIN_PRIORITY` (1) to `Thread.MAX_PRIORITY` (10).</li>
+                        <pre><code>thread.setPriority(Thread.MAX_PRIORITY);</code></pre>
+
+                        <li><strong>`isAlive()`</strong>: Checks if the thread is still running.</li>
+                        <pre><code>boolean alive = thread.isAlive();</code></pre>
+
+                        <li><strong>`interrupt()`</strong>: Interrupts the thread, causing it to throw an
+                            `InterruptedException` if it is sleeping or waiting.</li>
+                        <pre><code>thread.interrupt();</code></pre>
+
+                        <li><strong>`synchronized`</strong>: A keyword used to control access to a shared resource by
+                            multiple threads to prevent data inconsistency.</li>
+                        <pre><code>synchronized(object) {
+    // synchronized block
+}</code></pre>
+                    </ul>
+                </div>
+
+                <div id="80">
+                    <h4>Example: Implementing Multithreading with Synchronization</h4>
+                    <p>Here's an example of using multithreading with synchronization to ensure that two threads do not
+                        interfere with each other while accessing a shared resource.</p>
+                    <pre><code>
+class Counter {
+    private int count = 0;
+
+    public synchronized void increment() {
+        count++;
+    }
+
+    public int getCount() {
+        return count;
+    }
+}
+
+class MyThread extends Thread {
+    Counter counter;
+
+    MyThread(Counter counter) {
+        this.counter = counter;
+    }
+
+    public void run() {
+        for (int i = 0; i < 1000; i++) {
+            counter.increment();
+        }
+    }
+}
+
+public class TestSynchronization {
+    public static void main(String[] args) {
+        Counter counter = new Counter();
+        MyThread t1 = new MyThread(counter);
+        MyThread t2 = new MyThread(counter);
+        
+        t1.start();
+        t2.start();
+        
+        try {
+            t1.join();
+            t2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Final count: " + counter.getCount());
+    }
+}
+        </code></pre>
+
+                    <p><strong>Output</strong>:</p>
+                    <pre><code>
+Final count: 2000
+        </code></pre>
+
+                    <p>In this example, two threads increment the same counter 1000 times each. The `synchronized`
+                        keyword ensures that the threads do not interfere with each other's increments, leading to the
+                        correct final count of 2000.</p>
+                </div>
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+            <div id="topic10" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+
+
+
+                <div class="section">
+                    <h2>Introduction to Java GUI Programming</h2>
+                    <h3>Understanding GUI: Definition and Importance</h3>
+                    <p>GUI (Graphical User Interface) allows users to interact with applications using graphical
+                        elements like buttons, text fields, and menus. It's crucial for enhancing user experience by
+                        making applications intuitive and easy to use.</p>
+                    <h3>Java GUI Frameworks: AWT, Swing, JavaFX</h3>
+                    <p><strong>AWT (Abstract Window Toolkit)</strong>: The original Java GUI toolkit providing basic
+                        components like buttons, checkboxes, and windows.</p>
+                    <p><strong>Swing</strong>: A more advanced GUI toolkit built on AWT, offering a richer set of
+                        components, better look and feel, and more flexibility.</p>
+                    <p><strong>JavaFX</strong>: The latest GUI toolkit introduced to replace Swing, offering modern
+                        features like CSS styling, 3D graphics, and rich multimedia support.</p>
+                    <h3>Overview of Event-Driven Programming</h3>
+                    <p>Event-driven programming is a paradigm where the flow of the program is determined by events like
+                        user actions (clicks, key presses). In Java GUI, components generate events, and you write
+                        listeners to handle them.</p>
+                    <h3>Setting Up the Development Environment (Eclipse, IntelliJ, NetBeans)</h3>
+                    <p>To develop Java GUI applications, you need an Integrated Development Environment (IDE) like
+                        Eclipse, IntelliJ IDEA, or NetBeans. These tools provide powerful code editors, debugging tools,
+                        and built-in support for Java GUI frameworks.</p>
+                </div>
+
+                <div class="section">
+                    <h2>2. Java Abstract Window Toolkit (AWT)</h2>
+                    <h3>Introduction to AWT</h3>
+                    <p>AWT is Java's original platform-independent windowing, graphics, and user interface widget
+                        toolkit. It provides basic components like Button, Label, TextField, etc.</p>
+                    <h3>AWT Components and Containers</h3>
+                    <p><strong>Components:</strong> Basic UI elements like buttons, labels, and text fields.</p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>Button(String label)</code>: Creates a button with a specified label.</li>
+                        <li><code>Label(String text)</code>: Creates a label with specified text.</li>
+                        <li><code>TextField(int columns)</code>: Creates a text field with a specified number of
+                            columns.</li>
+                    </ul>
+                    <p><strong>Containers:</strong> Containers hold components and control their layout.</p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>add(Component c)</code>: Adds a component to the container.</li>
+                        <li><code>setLayout(LayoutManager mgr)</code>: Sets the layout manager for arranging components.
+                        </li>
+                    </ul>
+                    <h4>Example: AWT Example</h4>
+                    <pre><code>import java.awt.*;
+import java.awt.event.*;
+
+public class AWTExample {
+    public static void main(String[] args) {
+        Frame frame = new Frame("AWT Example");
+        Label label = new Label("Enter your name:");
+        TextField textField = new TextField(20);
+        Button button = new Button("Submit");
+
+        frame.add(label);
+        frame.add(textField);
+        frame.add(button);
+
+        frame.setLayout(new FlowLayout());
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+
+        button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Hello, " + textField.getText());
+            }
+        });
+    }
+}
+</code></pre>
+                    <h3>Layout Managers in AWT</h3>
+                    <p><strong>FlowLayout:</strong> Places components in a row, starting a new row if there's no room.
+                    </p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>FlowLayout()</code>: Creates a FlowLayout with centered alignment and default gaps.
+                        </li>
+                        <li><code>FlowLayout(int align)</code>: Creates a FlowLayout with the specified alignment.</li>
+                    </ul>
+                    <p><strong>BorderLayout:</strong> Divides the container into five regions: North, South, East, West,
+                        and Center.</p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>BorderLayout()</code>: Creates a BorderLayout with no gaps between components.</li>
+                    </ul>
+                    <p><strong>GridLayout:</strong> Arranges components in a grid of rows and columns.</p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>GridLayout(int rows, int cols)</code>: Creates a grid layout with the specified number
+                            of rows and columns.</li>
+                    </ul>
+                    <p><strong>CardLayout:</strong> Allows switching between different panels like flipping through a
+                        stack of cards.</p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>CardLayout()</code>: Creates a CardLayout with no gaps between components.</li>
+                    </ul>
+                    <h4>Example: Layout Example</h4>
+                    <pre><code>import java.awt.*;
+
+public class LayoutExample {
+    public static void main(String[] args) {
+        Frame frame = new Frame("AWT Layout Example");
+
+        Button b1 = new Button("Button 1");
+        Button b2 = new Button("Button 2");
+        Button b3 = new Button("Button 3");
+        Button b4 = new Button("Button 4");
+        Button b5 = new Button("Button 5");
+
+        frame.setLayout(new BorderLayout());
+        frame.add(b1, BorderLayout.NORTH);
+        frame.add(b2, BorderLayout.SOUTH);
+        frame.add(b3, BorderLayout.EAST);
+        frame.add(b4, BorderLayout.WEST);
+        frame.add(b5, BorderLayout.CENTER);
+
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+    }
+}
+</code></pre>
+                    <h3>Event Handling in AWT</h3>
+                    <p><strong>Event Handling:</strong> Responding to user actions like clicks and key presses.</p>
+                    <p><strong>Key Interfaces:</strong></p>
+                    <ul>
+                        <li><code>ActionListener</code>: Handles action events (e.g., button clicks).</li>
+                        <li><code>MouseListener</code>: Handles mouse events (e.g., clicks, movement).</li>
+                        <li><code>KeyListener</code>: Handles keyboard events.</li>
+                    </ul>
+                    <h4>Example: Event Handling Example</h4>
+                    <pre><code>import java.awt.*;
+import java.awt.event.*;
+
+public class EventHandlingExample {
+    public static void main(String[] args) {
+        Frame frame = new Frame("Event Handling Example");
+        Button button = new Button("Click Me");
+
+        frame.add(button);
+        frame.setSize(300, 200);
+        frame.setLayout(new FlowLayout());
+        frame.setVisible(true);
+
+        button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Button Clicked!");
+            }
+        });
+    }
+}
+</code></pre>
+                    <h3>Creating Simple AWT Applications</h3>
+                    <p>Use AWT components and layout managers to create simple applications, such as a form or
+                        calculator.</p>
+                    <h3>AWT Dialogs and Frames</h3>
+                    <p><strong>Frame:</strong> A top-level window with a title and border.</p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>setTitle(String title)</code>: Sets the title for the frame.</li>
+                        <li><code>setSize(int width, int height)</code>: Sets the size of the frame.</li>
+                        <li><code>setVisible(boolean b)</code>: Shows or hides the frame.</li>
+                    </ul>
+                    <p><strong>Dialog:</strong> A pop-up window that takes focus away from other windows.</p>
+                    <p><strong>Key Methods:</strong></p>
+                    <ul>
+                        <li><code>Dialog(Frame owner, String title, boolean modal)</code>: Creates a dialog with
+                            specified owner, title, and modality.</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>3. Java Swing</h2>
+                    <h3>Introduction to Swing</h3>
+                    <p>Swing is a part of Java's Standard Library that provides a more sophisticated set of GUI
+                        components than AWT. It offers features like pluggable look and feel, better event handling, and
+                        more flexible components.</p>
+                    <h3>Common Swing Components</h3>
+                    <p><strong>JFrame:</strong> The main window of a Swing application.</p>
+                    <p><strong>JButton:</strong> A button that can trigger actions.</p>
+                    <p><strong>JLabel:</strong> A non-editable text display.</p>
+                    <p><strong>JTextField:</strong> A single-line text input field.</p>
+                    <p><strong>JTextArea:</strong> A multi-line text input area.</p>
+                    <p><strong>JCheckBox:</strong> A checkable box.</p>
+                    <p><strong>JRadioButton:</strong> A button in a group where only one button can be selected at a
+                        time.</p>
+                    <h4>Example: Swing Example</h4>
+                    <pre><code>import javax.swing.*;
+
+public class SwingExample {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Swing Example");
+        JLabel label = new JLabel("Enter your name:");
+        JTextField textField = new JTextField(20);
+        JButton button = new JButton("Submit");
+
+        frame.setLayout(new FlowLayout());
+        frame.add(label);
+        frame.add(textField);
+        frame.add(button);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        button.addActionListener(e -> System.out.println("Hello, " + textField.getText()));
+    }
+}
+</code></pre>
+                    <h3>Layout Managers in Swing</h3>
+                    <p><strong>FlowLayout:</strong> Places components in a row, starting a new row if there's no room.
+                    </p>
+                    <p><strong>BorderLayout:</strong> Divides the container into five regions: North, South, East, West,
+                        and Center.</p>
+                    <p><strong>GridLayout:</strong> Arranges components in a grid of rows and columns.</p>
+                    <h4>Example: Layout Example in Swing</h4>
+                    <pre><code>import javax.swing.*;
+import java.awt.*;
+
+public class SwingLayoutExample {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Swing Layout Example");
+        JButton b1 = new JButton("Button 1");
+        JButton b2 = new JButton("Button 2");
+        JButton b3 = new JButton("Button 3");
+        JButton b4 = new JButton("Button 4");
+        JButton b5 = new JButton("Button 5");
+
+        frame.setLayout(new BorderLayout());
+        frame.add(b1, BorderLayout.NORTH);
+        frame.add(b2, BorderLayout.SOUTH);
+        frame.add(b3, BorderLayout.EAST);
+        frame.add(b4, BorderLayout.WEST);
+        frame.add(b5, BorderLayout.CENTER);
+
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
+</code></pre>
+                    <h3>Event Handling in Swing</h3>
+                    <p>Handling events in Swing is similar to AWT, but Swing provides more event types and more
+                        sophisticated event handling.</p>
+                    <h4>Example: Event Handling Example in Swing</h4>
+                    <pre><code>import javax.swing.*;
+import java.awt.event.*;
+
+public class SwingEventHandlingExample {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Swing Event Handling Example");
+        JButton button = new JButton("Click Me");
+
+        frame.setLayout(new FlowLayout());
+        frame.add(button);
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        button.addActionListener(e -> System.out.println("Button Clicked!"));
+    }
+}
+</code></pre>
+                    <h3>Creating Simple Swing Applications</h3>
+                    <p>To create simple Swing applications, use JFrame and add various Swing components to it. Utilize
+                        layout managers to arrange components effectively.</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. JavaFX</h2>
+                    <h3>Introduction to JavaFX</h3>
+                    <p>JavaFX is a modern UI toolkit for Java that allows developers to create rich, visually appealing
+                        applications with advanced features like 2D and 3D graphics, CSS styling, and multimedia.</p>
+                    <h3>JavaFX Components and Layouts</h3>
+                    <p><strong>Stage:</strong> The main window of a JavaFX application.</p>
+                    <p><strong>Scene:</strong> Contains the visual elements and layout of a JavaFX application.</p>
+                    <p><strong>Nodes:</strong> Basic building blocks of JavaFX scenes, such as buttons, labels, and text
+                        fields.</p>
+                    <h4>Example: JavaFX Example</h4>
+                    <pre><code>import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
+public class JavaFXExample extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        Label label = new Label("Enter your name:");
+        TextField textField = new TextField();
+        Button button = new Button("Submit");
+
+        FlowPane root = new FlowPane();
+        root.getChildren().addAll(label, textField, button);
+
+        Scene scene = new Scene(root, 300, 200);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("JavaFX Example");
+        primaryStage.show();
+
+        button.setOnAction(e -> System.out.println("Hello, " + textField.getText()));
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+</code></pre>
+                    <h3>JavaFX Layouts</h3>
+                    <p><strong>FlowPane:</strong> Arranges nodes in a horizontal or vertical flow.</p>
+                    <p><strong>BorderPane:</strong> Divides the layout into five regions: Top, Bottom, Left, Right, and
+                        Center.</p>
+                    <p><strong>GridPane:</strong> Arranges nodes in a grid of rows and columns.</p>
+                    <h4>Example: Layout Example in JavaFX</h4>
+                    <pre><code>import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+public class JavaFXLayoutExample extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        Button b1 = new Button("Button 1");
+        Button b2 = new Button("Button 2");
+        Button b3 = new Button("Button 3");
+        Button b4 = new Button("Button 4");
+        Button b5 = new Button("Button 5");
+
+        BorderPane root = new BorderPane();
+        root.setTop(b1);
+        root.setBottom(b2);
+        root.setLeft(b3);
+        root.setRight(b4);
+        root.setCenter(b5);
+
+        Scene scene = new Scene(root, 400, 300);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("JavaFX Layout Example");
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+</code></pre>
+                    <h3>Event Handling in JavaFX</h3>
+                    <p>JavaFX provides a rich set of event types and handlers. Use event handlers to respond to user
+                        interactions with JavaFX components.</p>
+                    <h4>Example: Event Handling Example in JavaFX</h4>
+                    <pre><code>import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
+public class JavaFXEventHandlingExample extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        Button button = new Button("Click Me");
+
+        FlowPane root = new FlowPane();
+        root.getChildren().add(button);
+
+        Scene scene = new Scene(root, 300, 200);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("JavaFX Event Handling Example");
+        primaryStage.show();
+
+        button.setOnAction(e -> System.out.println("Button Clicked!"));
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+</code></pre>
+                    <h3>Creating Simple JavaFX Applications</h3>
+                    <p>To create simple JavaFX applications, initialize the Stage and Scene, add components to the
+                        Scene, and set the Scene to the Stage. Use layout panes to arrange components effectively.</p>
+                </div>
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script src="java.js"></script>
+</body>
+
+</html>

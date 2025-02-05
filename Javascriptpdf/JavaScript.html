@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2208b4c814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="topNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-black" id="logo-title" href="../index.html">E-Learning</a>
+
+            <button class="navbar-toggler shadow-none border-0 btn-close-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-4" id="offcanvasNavbarLabel">E-Learning
+                    </h5>
+                    <!-- if you add color in close icon you can use "btn-close-white" inside the class -->
+                    <button type="button" id="closeIcon" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+
+                    </button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link   me-4" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../Notes page/index.html">Notes</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+
+                            <ul class="dropdown-menu" style=" border-radius: 18px; border:none">
+                                <li><a class="dropdown-item " href="JavaScript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item " href="../phppdf/php.html">PHP</a></li>
+                                <li><a class="dropdown-item " href="../cpdf/c.html">C</a></li>
+                                <li><a class="dropdown-item " href="../htmlpdf/Fhtml.html">HTML</a></li>
+                                <li><a class="dropdown-item " href="../pythonpdf/python.html">Python</a></li>
+                                <li><a class="dropdown-item " href="../cpluspdf/cplus.html">C++</a></li>
+                                <li><a class="dropdown-item " href="../javapdf/java.html">Java</a></li>
+                                <li><a class="dropdown-item " href="../reactpdf/react.html">React</a></li>
+
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../about/Demo.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  me-4" href="../contact/index.html">Contact</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </nav>
+
+
+
+    <div class="containerjs">
+        <!-- Sidebar -->
+        <div class="sidebarjs">
+            <ul id="topicListjs">
+                <li data-topic="topic1"><i class="fas fa-book read-icon"></i>&nbsp;Introduction to JavaScript</li>
+                <li data-topic="topic2"><i class="fas fa-book read-icon"></i>&nbsp;Variables and Data Types in
+                    JavaScript</li>
+                <li data-topic="topic3"><i class="fas fa-book read-icon"></i>&nbsp;Operator In JavaScript
+                <li>
+                <li data-topic="topic4"><i class="fas fa-book read-icon"></i>&nbsp;Conditional Statement</li>
+                <li data-topic="topic5"><i class="fas fa-book read-icon"></i>&nbsp;JavaScript String</li>
+                <li data-topic="topic6"><i class="fas fa-book read-icon"></i>&nbsp;Array and Array Method</li>
+                <li data-topic="topic7"><i class="fas fa-book read-icon"></i>&nbsp;Loops with Array</li>
+                <li data-topic="topic8"><i class="fas fa-book read-icon"></i>&nbsp;Map,filter and Reduce</li>
+                <li data-topic="topic9"><i class="fas fa-book read-icon"></i>&nbsp;Date</li>
+                <li data-topic="topic10"><i class="fas fa-book read-icon"></i>&nbsp;Math</li>
+
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="contentjs">
+            <div id="topic1" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Introduction to JavaScript</h2>
+                <h4>What is JavaScript?</h4>
+                <p>JavaScript is a client-side scripting language that runs in the browser, enabling web pages to
+                    respond to user actions without requiring a page reload. It's one of the core technologies of the
+                    World Wide Web, alongside HTML and CSS.</p>
+                <h4>Key Features:-</h4>
+                <p>1. Interactivity: JavaScript makes web pages interactive by allowing actions like form validation,
+                    dynamic content updates, animations, and user interface enhancements.</p>
+                <p>2. Event Handling: It responds to user interactions like clicks, keyboard inputs, and mouse
+                    movements.</p>
+                <p>3. Cross-Browser Compatibility: JavaScript runs on all major web browsers, including Chrome, Firefox,
+                    Safari, and Edge.</p>
+                <p>4. Object-Oriented: Though not strictly an object-oriented language, JavaScript supports
+                    object-oriented programming concepts like objects, inheritance, and encapsulation.</p>
+                <p>5. Asynchronous Programming: JavaScript supports asynchronous operations through callbacks, promises,
+                    and async/await, making it ideal for handling tasks like data fetching without blocking the main
+                    thread.
+                </p>
+                <h4>Basic Syntax</h4>
+                <img src="Images/img1.png" alt="img1" class="responsive-image"><br><br>
+                <h4>Common Uses of JavaScript:</h4>
+                <p>1. DOM Manipulation: JavaScript can dynamically modify HTML and CSS, enabling the creation of dynamic
+                    user interfaces.</p>
+                <p>2. Form Validation: Before data is sent to a server, JavaScript can validate user inputs to ensure
+                    they meet the required criteria.</p>
+                <p>3. Event Handling: JavaScript can execute code in response to user actions, such as clicking a button
+                    or hovering over an element.</p>
+                <p>4. AJAX: JavaScript allows for asynchronous data loading, making web pages faster and more responsive
+                    by updating parts of the page without refreshing the whole page.</p>
+                <p>5. Games: Simple browser-based games can be created using JavaScript.</p>
+            </div>
+            <div id="topic2" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Variables and Data Types in JavaScript</h2>
+                <h4>Variables in JavaScript:-</h4>
+                <p>In JavaScript, variables are containers for storing data values. You can declare variables using
+                    three keywords: 'var', 'let', and 'const'.</p>
+                <h4>1.&nbsp; `var`:-</h4>
+                <p>
+                    <li>Introduced in the original version of JavaScript.</li>
+                    <li>Function-scoped: Accessible within the function where it's defined.</li>
+                    <li>Can be redeclared and updated.</li>
+                </p>
+                <img src="Images/img2.png" alt="img2" class="responsive-image"><br><br><br><br>
+                <h4>2.&nbsp; `let`:-</h4>
+                <p>
+                    <li>Introduced in ECMAScript 6 (ES6).</li>
+                    <li>Block-scoped: Accessible only within the block where it's defined (e.g., within `{}`).</li>
+                    <li>Cannot be redeclared within the same scope but can be updated.</li>
+                </p>
+                <img src="Images/img3.png" alt="img3" class="responsive-image"><br><br><br><br>
+
+                <h4>3.&nbsp; `const`:-</h4>
+                <p>
+                    <li>Also introduced in ES6.</li>
+                    <li>Block-scoped like `let`.</li>
+                    <li>Cannot be updated or redeclared after it’s assigned a value. Useful for constants.</li>
+                </p>
+                <img src="Images/img4.png" alt="img4" class="responsive-image"><br><br><br><br>
+                <h2>Data Types in JavaScript:-</h2>
+                <p>JavaScript supports various data types, categorized as either primitive or non-primitive.</p>
+                <h4>Primitive Data Types:</h4>
+                <p>Number: Represents both integer and floating-point numbers.</p>
+                <img src="Images/img5.png" alt="img5" class="responsive-image"><br><br><br><br>
+                <p>String: Represents a sequence of characters. Strings are enclosed in single (`'`), double (`"`), or
+                    backticks (```) for template literals.</p>
+                <img src="Images/img6.png" alt="img6" class="responsive-image"><br><br><br><br>
+                <p>Boolean: Represents logical entities and can have two values: `true` or `false`.</p>
+                <img src="Images/img7.png" alt="img7" class="responsive-image"><br><br><br><br>
+                <p>Undefined:-A variable that has been declared but has not been assigned a value.</p>
+                <img src="Images/img8.png" alt="img8" class="responsive-image"><br><br><br><br>
+                <p>Null: Represents the intentional absence of any object value. It's a primitive type in JavaScript.
+                </p>
+                <img src="Images/img9.png" alt="img9" class="responsive-image"><br><br><br><br>
+                <p>Symbol: Introduced in ES6, Symbol is a unique and immutable primitive value, often used to create
+                    unique object keys.</p>
+                <img src="Images/img10.png" alt="img10" class="responsive-image"><br><br><br><br>
+                <p>BigInt: Introduced in ES2020, `BigInt` is used to represent integers larger than the `Number` type
+                    can handle.</p>
+                <img src="Images/img11.png" alt="img11" class="responsive-image"><br><br><br><br>
+
+
+                <h2>Non-Primitive Data Types:</h2>
+                <p>Object: Used to store collections of data and more complex entities.</p>
+                <img src="Images/img12.png" alt="img12" class="responsive-image"><br><br><br><br>
+
+                <p>Array: A special type of object used to store multiple values in a single variable.</p>
+                <img src="Images/img13.png" alt="img13" class="responsive-image"><br><br><br><br>
+
+                <p>Function: Functions are blocks of code designed to perform a particular task. They are objects in
+                    JavaScript and can be assigned to variables.</p>
+                <img src="Images/img14.png" alt="img14" class="responsive-image"><br><br><br><br>
+
+                <h2>Type Conversion</h2>
+                <p>JavaScript automatically converts between different data types as needed, but you can also manually
+                    convert types.</p>
+                <p>Example of Type Conversion:</p>
+                <img src="Images/img15.png" alt="img15" class="responsive-image">
+                <p>Understanding variables and data types in JavaScript is fundamental for writing effective code, as
+                    they form the basis for handling and manipulating data within your programs.</p>
+            </div>
+            <div id="topic3" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Operator</h2>
+                <p>In JavaScript, operators are symbols that perform operations on operands (values or variables).
+                    Here's a breakdown of the different types of operators you mentioned:</p>
+                <h4>1. Arithmetic Operators</h4>
+                <img src="Images/img16.png" alt="img16" class="responsive-image"><br><br><br><br>
+
+                <h4>2. Assignment Operators</h4>
+                <img src="Images/img17.png" alt="img17" class="responsive-image"><br><br><br><br>
+
+                <h4>3. Comparison Operators</h4>
+                <img src="Images/img18.png" alt="img18" class="responsive-image"><br><br><br><br>
+
+                <h4>4. Logical Operators</h4>
+                <img src="Images/img19.png" alt="img19" class="responsive-image">
+                <h4>Logical OR(||):</h4>
+                <p>
+                    <li style="margin-top:0; padding-top:0; padding-left:30px">Returns true if at least one of the
+                        operands is true.</li>
+                </p>
+                <p>
+                    <li style="margin-top:0; padding-top:0; padding-left:30px">Example: true || false evaluates to true.
+                    </li>
+                </p>
+                <br><br><br><br>
+
+                <h4>5. Bitwise Operators</h4>
+                <img src="Images/img20.png" alt="img20" class="responsive-image">
+                <h4>Bitwise OR(|):</h4>
+                <p>
+                    <li style="margin-top:0; padding-top:0; padding-left:30px">Purpose: Used to perform a bitwise OR
+                        operation on two numbers</li>
+                </p>
+                <p>
+                    <li style="margin-top:0; padding-top:0; padding-left:30px">Function: Compares each bit of the
+                        numbers and returns a new number where each bit is 1 if at least one of the corresponding bits
+                        of the operands is 1. Otherwise, it’s 0.</li>
+                </p>
+                <br><br><br><br>
+
+                <h4>Sample Code</h4>
+                <img src="Images/img21.png" alt="img21" class="responsive-image"> <br><br><br><br>
+
+            </div>
+
+            <div id="topic4" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Conditional Statements</h2>
+                <h4>if</h4>
+                <p>The if statement executes a block of code if a specified condition is true.</p>
+                <img src="Images/img22.png" alt="img22" class="responsive-image"><br><br><br><br>
+
+                <h4>else</h4>
+                <p>The else statement executes a block of code if the if condition is false.</p>
+                <img src="Images/img23.png" alt="img23" class="responsive-image"><br><br><br><br>
+
+                <h4>else if</h4>
+                <p>The else if statement specifies a new condition to test if the previous if condition is false.</p>
+                <img src="Images/img24.png" alt="img24" class="responsive-image"><br><br><br><br>
+
+                <h2>Switch Statement</h2>
+                <p>The switch statement evaluates an expression and executes code blocks based on the expression’s
+                    value. It’s often used as an alternative to multiple if-else statements.</p>
+                <img src="Images/img25.png" alt="img25" class="responsive-image"><br><br><br><br>
+
+                <h2>Loops</h2>
+                <h4>for</h4>
+                <p>The for loop is used when you know how many times you want to iterate through a block of code.</p>
+                <img src="Images/img26.png" alt="img26" class="responsive-image"><br><br><br><br>
+
+                <h4>while</h4>
+                <p>The while loop continues to execute a block of code as long as the specified condition remains true.
+                </p>
+                <img src="Images/img27.png" alt="img27" class="responsive-image"><br><br><br><br>
+
+                <h4>do-while</h4>
+                <p>The do-while loop is similar to the while loop, but it guarantees that the block of code will execute
+                    at least once before checking the condition.</p>
+                <img src="Images/img28.png" alt="img28" class="responsive-image"><br><br><br><br>
+
+                <h2>Summary:-</h2>
+                <li>if: Executes code if a condition is true.</li>
+                <li>else: Executes code if the previous if condition is false.</li>
+                <li>else if: Tests additional conditions if previous ones are false.</li>
+                <li>switch: Tests a value against multiple cases and executes corresponding code blocks.</li>
+                <li>for: Loops through code a specified number of times.</li>
+                <li>while: Loops through code as long as a condition is true.</li>
+                <li>do-while: Loops through code at least once and then continues as long as a condition is true.</li>
+
+            </div>
+            <!-- Add more content sections as needed -->
+
+
+            <div id="topic5" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Strings</h2>
+                <p>One of the most important aspects of JavaScript is its ability to manipulate strings, which are sequences of characters. In this blog post, we will explore the basics of JavaScript strings and the various string methods that can be used to manipulate them.</p>
+
+                <p>A string in JavaScript is a sequence of characters enclosed in either single or double quotes. For example, the following are valid strings in JavaScript:</p>
+<code><pre>
+    "Hello World"
+    'Hello World'
+</pre></code>
+<p>JavaScript provides a number of built-in methods for manipulating strings. Some of the most commonly used string methods are:</p>
+<br>
+<p><b>length : </b>This method returns the number of characters in a string. For example, the following code will return 11:</p>
+<code><pre>
+    var str = "Hello World";
+    console.log(str.length);
+</pre></code>
+<br>
+<p><b>concat :</b> This method is used to concatenate (combine) two or more strings. For example, the following code will return "Hello World":</p>
+<code><pre>
+    var str1 = "Hello";
+    var str2 = " World";
+    console.log(str1.concat(str2));
+
+</pre></code>
+<br>
+<p><b>indexOf:</b>This method is used to find the index of a specific character or substring in a string. For example, the following code will return 6:</p>
+<code><pre>
+    var str = "Hello World";
+    console.log(str.indexOf("W")); 
+</pre></code>
+<br>
+<p><b>slice :</b>This method is used to extract a portion of a string. For example, the following code will return "World":</p>
+<code><pre>
+    var str = "Hello World";
+    console.log(str.slice(6));
+
+</pre></code>
+<br>
+<p><b>replace:</b> This method is used to replace a specific character or substring in a string. For example, the following code will return "Hello Universe":</p>
+<code><pre>
+    var str = "Hello World";
+    console.log(str.replace("World", "Universe"));
+</pre></code>
+<br>
+<p><b>toUpperCase & toLowerCase:-</b> These methods are used to convert a string to uppercase or lowercase letters. For example, the following code will return "HELLO WORLD" and "hello world" respectively:</p>
+<code><pre>
+    var str = "Hello World";
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+</pre></code>
+<p>These are just a few of the many string methods available in JavaScript. By understanding the basics of strings and the various methods that can be used to manipulate them, you can create more dynamic and interactive web pages. So, start experimenting with different string methods and see what you can create!</p>
+
+
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic6" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+<h2>Arrays and Array Methods</h2>
+<p>One of the most important data structures in JavaScript is the array, which is a collection of elements. In this blog post, we will explore the basics of JavaScript arrays and the various array methods that can be used to manipulate them.</p>
+<p>An array in JavaScript is a collection of elements enclosed in square brackets. Elements can be of any data type, including numbers, strings, and other arrays. For example, the following is a valid array in JavaScript:</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3]];
+</pre></code>
+<p>JavaScript provides a number of built-in methods for manipulating arrays. Some of the most commonly used array methods are:
+
+</p>
+<br>
+<p><b>length : </b>This method returns the number of elements in an array. For example, the following code will return 3:</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3]];
+    console.log(myArray.length);
+</pre></code>
+<br>
+<p><b>push :</b>This method is used to add an element to the end of an array. For example, the following code will add the element "World" to the end of the array:</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3]];
+    myArray.push("World");
+    console.log(myArray); // [1, "Hello", [2, 3], "World"]     
+</pre></code>
+<br>
+<p><b>pop :</b>This method is used to remove the last element of an array. For example, the following code will remove the last element ("World") from the array:</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3], "World"];
+    myArray.pop();
+    console.log(myArray); // [1, "Hello", [2, 3]]
+</pre></code>
+
+<br>
+<p><b>shift :</b>This method is used to remove the first element of an array. For example, the following code will remove the first element (1) from the array:</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3]];
+    myArray.shift();
+    console.log(myArray); // ["Hello", [2, 3]]
+</pre></code>
+<br>
+<p><b>unshift :</b>This method is used to add an element to the beginning of an array. For example, the following code will add the element 0 to the beginning of the array:</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3]];
+    myArray.unshift(0);
+    console.log(myArray); // [0, 1, "Hello", [2, 3]]
+</pre></code>
+<p><b>slice :</b>This method is used to extract a portion of an array. For example, the following code will extract the elements from index 1 to 2 (exclusive):</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3]];
+    console.log(myArray.slice(1, 2)); // ["Hello"]
+</pre></code>
+<br>
+<p><b>splice :</b>This method is used to add or remove elements from an array. For example, the following code will remove the element at index 1 and add the elements "Hello World" and [4, 5] at index 1:</p>
+<code><pre>
+    var myArray = [1, "Hello", [2, 3]];
+    myArray.splice(1, 1, "Hello World", [4, 5]);
+    console.
+</pre></code>
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+
+            <div id="topic7" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Loops with Arrays</h2>
+                <p>One of the most important data structures in JavaScript is the array, which is a collection of elements. When working with arrays, it is often necessary to iterate through each element in the array, which is where loops come in. In this blog post, we will explore how to use loops with arrays in JavaScript.</p>
+                <p>JavaScript provides several ways to iterate through an array, including the <b>for</b> loop, <b>forEach</b> method, and <b>for...of</b> loop.</p>
+<p><b>for</b> loop:-This is the most basic way to iterate through an array. The for loop uses a counter variable that is incremented on each iteration. For example, the following code will print out each element in the array:</p>
+<code><pre>
+    var myArray = [1, 2, 3, 4, 5];
+    for (var i = 0; i < myArray.length; i++) {
+        console.log(myArray[i]);
+    }
+</pre></code>
+<br>
+<p><b>forEach</b> method :-This method is a more concise way to iterate through an array. The forEach method takes a callback function as its argument, which is called on each element in the array. For example, the following code will print out each element in the array:</p>
+<code><pre>
+    var myArray = [1, 2, 3, 4, 5];
+    myArray.forEach(function(element) {
+        console.log(element);
+    });
+</pre></code>
+<br>
+<p><b>for...of</b> loop:-This is a more recent addition to JavaScript, and it is the most concise way to iterate through an array. It allows you to iterate through the elements of an array without having to access the index, and it works with any iterable object, not just arrays. For example, the following code will print out each element in the array:</p>
+<code><pre>
+    var myArray = [1, 2, 3, 4, 5];
+    for (var element of myArray) {
+        console.log(element);
+    }
+</pre></code><br>
+<p>It is important to note that when you are iterating through an array using a for loop and you plan to change the array during iteration you should use a for loop with a separate counter variable.</p>
+
+
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic8" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Map, Filter and Reduce</h2>
+                <p>One of the most important data structures in JavaScript is the array, which is a collection of elements. When working with arrays, it is often necessary to manipulate the elements in various ways, which is where the built-in methods map, filter, and reduce come in. In this blog post, we will explore how to use these methods to manipulate arrays in JavaScript.</p>
+                <br><br>
+                <p><b>Map:-</b>The map method is used to create a new array with the result of a callback function called on each element in the original array. The callback function takes one argument, the current element, and returns the new value for that element. For example, the following code will return an array of each element multiplied by 2:</p>
+<code><pre>
+    var myArray = [1, 2, 3, 4, 5];
+    var multipliedArray = myArray.map(function(element) {
+        return element * 2;
+    });
+    console.log(multipliedArray); // [2, 4, 6, 8, 10]
+</pre></code>
+<br>
+<p><b>Filter:-</b>The filter method is used to filter an array based on a certain condition. The filter method takes a callback function as its argument, which is called on each element in the array. If the function returns true, the element is included in the new filtered array. For example, the following code will return an array of all even numbers in the original array:</p>
+<code><pre>
+    var myArray = [1, 2, 3, 4, 5];
+    var evenNumbers = myArray.filter(function(element) {
+        return element % 2 === 0;
+    });
+    console.log(evenNumbers); // [2, 4]
+</pre></code>
+<br>
+<p><b>Reduce:-</b>The reduce method is used to reduce an array to a single value. The reduce method takes a callback function as its argument, which is called on each element in the array. The callback function takes two arguments, the accumulator and the current element, and returns the new value for the accumulator. For example, the following code will return the sum of all elements in the array:</p>
+<code><pre>
+    var myArray = [1, 2, 3, 4, 5];
+    var sum = myArray.reduce(function(acc, cur) {
+        return acc + cur;
+    }, 0);
+    console.log(sum); // 15
+</pre></code><br>
+<p>It's important to note that these methods work on the original array and doesn't change it, it returns a new array.</p>
+<p>Combining these three methods can be powerful, for example, you can filter an array, then map the filtered array, and finally reduce the mapped array.</p>
+<p>In conclusion, understanding and utilizing the map, filter, and reduce methods in JavaScript can greatly improve your ability to manipulate arrays and perform complex operations on them. These methods are not only more concise but also more efficient than traditional loops and make your code more readable.</p>
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic9" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Date</h2>
+                <p>JavaScript's Date object allows you to work with dates and times in your scripts. It can be used to get the current date and time, or to manipulate and format dates and times in various ways.</p>
+<p>Creating a new Date object is simple. You can either create a new date object with the current date and time by calling new Date() with no arguments, or you can create a date object with a specific date and time by passing in a string or numerical values.</p>
+<p>Here's an example of how you can use the Date object to get the current date and time:</p>
+<code><pre>
+    var currentDate = new Date();
+    console.log(currentDate);
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    Thu Jan 14 2021 15:15:38 GMT+0530 (India Standard Time)
+</pre></code>
+<br>
+<p>You can also manipulate the date and time using the various methods available on the Date object. For example, you can use the setDate() method to set the day of the month, and the setFullYear() method to set the year.</p>
+<code><pre>
+    var date = new Date();
+    date.setDate(15);
+    date.setFullYear(2022);
+    console.log(date);
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    var date = new Date();
+    date.setDate(15);
+    date.setFullYear(2022);
+    console.log(date);
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    Sat Jan 15 2022 15:15:38 GMT+0530 (India Standard Time)
+</pre></code>
+<br>
+<p>You can also format the date and time using the toLocaleString() method, which allows you to specify the format and time zone.</p>
+<code><pre>
+    var date = new Date();
+    console.log(date.toLocaleString());
+    console.log(date.toLocaleString('en-US', {timeZone: 'UTC'}));
+</pre></code>
+<b>Output:</b>
+<code><pre>
+    1/14/2021, 3:45:38 PM 1/14/2021, 10:15:38 AM
+</pre></code>
+<br>
+<p>In this way, you can use the Date object in JavaScript to work with dates and times in your scripts, and to format and manipulate dates and times in various ways.</p>
+
+
+
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+            <div id="topic10" class="content-section">
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+                <h2>Math</h2>
+                <p>The JavaScript Math object is a built-in object that provides a variety of mathematical functions and constants. It can be used to perform mathematical operations such as trigonometry, logarithms, and random number generation.</p>
+<p>One of the most commonly used functions in the Math object is the Math.random() function, which generates a random number between 0 (inclusive) and 1 (exclusive). This function can be used to generate random numbers for various purposes such as games, simulations, and other applications.</p>
+<code><pre>
+    console.log(Math.random());
+    // Output: a random number between 0 and 1 (e.g. 0.3456)
+</pre></code>
+
+<p>You can also use the Math.floor() function to round a number down to the nearest integer.</p>
+<code><pre>
+    console.log(Math.floor(3.8));
+    // Output: 3
+</pre></code>
+<p>The Math.ceil() function rounds a number up to the nearest integer.</p>
+<code><pre>
+    console.log(Math.ceil(3.2));
+    // Output: 4
+</pre></code>
+<p>Another useful function of Math object is Math.max() and Math.min() which are used to find the maximum and minimum values in a set of numbers respectively.</p>
+<code><pre>
+    console.log(Math.max(3,5,7,9));
+    // Output: 9
+    console.log(Math.min(3,5,7,9));
+    // Output: 3
+</pre></code>
+<p>Math object also provides the most commonly used mathematical constants such as Math.PI for the value of pi, Math.E for the value of the mathematical constant e.</p>
+
+<code><pre>
+    console.log(Math.PI);
+    // Output: 3.141592653589793
+    console.log(Math.E);
+    // Output: 2.718281828459045
+</pre></code>
+<p>In this way, you can use the Math object in JavaScript to perform mathematical operations, generate random numbers, and access mathematical constants. It is a powerful tool that can be used to add more functionality to your JavaScript programs and make them more interactive and dynamic.</p>
+
+                <div class="navigation-buttons">
+                    <button onclick="previousContent()">Previous</button>
+                    <button onclick="nextContent()" id="next">Next</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

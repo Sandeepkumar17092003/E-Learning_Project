@@ -1,0 +1,568 @@
+/* navbar Design Start here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+/* navbar */
+#logo-title{
+    font-size:30px;
+    font-family:sans-serif;
+}
+#topNavbar{
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+    background-color: white;
+    border-radius: 0.25rem;
+	box-shadow: 0 0.3rem 0.4rem rgba(211, 211, 211, 0.986);
+  
+}
+.navbar-brand{
+    font-size:30px;
+    font-family: sans-serif;
+}
+.nav-item{
+    color:#333;
+    font-family: sans-serif;
+    font-size:18px;
+    font-weight:600;
+}
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+    padding-bottom: 5px;
+    position: relative;
+}
+.nav-item a:hover{
+    transform: translateY(-8px);
+    color:red;
+}
+
+.navbar-toggler-icon{
+    font-size:18px;
+    border-radius:5px;
+}
+
+
+#closeIcon:hover{
+    background-color:white !important;
+}
+.dropdown-item:focus, .dropdown-item:active {
+    background-color: lightblue !important; /* Background color when focused or clicked */
+    color: black !important; /* Text color when focused or clicked */
+}
+
+
+
+.dropdown-menu .dropdown-item:hover{
+  border-radius: 10px;
+}
+#mainContent{
+  display:flex;
+}
+
+#mainContent .left{
+  /* border:1px solid red; */
+  width:50%;
+}
+
+#mainContent .right{
+  /* border:1px solid red; */
+  width:50%;
+}
+/* end navbar */
+
+
+/* Navbar meadia query */
+@media(max-width:992px){
+	#offcanvasNavbar {
+        background-color: rgba(15, 13, 13, 0.661); /* Semi-transparent background */
+        backdrop-filter: blur(20px); /* Blur effect */ 
+        color:white;/* Text color */
+    }
+   
+    .nav-item a{
+        color:white;
+        width:30%;
+    }
+    .nav-item a:hover{
+        color:red;
+    }
+    .dropdown-menu{
+        background-color: rgba(42, 41, 41, 0.661) !important;
+        backdrop-filter: blur(40px);
+        border:none;
+        width:10%;
+       
+         
+    }
+    .dropdown-menu li a{
+        /* border:1px solid red; */
+        width:50%;
+    }
+    .dropdown-menu li a:hover{
+        color:red;
+        background:none;
+    }
+   #mainContent{
+    width:100%;
+    flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+} 
+
+/* navbar design end here */
+
+
+
+
+.containerjs {
+    padding:0;
+    /* margin:0; */
+    display: flex;
+    font-family:sans-serif;
+    height: 100vh;
+    padding-top:75px;
+    padding-left:0;
+    margin-left:0;
+}
+
+/* Sidebar styling */
+.sidebarjs {
+    width: 25%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%; 
+    margin-left: 20px;
+    transition: width 0.3s ease;
+}
+.sidebarjs::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.sidebarjs::-webkit-scrollbar-track {
+    background: lightgrey; /* Background of the track */
+}
+
+.sidebarjs::-webkit-scrollbar-thumb {
+    background: #688cb0cd; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+.sidebarjs::-webkit-scrollbar-thumb:hover {
+    background: #4682b4; /* Darker blue when hovering over the thumb */
+}
+
+.sidebarjs ul {
+    padding: 0;
+    margin: 0;
+    height:100%;
+    /* padding-left: ; */
+    list-style-type: none;
+    margin-right:10px;
+}
+
+.sidebarjs ul li {
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+    color: blue;
+    margin-top: 30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.sidebarjs ul li.active {
+    background-color: lightblue;
+    border-radius: 5px;
+}
+.sidebarjs ul li i{
+    color:red;
+}
+
+/* Content styling */
+.contentjs {
+    width: 100%;
+    padding-left:30px;
+    padding-right:30px;
+    overflow-y: auto;
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* This removes any extra space below the image */
+}
+#image-id{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.content-section {
+    padding-top:23px;
+}
+
+.content-section h2{
+    color:orangered;
+}
+.content-section h4{
+    font-weight: 700;
+    font-family:sans-serif;
+}
+/* Scrollbar styles for .sidebarjs */
+.sidebarjs::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.sidebarjs::-webkit-scrollbar-track {
+    background: lightgrey; /* Background of the track */
+}
+
+.sidebarjs::-webkit-scrollbar-thumb {
+    background: #688cb0cd; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+.sidebarjs::-webkit-scrollbar-thumb:hover {
+    background: #4682b4; /* Darker blue when hovering over the thumb */
+}
+
+/* Scrollbar styles for .contentjs */
+.contentjs::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.contentjs::-webkit-scrollbar-track {
+    background: lightgrey; /* Background of the track */
+}
+
+.contentjs::-webkit-scrollbar-thumb {
+    background: #688cb0cd; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+.contentjs::-webkit-scrollbar-thumb:hover {
+    background: #4682b4; /* Darker blue when hovering over the thumb */
+}
+
+
+/* Navigation buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom:20px;
+}
+
+.navigation-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are collapsed into a single border */
+}
+th, td {
+    border: 1px solid #ddd; /* Adds a 1px solid border to each cell */
+    padding: 8px; /* Adds padding inside cells for better readability */
+    text-align: left; /* Aligns text to the left inside cells */
+}
+th {
+    background-color: #f2f2f2; /* Adds a background color to header cells */
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Adds a background color to even rows */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 46.25%; /* 16:9 Aspect Ratio (height / width * 100) */
+    height: 0;
+    overflow: hidden;
+    max-width: 70%;
+    
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container-tags {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    font-family:sans-serif;
+}
+.container-tags h2 {
+    color: black;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.container-tags h4 {
+    color: black;
+}
+.container-tags p {
+    margin-bottom: 1em;
+}
+.container-tags ul {
+    margin-bottom: 1em;
+}
+.container-tags code {
+    background: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 90%;
+}
+/* Media queries for responsiveness */
+@media (max-width: 792px) {
+    .sidebarjs {
+        display: none;
+        width: 0;
+    }
+
+    .contentjs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebarjs {
+        font-size: 18px;
+    }
+
+    .contentjs {
+        font-size: 18px;
+    }
+}
+@media(max-width:260px)
+{
+    .navigation-buttons{
+        flex-direction:column;
+    }
+    #next{
+        margin-top:20px;
+    }
+
+    #logo-title{
+        font-size:22px !important;
+    }
+}
+
+
+/* topics 1 and 2 */
+#10, #20, #30, #40, #50, #60, #70, #80, #90 {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Heading styling */
+#10 h2, #20 h2, #30 h2, #40 h2, #50 h2, #60 h2, #70 h2, #80 h2, #90 h2 {
+    color: #333;
+}
+
+/* Paragraph styling */
+#10 p, #20 p, #30 p, #40 p, #50 p, #60 p, #70 p, #80 p, #90 p {
+    margin-bottom: 1em;
+}
+
+/* List styling */
+#20 ul, #30 ul, #50 ul, #70 ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Highlight class */
+.highlight {
+    background-color: #e7f4ff;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 20px;
+}
+
+/* Preformatted text */
+pre {
+    background-color: #cecccc;
+    padding: 10px;
+    overflow-x: auto;
+    font-size: 1em; /* Default font size */
+}
+
+/* Heading styling */
+h2 {
+    color: #00796b;
+}
+
+/* Subheading styling */
+h4 {
+    color: #004d40;
+}
+
+/* General paragraph styling */
+p {
+    margin: 10px 0;
+}
+
+/* Code styling */
+code {
+    background-color: #cecccc;
+    padding: 2px 4px;
+    font-size: 1em; /* Default font size */
+}
+.output {
+    background: #e0e0e0;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #10, #20, #30, #40, #50, #60, #70, #80, #90 {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    code {
+        font-size: 1em;
+    }
+
+    pre {
+        padding: 8px;
+    }
+
+    #20 ul, #30 ul, #50 ul, #70 ul {
+        padding-left: 15px;
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    #10, #20, #30, #40, #50, #60, #70, #80, #90 {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    code {
+        font-size: 0.9em;
+    }
+
+    pre {
+        padding: 5px;
+    }
+
+    #20 ul, #30 ul, #50 ul, #70 ul {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    pre {
+        padding: 8px;
+        font-size: 0.9em; /* Slightly smaller text on medium devices */
+    }
+
+    code {
+        padding: 2px 3px;
+        font-size: 0.9em; /* Slightly smaller text on medium devices */
+    }
+}
+
+@media (max-width: 480px) {
+    pre {
+        padding: 6px;
+        font-size: 0.8em; /* Smaller text on small devices */
+    }
+
+    code {
+        padding: 2px 2px;
+        font-size: 0.8em; /* Smaller text on small devices */
+    }
+}
+
+/*End here topics 1 and 2 */
