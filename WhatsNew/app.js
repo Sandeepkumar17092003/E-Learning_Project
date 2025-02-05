@@ -5,13 +5,13 @@ import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, getDoc } fro
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyC--B80DIqbwZhxc-06nsAju0xPL9-dUvY",
-    authDomain: "elearning-39296.firebaseapp.com",
-    projectId: "elearning-39296",
-    storageBucket: "elearning-39296.appspot.com",
-    messagingSenderId: "690590397095",
-    appId: "1:690590397095:web:87c253a768fd79f95ea182",
-    measurementId: "G-D8FGWHGT3S"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 // Initialize Firebase
